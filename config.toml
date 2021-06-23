@@ -1,4 +1,4 @@
 baseURL = "https://blog.r2ys.life/"
 languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "hyde"
+title = "r2ys blog"
+theme = "hugo-theme-bootstrap"
