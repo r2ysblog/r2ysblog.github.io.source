@@ -4,7 +4,7 @@ theme = "hugo-theme-bootstrap"
 copyright = "Copyright © 2021-{year} r2ys. All Rights Reserved."
 
 # Multilingual mode
-defaultContentLanguage = "en"
+defaultContentLanguage = "zh-cn"
 defaultContentLanguageInSubdir = true
 
 # Pagination
