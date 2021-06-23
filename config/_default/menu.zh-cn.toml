@@ -1,0 +1,13 @@
+[[main]]
+  name = "我的其它主页"
+  identifier = "dropdown"
+[[main]]
+  parent = "dropdown"
+  name = "Github"
+  url = "https://github.com/razonyang/hugo-theme-bootstrap"
+  pre = '<i class="fab fa-fw fa-github"></i>'
+[[main]]
+  parent = "dropdown"
+  name = "Rubik's cube"
+  url = "https://cube.r2ys.life"
+  pre = '<i class="fab fa-fw fa-github"></i>'

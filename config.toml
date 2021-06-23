@@ -1,4 +1,0 @@
-baseURL = "https://blog.r2ys.life/"
-languageCode = "en-us"
-title = "r2ys blog"
-theme = "hugo-theme-bootstrap"

@@ -1,0 +1,6 @@
+name = "r2ys"
+# avatar = "images/profile.png" # Avatar image. Default to "images/profile.webp".
+bio = "好的应用开发者、应用架构师"
+company = "sft"
+location = "北京朝阳门"
+# about = "https://domain.tld" # The external about page. The internal about page will be used if not set.
