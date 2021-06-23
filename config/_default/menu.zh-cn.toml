@@ -8,6 +8,6 @@
   pre = '<i class="fab fa-fw fa-github"></i>'
 [[main]]
   parent = "dropdown"
-  name = "Rubik's cube"
+  name = "我的魔方页"
   url = "https://cube.r2ys.life"
   pre = '<i class="fab fa-fw fa-github"></i>'
