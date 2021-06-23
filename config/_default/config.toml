@@ -1,11 +1,14 @@
 baseURL = "https://blog.r2ys.life"
 title = "r2ys blog"
 theme = "hugo-theme-bootstrap"
+
+hasCJKLanguage = false
+
 copyright = "Copyright © 2021-{year} r2ys. All Rights Reserved."
 
 # Multilingual mode
-defaultContentLanguage = "zh-cn"
-defaultContentLanguageInSubdir = true
+# defaultContentLanguage = "zh-cn"
+# defaultContentLanguageInSubdir = true
 
 # Pagination
 paginate = 5
