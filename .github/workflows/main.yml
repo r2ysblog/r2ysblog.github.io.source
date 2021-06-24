@@ -21,7 +21,7 @@ jobs:
 #        run: hugo --theme=hugo-theme-bootstrap --buildDrafts
 
       - name: site
-        run: cat 'blog.r2ys.life' > public/CNAME
+        run: echo 'blog.r2ys.life' > public/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
