@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on r2ys blog</title>
+    <link>/categories/java/</link>
+    <description>Recent content in Java on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 15 Jan 2020 10:53:49 +0800</lastBuildDate><atom:link href="/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>parse request url</title>
+      <link>/posts/notes/2020-01-15-parse-request-url/</link>
+      <pubDate>Wed, 15 Jan 2020 10:53:49 +0800</pubDate>
+      
+      <guid>/posts/notes/2020-01-15-parse-request-url/</guid>
+      <description>parse request url </description>
+    </item>
+    
+    <item>
+      <title>difference from array and arraylist</title>
+      <link>/posts/notes/2020-01-15-difference-from-array-and-arraylist/</link>
+      <pubDate>Wed, 15 Jan 2020 10:44:25 +0800</pubDate>
+      
+      <guid>/posts/notes/2020-01-15-difference-from-array-and-arraylist/</guid>
+      <description>Array和ArrayList的各自特点和区别 Array  内存中是连续的 读取和赋值很快 扩容和收缩很慢 需要指定内存大小  ArrayList  不需要指定容量 方便动态扩容和收缩 可以保存不同类型，本质都当作Object处理 ArrayList不是类型安全，需要拆装箱 通过指定泛型，通过编译来强制使用正确统一的数据类型，也减少了类型转换  </description>
+    </item>
+    
+  </channel>
+</rss>

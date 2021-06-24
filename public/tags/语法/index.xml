@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>语法 on r2ys blog</title>
+    <link>/tags/%E8%AF%AD%E6%B3%95/</link>
+    <description>Recent content in 语法 on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 10 Jul 2019 16:01:00 +0800</lastBuildDate><atom:link href="/tags/%E8%AF%AD%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql only full group by</title>
+      <link>/posts/notes/2019-07-10-mysql-only-full-group-by/</link>
+      <pubDate>Wed, 10 Jul 2019 16:01:00 +0800</pubDate>
+      
+      <guid>/posts/notes/2019-07-10-mysql-only-full-group-by/</guid>
+      <description>MySQL SQL GROUP BY是如何选择哪一条数据留下的 示例 -- 建表 CREATE TABLE `src2` ( `id` int(11) DEFAULT NULL, `name` varchar(20) DEFAULT NULL ) ENGINE=InnoDB DEFAULT CHARSET=utf8; -- 查询 SELECT id, name FROM src2; 查询到的结果 id name 1 alpha 1 bravo 2 charlie 2 dolphin
+查看当前mysql版本，并且看是否开启了only full group by SELECT version(), @@sql_mode; 5.7.20 STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+根据id使用group by查询id,name SELECT id, NAME FROM src2 GROUP BY id; 如无异常会查询到两条数据，但是同样为id1的两条数据是如何选择留哪一条呢 1 alpha 2 charlie
+稍后再看，先解决这个问题 关闭only full group by -- 去除 SET sql_mode=(SELECT REPLACE(@@sql_mode,&amp;#39;ONLY_FULL_GROUP_BY&amp;#39;,&amp;#39;&amp;#39;)); -- 再次查询 SELECT version(), @@sql_mode; 如何恢复？ 5.</description>
+    </item>
+    
+  </channel>
+</rss>

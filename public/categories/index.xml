@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>分类 on r2ys blog</title>
+    <link>/categories/</link>
+    <description>Recent content in 分类 on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Thu, 16 Jan 2020 08:47:24 +0800</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iOS cer p12</title>
+      <link>/categories/ios-cer-p12/</link>
+      <pubDate>Thu, 16 Jan 2020 08:47:24 +0800</pubDate>
+      
+      <guid>/categories/ios-cer-p12/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fabric</title>
+      <link>/categories/fabric/</link>
+      <pubDate>Wed, 15 Jan 2020 11:03:42 +0800</pubDate>
+      
+      <guid>/categories/fabric/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AST</title>
+      <link>/categories/ast/</link>
+      <pubDate>Wed, 15 Jan 2020 11:02:41 +0800</pubDate>
+      
+      <guid>/categories/ast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flow</title>
+      <link>/categories/flow/</link>
+      <pubDate>Wed, 15 Jan 2020 11:02:00 +0800</pubDate>
+      
+      <guid>/categories/flow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>/categories/shell/</link>
+      <pubDate>Wed, 15 Jan 2020 11:01:03 +0800</pubDate>
+      
+      <guid>/categories/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>algorithms</title>
+      <link>/categories/algorithms/</link>
+      <pubDate>Wed, 15 Jan 2020 11:00:03 +0800</pubDate>
+      
+      <guid>/categories/algorithms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>distributed</title>
+      <link>/categories/distributed/</link>
+      <pubDate>Wed, 15 Jan 2020 10:58:31 +0800</pubDate>
+      
+      <guid>/categories/distributed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>maven</title>
+      <link>/categories/maven/</link>
+      <pubDate>Wed, 15 Jan 2020 10:56:08 +0800</pubDate>
+      
+      <guid>/categories/maven/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>/categories/java/</link>
+      <pubDate>Wed, 15 Jan 2020 10:53:49 +0800</pubDate>
+      
+      <guid>/categories/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>/categories/linux/</link>
+      <pubDate>Wed, 15 Jan 2020 10:52:25 +0800</pubDate>
+      
+      <guid>/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>orm</title>
+      <link>/categories/orm/</link>
+      <pubDate>Wed, 15 Jan 2020 10:50:39 +0800</pubDate>
+      
+      <guid>/categories/orm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>database</title>
+      <link>/categories/database/</link>
+      <pubDate>Wed, 15 Jan 2020 10:48:26 +0800</pubDate>
+      
+      <guid>/categories/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mysql</title>
+      <link>/categories/mysql/</link>
+      <pubDate>Wed, 15 Jan 2020 10:47:28 +0800</pubDate>
+      
+      <guid>/categories/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resume</title>
+      <link>/categories/resume/</link>
+      <pubDate>Wed, 15 Jan 2020 09:33:05 +0800</pubDate>
+      
+      <guid>/categories/resume/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>work</title>
+      <link>/categories/work/</link>
+      <pubDate>Tue, 14 Jan 2020 16:48:02 +0800</pubDate>
+      
+      <guid>/categories/work/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>english</title>
+      <link>/categories/english/</link>
+      <pubDate>Mon, 28 Oct 2019 10:44:00 +0800</pubDate>
+      
+      <guid>/categories/english/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nginx</title>
+      <link>/categories/nginx/</link>
+      <pubDate>Mon, 28 Oct 2019 10:44:00 +0800</pubDate>
+      
+      <guid>/categories/nginx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sh</title>
+      <link>/categories/sh/</link>
+      <pubDate>Mon, 21 Oct 2019 11:45:00 +0800</pubDate>
+      
+      <guid>/categories/sh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jdk</title>
+      <link>/categories/jdk/</link>
+      <pubDate>Fri, 09 Aug 2019 09:00:00 +0800</pubDate>
+      
+      <guid>/categories/jdk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>/categories/math/</link>
+      <pubDate>Wed, 24 Jul 2019 14:06:00 +0800</pubDate>
+      
+      <guid>/categories/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>encrypt</title>
+      <link>/categories/encrypt/</link>
+      <pubDate>Wed, 10 Jul 2019 10:53:00 +0800</pubDate>
+      
+      <guid>/categories/encrypt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jekyll update</title>
+      <link>/categories/jekyll-update/</link>
+      <pubDate>Tue, 08 Jan 2019 18:46:41 +0800</pubDate>
+      
+      <guid>/categories/jekyll-update/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

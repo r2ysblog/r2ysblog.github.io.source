@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mysql on r2ys blog</title>
+    <link>/categories/mysql/</link>
+    <description>Recent content in mysql on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 15 Jan 2020 10:47:28 +0800</lastBuildDate><atom:link href="/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>derby and mysql</title>
+      <link>/posts/notes/2020-01-15-derby-and-mysql/</link>
+      <pubDate>Wed, 15 Jan 2020 10:47:28 +0800</pubDate>
+      
+      <guid>/posts/notes/2020-01-15-derby-and-mysql/</guid>
+      <description>derby and mysql todo derby 哪些方面能代替mysql MariaDB 为什么是mysql的分支 </description>
+    </item>
+    
+    <item>
+      <title>delete dirty lines in mysql</title>
+      <link>/posts/notes/2020-01-15-delete-dirty-lines-in-mysql/</link>
+      <pubDate>Wed, 15 Jan 2020 10:38:28 +0800</pubDate>
+      
+      <guid>/posts/notes/2020-01-15-delete-dirty-lines-in-mysql/</guid>
+      <description>清楚重复数据 建表 CREATE TABLE `src5` ( `userid` int(11) unsigned NOT NULL AUTO_INCREMENT, `username` varchar(20) DEFAULT NULL, `usercode` varchar(20) DEFAULT NULL, PRIMARY KEY (`userid`) ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8; 如果usercode重复，那么可能会出现以下数据 userid username usercode 1 &amp;hellip; code0 2 &amp;hellip; code0 3 &amp;hellip; code0
+删除id最大的那一行，比如删除code0，userid为3的那行 DELETE FROM src5 WHERE userid IN ( SELECT id FROM ( SELECT MAX(userid) AS id, COUNT(usercode) AS ucount FROM src5 GROUP BY usercode HAVING ucount &amp;gt; 1 ORDER BY ucount DESC ) tab ) 如果没有自增主键，需要先临时增加，以tmpid为count ALTER TABLE src5 ADD COLUMN tmpid INT(11) PRIMARY KEY AUTO_INCREMENT; 最后再删除 ALTER TABLE src5 DROP COLUMN tmpid; 同时修改原来的主键column ALTER table table_name add PRIMARY KEY (user_role_id) </description>
+    </item>
+    
+    <item>
+      <title>mysql only full group by</title>
+      <link>/posts/notes/2019-07-10-mysql-only-full-group-by/</link>
+      <pubDate>Wed, 10 Jul 2019 16:01:00 +0800</pubDate>
+      
+      <guid>/posts/notes/2019-07-10-mysql-only-full-group-by/</guid>
+      <description>MySQL SQL GROUP BY是如何选择哪一条数据留下的 示例 -- 建表 CREATE TABLE `src2` ( `id` int(11) DEFAULT NULL, `name` varchar(20) DEFAULT NULL ) ENGINE=InnoDB DEFAULT CHARSET=utf8; -- 查询 SELECT id, name FROM src2; 查询到的结果 id name 1 alpha 1 bravo 2 charlie 2 dolphin
+查看当前mysql版本，并且看是否开启了only full group by SELECT version(), @@sql_mode; 5.7.20 STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+根据id使用group by查询id,name SELECT id, NAME FROM src2 GROUP BY id; 如无异常会查询到两条数据，但是同样为id1的两条数据是如何选择留哪一条呢 1 alpha 2 charlie
+稍后再看，先解决这个问题 关闭only full group by -- 去除 SET sql_mode=(SELECT REPLACE(@@sql_mode,&amp;#39;ONLY_FULL_GROUP_BY&amp;#39;,&amp;#39;&amp;#39;)); -- 再次查询 SELECT version(), @@sql_mode; 如何恢复？ 5.</description>
+    </item>
+    
+  </channel>
+</rss>

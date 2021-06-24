@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shell on r2ys blog</title>
+    <link>/categories/shell/</link>
+    <description>Recent content in shell on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 15 Jan 2020 11:01:03 +0800</lastBuildDate><atom:link href="/categories/shell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>learn shell from start</title>
+      <link>/posts/notes/2020-01-15-learn-shell-from-start/</link>
+      <pubDate>Wed, 15 Jan 2020 11:01:03 +0800</pubDate>
+      
+      <guid>/posts/notes/2020-01-15-learn-shell-from-start/</guid>
+      <description>learn shell from start 打印日期的两种方式 echo today is `date &amp;#34;+%Y-%m-%d&amp;#34;` echo today is $(date &amp;#34;+%Y-%m-%d&amp;#34;) shell中变量的使用 mypid=$$ echo &amp;ldquo;mypid:$mypid&amp;rdquo;
+paramCount=$# echo &amp;ldquo;paramCount:$paramCount&amp;rdquo;
+lastPid=$! echo &amp;ldquo;lastPid:$lastPid&amp;rdquo;
+lastResponse=$? echo &amp;ldquo;lastResponse:$lastResponse&amp;rdquo;
+setFlag=$- echo &amp;ldquo;setFlag:$setFlag&amp;rdquo;
+params=$* echo &amp;ldquo;params:$params&amp;rdquo;
+stringParams=$@ echo &amp;ldquo;stringParams:$params&amp;rdquo;
+param0=$0 echo &amp;ldquo;param0:$param0&amp;rdquo;
+param1=$1 echo &amp;ldquo;param1:$param1&amp;rdquo; printf &amp;ldquo;param1 is %s\n&amp;rdquo; $param1
+for i in $@; do echo $i done
+for i in $params; do echo $i done
+`` 和 $() 里面的都是命令 echo Linux echo Shell echo today is date &amp;quot;+%Y-%m-%d&amp;quot;``` echo Linux echo Shell $(echo today is $(date &amp;ldquo;+%Y-%m-%d&amp;rdquo;))` echo Linux $(echo Shell $(echo today is $(date &amp;ldquo;+%Y-%m-%d&amp;rdquo;)))</description>
+    </item>
+    
+    <item>
+      <title>how to post by shell</title>
+      <link>/posts/notes/2020-01-14-how-to-post-by-shell/</link>
+      <pubDate>Tue, 14 Jan 2020 15:18:17 +0800</pubDate>
+      
+      <guid>/posts/notes/2020-01-14-how-to-post-by-shell/</guid>
+      <description>how to post by shell 本篇文章留存，用作帮助使用shell去快速发布一篇文章</description>
+    </item>
+    
+    <item>
+      <title>how to auto publish post</title>
+      <link>/posts/notes/2020-01-14-how-to-auto-publish-post/</link>
+      <pubDate>Tue, 14 Jan 2020 15:06:01 +0800</pubDate>
+      
+      <guid>/posts/notes/2020-01-14-how-to-auto-publish-post/</guid>
+      <description>how to auto publish post 我这里使用的是zsh
+#!/bin/zsh </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ios develop certificate understanding - r2ys blog</title><link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/images/favicons/manifest.json">
+<link rel="icon" href="/images/favicons/favicon.ico">
+<meta name="description" content="" /><meta itemprop="name" content="ios develop certificate understanding">
+<meta itemprop="description" content="理解iOS开发证书 术语解释 cer 一种文件格式，存储的是公钥，学名证书
+如何生成cer  der二进制编码（cer有别于ber、der） base64编码  der 二进制格式，不可读，Java和Windows服务器偏向使用这种格式 DER格式的证书基于X.509标准
+PKCS#12 一个公钥加密的标准，总共有15个
+p12 .p12是基于PKCS#12标准生成的一种文件格式，存储的是私钥 mac系统下在keychains钥匙串中找到证书-&gt;导出-&gt;p12就可以
+数字证书 无论是cer还是p12，广义上说都可以被称为数字证书。 | 什么是数字证书呢？数字证书就是互联网通讯中标志通讯各方身份信息的一串数字，提供了一种在Internet上验证通信实体身份的方式，数字证书不是数字身份证，而是身份认证机构盖在数字身份证上的一个章或印（或者说加在数字身份证上的一个签名）。它是由权威机构——CA机构，又称为证书授权（CertificateAuthority）中心发行的，人们可以在网上用它来识别对方的身份。在当今这个互联网时代，已经成为了必不可少，不可或缺的一个过程。
+ PEM pem文件是p12文件转换后的一种文件格式，存储的也是密码（私钥还是公钥？），内容是BASE64编码 以&mdash;&ndash;BEGIN开头，&mdash;&ndash;END结束 Apache和Linux、Unix服务器偏向使用这种编码格式 PEM格式的证书基于X.509标准
+Https和Http关于s的区别以及SSL OpenSSL 是SSL规范的一种实现。它还提供了一些工具软件，SSL证书需要符合的是一种标准X.509、RFC5280
+证书编码格式的问题 证书编码格式常见的有pem和der，但是文件扩展名并一定就是它俩，证书可以转换为其它编码格式，内容也有差别
+证书格式  CRT CER KEY PFX/p12 JKS  CSR Certificate Signing Request, 证书签名请求，用户生成公私钥，私钥自己保存好，公钥作为申请内容，向证书颁发机构申请获得签名证书
+iOS证书申请、到发布、再到用户安装过程中的流程 ![]({{ site.baseurl }}/images/apple_auth_process.png)"><meta itemprop="datePublished" content="2020-01-16T08:47:24&#43;08:00" />
+<meta itemprop="dateModified" content="2020-01-16T08:47:24&#43;08:00" />
+<meta itemprop="wordCount" content="44">
+<meta itemprop="keywords" content="" /><meta property="og:title" content="ios develop certificate understanding" />
+<meta property="og:description" content="理解iOS开发证书 术语解释 cer 一种文件格式，存储的是公钥，学名证书
+如何生成cer  der二进制编码（cer有别于ber、der） base64编码  der 二进制格式，不可读，Java和Windows服务器偏向使用这种格式 DER格式的证书基于X.509标准
+PKCS#12 一个公钥加密的标准，总共有15个
+p12 .p12是基于PKCS#12标准生成的一种文件格式，存储的是私钥 mac系统下在keychains钥匙串中找到证书-&gt;导出-&gt;p12就可以
+数字证书 无论是cer还是p12，广义上说都可以被称为数字证书。 | 什么是数字证书呢？数字证书就是互联网通讯中标志通讯各方身份信息的一串数字，提供了一种在Internet上验证通信实体身份的方式，数字证书不是数字身份证，而是身份认证机构盖在数字身份证上的一个章或印（或者说加在数字身份证上的一个签名）。它是由权威机构——CA机构，又称为证书授权（CertificateAuthority）中心发行的，人们可以在网上用它来识别对方的身份。在当今这个互联网时代，已经成为了必不可少，不可或缺的一个过程。
+ PEM pem文件是p12文件转换后的一种文件格式，存储的也是密码（私钥还是公钥？），内容是BASE64编码 以&mdash;&ndash;BEGIN开头，&mdash;&ndash;END结束 Apache和Linux、Unix服务器偏向使用这种编码格式 PEM格式的证书基于X.509标准
+Https和Http关于s的区别以及SSL OpenSSL 是SSL规范的一种实现。它还提供了一些工具软件，SSL证书需要符合的是一种标准X.509、RFC5280
+证书编码格式的问题 证书编码格式常见的有pem和der，但是文件扩展名并一定就是它俩，证书可以转换为其它编码格式，内容也有差别
+证书格式  CRT CER KEY PFX/p12 JKS  CSR Certificate Signing Request, 证书签名请求，用户生成公私钥，私钥自己保存好，公钥作为申请内容，向证书颁发机构申请获得签名证书
+iOS证书申请、到发布、再到用户安装过程中的流程 ![]({{ site.baseurl }}/images/apple_auth_process.png)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/notes/2020-01-16-ios-develop-certificate-understanding/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-01-16T08:47:24&#43;08:00" />
+<meta property="article:modified_time" content="2020-01-16T08:47:24&#43;08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ios develop certificate understanding"/>
+<meta name="twitter:description" content="理解iOS开发证书 术语解释 cer 一种文件格式，存储的是公钥，学名证书
+如何生成cer  der二进制编码（cer有别于ber、der） base64编码  der 二进制格式，不可读，Java和Windows服务器偏向使用这种格式 DER格式的证书基于X.509标准
+PKCS#12 一个公钥加密的标准，总共有15个
+p12 .p12是基于PKCS#12标准生成的一种文件格式，存储的是私钥 mac系统下在keychains钥匙串中找到证书-&gt;导出-&gt;p12就可以
+数字证书 无论是cer还是p12，广义上说都可以被称为数字证书。 | 什么是数字证书呢？数字证书就是互联网通讯中标志通讯各方身份信息的一串数字，提供了一种在Internet上验证通信实体身份的方式，数字证书不是数字身份证，而是身份认证机构盖在数字身份证上的一个章或印（或者说加在数字身份证上的一个签名）。它是由权威机构——CA机构，又称为证书授权（CertificateAuthority）中心发行的，人们可以在网上用它来识别对方的身份。在当今这个互联网时代，已经成为了必不可少，不可或缺的一个过程。
+ PEM pem文件是p12文件转换后的一种文件格式，存储的也是密码（私钥还是公钥？），内容是BASE64编码 以&mdash;&ndash;BEGIN开头，&mdash;&ndash;END结束 Apache和Linux、Unix服务器偏向使用这种编码格式 PEM格式的证书基于X.509标准
+Https和Http关于s的区别以及SSL OpenSSL 是SSL规范的一种实现。它还提供了一些工具软件，SSL证书需要符合的是一种标准X.509、RFC5280
+证书编码格式的问题 证书编码格式常见的有pem和der，但是文件扩展名并一定就是它俩，证书可以转换为其它编码格式，内容也有差别
+证书格式  CRT CER KEY PFX/p12 JKS  CSR Certificate Signing Request, 证书签名请求，用户生成公私钥，私钥自己保存好，公钥作为申请内容，向证书颁发机构申请获得签名证书
+iOS证书申请、到发布、再到用户安装过程中的流程 ![]({{ site.baseurl }}/images/apple_auth_process.png)"/>
+<meta data-name="palette" content="blue"><link rel=stylesheet href="/css/bundle.min.bdc006879cd20517e77688bae2fc55ea9d7e177932b39d1c3171a61568902591.css" integrity="sha256-vcAGh5zSBRfndoi64vxV6p1&#43;F3kys50cMXGmFWiQJZE=" crossorigin="anonymous"><script src="/js/bundle.min.9086c676f0fa41c310e43a66a8d4f808e5737f0d86298ae3892bfb2609456b21.js" integrity="sha256-kIbGdvD6QcMQ5DpmqNT4COVzfw2GKYrjiSv7JglFayE=" crossorigin="anonymous"></script>
+</head><body><header><nav class="navbar navbar-expand-xl fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img class="logo" alt="Logo" src="/images/logo.webp" loading="lazy">r2ysBlog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-1 mb-2 mb-lg-0"><form class="search-bar d-flex ms-1" action="/search">
+  <div class="input-group input-group-sm">
+    <button class="btn btn-search disabled position-absolute left-0" type="submit"><i class="fas fa-fw fa-search"></i></button>
+    <input class="form-control rounded-pill" id="searchQuery" name="q" type="search" aria-label="Search">
+  </div>
+</form></ul><ul class="navbar-nav me-1 mb-2 mb-lg-0 me-1 ms-auto"><li class="nav-item">
+          <a class="nav-link" href="/archives">
+            <i class="fas fa-fw fa-file-archive"></i>归档
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/categories">
+            <i class="fas fa-fw fa-folder"></i>分类
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/tags">
+            <i class="fas fa-fw fa-tags"></i>标签
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/series">
+            <i class="fas fa-fw fa-columns"></i>专栏
+          </a>
+        </li><li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            我的其它主页
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown-dropdown"><li>
+              <a class="dropdown-item"
+                href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank">
+                <i class="fab fa-fw fa-github"></i>Github
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="https://cube.r2ys.life" target="_blank">
+                <i class="fab fa-fw fa-github"></i>我的魔方页
+              </a>
+            </li></ul>
+        </li></ul>
+      <ul class="navbar-nav d-flex flex-row mb-2 mb-lg-0"><li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="paletteSwitcher" data-bs-toggle="popover" data-bs-placement="bottom" 
+    data-bs-target="#palettesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-palette" ></i>
+  </a>
+</li>
+<script type="text/html" id="palettesPopoverBody">
+  <ul class="palettes list-group"><li id="palette-blue" class="palette list-group-item bg-blue">
+      <a>Blue</a>
+    </li><li id="palette-blue-gray" class="palette list-group-item bg-blue-gray">
+      <a>Blue Gray</a>
+    </li><li id="palette-brown" class="palette list-group-item bg-brown">
+      <a>Brown</a>
+    </li><li id="palette-cyan" class="palette list-group-item bg-cyan">
+      <a>Cyan</a>
+    </li><li id="palette-green" class="palette list-group-item bg-green">
+      <a>Green</a>
+    </li><li id="palette-indigo" class="palette list-group-item bg-indigo">
+      <a>Indigo</a>
+    </li><li id="palette-orange" class="palette list-group-item bg-orange">
+      <a>Orange</a>
+    </li><li id="palette-pink" class="palette list-group-item bg-pink">
+      <a>Pink</a>
+    </li><li id="palette-purple" class="palette list-group-item bg-purple">
+      <a>Purple</a>
+    </li><li id="palette-red" class="palette list-group-item bg-red">
+      <a>Red</a>
+    </li><li id="palette-teal" class="palette list-group-item bg-teal">
+      <a>Teal</a>
+    </li><li id="palette-yellow" class="palette list-group-item bg-yellow">
+      <a>Yellow</a>
+    </li></ul>
+</script>
+<li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="fontSizeSwitcher" data-bs-toggle="popover" data-bs-placement="bottom" 
+    data-bs-target="#fontSizesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-font" ></i>
+  </a>
+</li>
+<script type="text/html" id="fontSizesPopoverBody">
+  <form class="font-size-switcher-form">
+    <label for="fontSize" class="form-label">Font Size</label>
+    <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+  </form>
+</script>
+
+<form class="mode-switcher-form d-flex align-items-center">
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="modeSwitcher">
+  </div>
+</form></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row" aria-label="breadcrumb">
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/posts/">文章</a></li><li class="breadcrumb-item active">ios develop certificate understanding</li></ol>
+</nav><article class="post row surface">
+  <h1 class="post-title my-3">ios develop certificate understanding</h1><div class="post-meta mb-3">
+  <span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>2020-01-16
+  </span>
+  <span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>1 min read
+  </span>
+<a href="/categories/ios-cer-p12/" class="post-taxonomy">#iOS cer p12</a></div>
+<div class="post-share mb-3"><div class="addthis_inline_share_toolbox"></div></div><div class="post-content mb-3"><h2 id="理解ios开发证书">理解iOS开发证书</h2>
+<h4 id="术语解释">术语解释</h4>
+<h5 id="cer">cer</h5>
+<p>一种文件格式，存储的是公钥，学名证书</p>
+<h6 id="如何生成cer">如何生成cer</h6>
+<ul>
+<li>der二进制编码（cer有别于ber、der）</li>
+<li>base64编码</li>
+</ul>
+<h5 id="der">der</h5>
+<p>二进制格式，不可读，Java和Windows服务器偏向使用这种格式
+DER格式的证书基于X.509标准</p>
+<h5 id="pkcs12">PKCS#12</h5>
+<p>一个公钥加密的标准，总共有15个</p>
+<h5 id="p12">p12</h5>
+<p>.p12是基于PKCS#12标准生成的一种文件格式，存储的是私钥
+mac系统下在keychains钥匙串中找到证书-&gt;导出-&gt;p12就可以</p>
+<h5 id="数字证书">数字证书</h5>
+<p>无论是cer还是p12，广义上说都可以被称为数字证书。
+| 什么是数字证书呢？数字证书就是互联网通讯中标志通讯各方身份信息的一串数字，提供了一种在Internet上验证通信实体身份的方式，数字证书不是数字身份证，而是身份认证机构盖在数字身份证上的一个章或印（或者说加在数字身份证上的一个签名）。它是由权威机构——CA机构，又称为证书授权（CertificateAuthority）中心发行的，人们可以在网上用它来识别对方的身份。在当今这个互联网时代，已经成为了必不可少，不可或缺的一个过程。</p>
+<p><a href="https://blog.csdn.net/huo065000/article/details/51002799" target="_blank"></a>
+</p>
+<h5 id="pem">PEM</h5>
+<p>pem文件是p12文件转换后的一种文件格式，存储的也是密码（私钥还是公钥？），内容是BASE64编码
+以&mdash;&ndash;BEGIN开头，&mdash;&ndash;END结束
+Apache和Linux、Unix服务器偏向使用这种编码格式
+PEM格式的证书基于X.509标准</p>
+<h5 id="https和http关于s的区别以及ssl">Https和Http关于s的区别以及SSL</h5>
+<h5 id="openssl">OpenSSL</h5>
+<p>是SSL规范的一种实现。它还提供了一些工具软件，SSL证书需要符合的是一种标准X.509、RFC5280</p>
+<h5 id="证书编码格式的问题">证书编码格式的问题</h5>
+<p>证书编码格式常见的有pem和der，但是文件扩展名并一定就是它俩，证书可以转换为其它编码格式，内容也有差别</p>
+<h6 id="证书格式">证书格式</h6>
+<ul>
+<li>CRT</li>
+<li>CER</li>
+<li>KEY</li>
+<li>PFX/p12</li>
+<li>JKS</li>
+</ul>
+<h5 id="csr">CSR</h5>
+<p>Certificate Signing Request, 证书签名请求，用户生成公私钥，私钥自己保存好，公钥作为申请内容，向证书颁发机构申请获得签名证书</p>
+<h4 id="ios证书申请到发布再到用户安装过程中的流程">iOS证书申请、到发布、再到用户安装过程中的流程</h4>
+<p>![]({{ site.baseurl }}/images/apple_auth_process.png)</p>
+</div><div class="post-copyright mb-4">
+  <h3>Copyright</h3>
+<div class="post-cc">This work is licensed under <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.CC BY-NC-ND 4.0 "><i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i>%!s(MISSING)</a>.</div>
+</div><div class="post-navs d-flex mb-3 justify-content-between">
+  <div class="post-nav w-50"><div class="prev-post">
+      <a href="/posts/notes/2020-01-15-charactoristics-on-hyperledger-fabric/">charactoristics on hyperledger fabric</a>
+    </div></div>
+  <div class="post-nav flex-row-reverse"></div>
+</div></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
+  repo="razonyang/hugo-theme-bootstrap"
+  issue-term="pathname"
+  label=""
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script></div></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container"><section class="profile surface row">
+  <div class="col-xl-6 d-flex align-items-center justify-content-center">
+    <img class="profile-avatar img-fluid" src="/images/profile.webp" alt="r2ys" loading="lazy">
+  </div>
+  <div class="col-xl-6">
+    <h5 class="profile-name my-2">r2ys</h5><div class="profile-bio mb-2">好的应用开发者、应用架构师</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>sft</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>北京朝阳门</div></div>
+</section><section class="recent-posts row surface">
+  <h4>Recent Posts</h4>
+  <ul><li><a href="/posts/notes/2020-01-16-ios-develop-certificate-understanding/">ios develop certificate understanding</a></li><li><a href="/posts/notes/2020-01-15-charactoristics-on-hyperledger-fabric/">charactoristics on hyperledger fabric</a></li><li><a href="/posts/notes/2020-01-15-learn-ast/">learn ast</a></li><li><a href="/posts/notes/2020-01-15-design-a-flow-based-develop-and-invoke-system/">design a flow based develop and invoke system</a></li><li><a href="/posts/notes/2020-01-15-learn-shell-from-start/">learn shell from start</a></li></ul>
+</section>
+<section class="taxonomy-categories row surface">
+  <h4>
+    <a href="/categories">Categories</a>
+  </h4>
+  <div><a href="/categories/linux/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="linux">
+      linux <span class="badge rounded-pill">4</span>
+    </a><a href="/categories/jdk/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="jdk">
+      jdk <span class="badge rounded-pill">3</span>
+    </a><a href="/categories/mysql/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="mysql">
+      mysql <span class="badge rounded-pill">3</span>
+    </a><a href="/categories/shell/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="shell">
+      shell <span class="badge rounded-pill">3</span>
+    </a><a href="/categories/java/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Java">
+      Java <span class="badge rounded-pill">2</span>
+    </a><a href="/categories/sh/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="sh">
+      sh <span class="badge rounded-pill">2</span>
+    </a><a href="/categories/algorithms/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="algorithms">
+      algorithms <span class="badge rounded-pill">1</span>
+    </a><a href="/categories/ast/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="AST">
+      AST <span class="badge rounded-pill">1</span>
+    </a><a href="/categories/database/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="database">
+      database <span class="badge rounded-pill">1</span>
+    </a><a href="/categories/distributed/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="distributed">
+      distributed <span class="badge rounded-pill">1</span>
+    </a></div>
+</section><section class="taxonomy-series row surface">
+  <h4>
+    <a href="/series">Series</a>
+  </h4>
+  <div><a href="/series/mysql%E7%94%B1%E6%B5%85%E5%85%A5%E6%B7%B1/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="MySQL由浅入深">
+      MySQL由浅入深 <span class="badge rounded-pill">1</span>
+    </a></div>
+</section><section class="taxonomy-tags row surface">
+  <h4>
+    <a href="/tags">Tags</a>
+  </h4>
+  <div><a href="/tags/%E8%AF%AD%E6%B3%95/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="语法">
+      语法 <span class="badge rounded-pill">1</span>
+    </a></div>
+</section></div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav my-2 justify-content-center"><li class="nav-item">
+    <a class="nav-link social-link" href="mailto:860150245@qq.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a>
+  </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://github.com/r2ysblog" title="GitHub">
+        <i class="fab fa-fw fa-2x fa-github"></i>
+      </a>
+    </li></nav>
+<div class="copyright mb-2">
+  Copyright © 2021-2021 r2ys. All Rights Reserved.
+</div>
+<div class="powered-by mb-2">
+  Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank">Bootstrap</a> theme.
+</div></footer>
+<a id="btnScrollToTop" class="btn-scroll-to-top">
+  <i class="fas fa-fw fa-chevron-circle-up fa-2x"></i>
+</a>
+<script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60bcc43f59f2d04f"></script></body>
+</html>

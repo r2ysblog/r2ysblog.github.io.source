@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>work on r2ys blog</title>
+    <link>/categories/work/</link>
+    <description>Recent content in work on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 14 Jan 2020 16:48:02 +0800</lastBuildDate><atom:link href="/categories/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>write work summary</title>
+      <link>/posts/notes/2020-01-14-write-work-summary/</link>
+      <pubDate>Tue, 14 Jan 2020 16:48:02 +0800</pubDate>
+      
+      <guid>/posts/notes/2020-01-14-write-work-summary/</guid>
+      <description>write work summary 总结中必须包含的几大内容点  工作中暴露问题 某些方案提出合理的方案 自己工作中的提升 对来年的展望 未来公司的规划、个人的规划  工作总结要可以体现出以下特点  精确 准确、量化 对公司核心的作用 工作重要性的排列 可以借鉴给他人复用的工作经验 必要的反思 来年工作计划、思考、体现出热情  其它补充的点  应当适当表明成功来源于领导 征求领导的建议 不告状 *不带情绪  </description>
+    </item>
+    
+  </channel>
+</rss>

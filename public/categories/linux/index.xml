@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on r2ys blog</title>
+    <link>/categories/linux/</link>
+    <description>Recent content in linux on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 15 Jan 2020 10:52:25 +0800</lastBuildDate><atom:link href="/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux close selinux</title>
+      <link>/posts/notes/2020-01-15-linux-close-selinux/</link>
+      <pubDate>Wed, 15 Jan 2020 10:52:25 +0800</pubDate>
+      
+      <guid>/posts/notes/2020-01-15-linux-close-selinux/</guid>
+      <description>CentOS7关闭SELinux [root@dev-server ~]# getenforce Disabled [root@dev-server ~]# /usr/sbin/sestatus SELinux status: disabled # 永久关闭 vi /etc/selinux/config # 将SELINUX=enforcing改为SELINUX=disabled # 重启后生效 </description>
+    </item>
+    
+    <item>
+      <title>operate linux firewall</title>
+      <link>/posts/notes/2020-01-15-operate-linux-firewall/</link>
+      <pubDate>Wed, 15 Jan 2020 10:51:33 +0800</pubDate>
+      
+      <guid>/posts/notes/2020-01-15-operate-linux-firewall/</guid>
+      <description>centOS7永久关闭防火墙 # 查看状态 systemctl status firewalld.service # 关闭 systemctl stop firewalld.service # 开机禁用 systemctl disable firewalld.service # 开启 systemctl start firewalld.service # 开机启用 systemctl enable firewalld.service </description>
+    </item>
+    
+    <item>
+      <title>query linux tcp exceptional tcp connections</title>
+      <link>/posts/notes/2020-01-15-query-linux-tcp-exceptional-tcp-connections/</link>
+      <pubDate>Wed, 15 Jan 2020 10:45:49 +0800</pubDate>
+      
+      <guid>/posts/notes/2020-01-15-query-linux-tcp-exceptional-tcp-connections/</guid>
+      <description>查询linux中各种状态的tcp连接 netstat -ant |grep CLOSE_WAIT|wc -l 同理可替换CLOSE_WAIT为  TIME_WAIT ESTABLISHED  </description>
+    </item>
+    
+    <item>
+      <title>install docker registry on centos</title>
+      <link>/posts/notes/2019-06-28-install-docker-registry-on-centos/</link>
+      <pubDate>Fri, 28 Jun 2019 13:06:41 +0800</pubDate>
+      
+      <guid>/posts/notes/2019-06-28-install-docker-registry-on-centos/</guid>
+      <description>centos搭建docker私有仓库 安装docker 略过
+# 重启docker systemctl daemon-reload systemctl restart docker 拉取仓库镜像 docker pull registry 运行仓库 docker run -d -v /registry:/var/lib/registry -p 5000:5000 --restart=always --privileged=true --name registry registry:latest 示例:从官方仓库拉取hello-world docker pull hello-world 给hello-world镜像打个tag，表示新的版本 docker tag hello-world 127.0.0.1:5000/hello-world:latest 推送：将新的hello-world镜像上传到私有仓库 docker push 127.0.0.1:5000/hello-world:latest 在私有仓库查看上传的镜像 ls /registry/docker/registry/v2/repositories 通过客户端查看镜像
+curl http://127.0.0.1:5000/v2/_catalog 输出:
+{&amp;#34;repositories&amp;#34;:[&amp;#34;hello-world&amp;#34;]} </description>
+    </item>
+    
+  </channel>
+</rss>

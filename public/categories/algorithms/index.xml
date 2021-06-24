@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>algorithms on r2ys blog</title>
+    <link>/categories/algorithms/</link>
+    <description>Recent content in algorithms on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 15 Jan 2020 11:00:03 +0800</lastBuildDate><atom:link href="/categories/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>byzantine</title>
+      <link>/posts/notes/2020-01-15-byzantine/</link>
+      <pubDate>Wed, 15 Jan 2020 11:00:03 +0800</pubDate>
+      
+      <guid>/posts/notes/2020-01-15-byzantine/</guid>
+      <description>byzantine：拜占庭问题的算法 https://www.zhihu.com/question/30288330
+1.5（P - E） &amp;gt; P 3 / 2 * P - 3 / 2 * E &amp;gt; P 1 / 2 * P &amp;gt; 3 / 2 * E P &amp;gt; 3 E 1 / 3 * P &amp;gt; E
+如果系统中有n个故障节点，系统要想正确运行，必须至少要有2n+1个正常节点
+P = N + E N &amp;gt; X &amp;gt; N/2 + E
+1.5N &amp;gt; N + E
+1 / 2 N &amp;gt; E N &amp;gt; 2E
+所有正确的节点最终会决定一个值（termination） 所有正确的节点决定的值必须相同（agreement） 所有正确的节点决定的值必须是被正确的节点提出来的（validity）</description>
+    </item>
+    
+  </channel>
+</rss>

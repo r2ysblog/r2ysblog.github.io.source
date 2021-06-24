@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sh on r2ys blog</title>
+    <link>/categories/sh/</link>
+    <description>Recent content in sh on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Mon, 21 Oct 2019 11:45:00 +0800</lastBuildDate><atom:link href="/categories/sh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>how to use scp and tar</title>
+      <link>/posts/notes/2019-10-21-how-to-use-scp-and-tar/</link>
+      <pubDate>Mon, 21 Oct 2019 11:45:00 +0800</pubDate>
+      
+      <guid>/posts/notes/2019-10-21-how-to-use-scp-and-tar/</guid>
+      <description>转载 scp scp /data/somefile.sometype tomcat@destinationhost:/data/newfile.type tar press:
+tar czf result.tar.gz sourcefile/ unpress:
+tar xzf result.tar.gz sourcefile/ </description>
+    </item>
+    
+    <item>
+      <title>use iterm2 and oh-my-zsh to replace terminal</title>
+      <link>/posts/notes/2019-10-10-use-iterm2-and-oh-my-zsh-to-replace-terminal/</link>
+      <pubDate>Thu, 10 Oct 2019 15:40:00 +0800</pubDate>
+      
+      <guid>/posts/notes/2019-10-10-use-iterm2-and-oh-my-zsh-to-replace-terminal/</guid>
+      <description>转载 guideline https://zhuanlan.zhihu.com/p/37195261
+dylib error https://discourse.brew.sh/t/library-not-loaded-usr-local-opt-gdbm-lib-libgdbm-4-dylib/2647/5</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>encrypt on r2ys blog</title>
+    <link>/categories/encrypt/</link>
+    <description>Recent content in encrypt on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 10 Jul 2019 10:53:00 +0800</lastBuildDate><atom:link href="/categories/encrypt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>aes encrypt in mysql</title>
+      <link>/posts/notes/2019-07-10-aes-encrypt-in-mysql/</link>
+      <pubDate>Wed, 10 Jul 2019 10:53:00 +0800</pubDate>
+      
+      <guid>/posts/notes/2019-07-10-aes-encrypt-in-mysql/</guid>
+      <description>在mysql中对字符串aes加密和解密 直接上函数 # 加密 SELECT HEX(AES_ENCRYPT(&amp;#39;123456&amp;#39;,&amp;#39;root&amp;#39;)) # 解密 SELECT AES_DECRYPT(unhex(&amp;#39;537AB41AAABDEC3BAB09BE15392B916A&amp;#39;), &amp;#39;root&amp;#39;) </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fabric on r2ys blog</title>
+    <link>/categories/fabric/</link>
+    <description>Recent content in fabric on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 15 Jan 2020 11:03:42 +0800</lastBuildDate><atom:link href="/categories/fabric/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>charactoristics on hyperledger fabric</title>
+      <link>/posts/notes/2020-01-15-charactoristics-on-hyperledger-fabric/</link>
+      <pubDate>Wed, 15 Jan 2020 11:03:42 +0800</pubDate>
+      
+      <guid>/posts/notes/2020-01-15-charactoristics-on-hyperledger-fabric/</guid>
+      <description>charactoristics on hyperledger fabric 一个标准的可认为是最佳实践的fabric项目应当具备的特性   初始配置
+  各组件启动
+  通道创建和加入
+  链码的注册和实例化
+  界面化的demo演示交易的调用
+  blockchain explorer启动和查看运行、网络、区块、交易
+  demo应用监听事件
+  多级证书配置和可插拔
+  动态加入和撤出组织
+  更换排序共识插件
+  组件无限扩展
+  账本、状态的存储结构替换
+  多通道
+   </description>
+    </item>
+    
+  </channel>
+</rss>

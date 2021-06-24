@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>math on r2ys blog</title>
+    <link>/categories/math/</link>
+    <description>Recent content in math on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 24 Jul 2019 14:06:00 +0800</lastBuildDate><atom:link href="/categories/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>how to prove pi</title>
+      <link>/posts/notes/2019-07-24-how-to-prove-pi/</link>
+      <pubDate>Wed, 24 Jul 2019 14:06:00 +0800</pubDate>
+      
+      <guid>/posts/notes/2019-07-24-how-to-prove-pi/</guid>
+      <description>https://zhuanlan.zhihu.com/p/48307582
+如何证明π为常数？ &amp;ndash;为什么π是一个常数？即为什么所有圆的周长和直径之比为一个定值？
+解答： 小圆的半径r1，周长c1；大圆的半径r2，周长c2 小圆内切正n边形，边长为k1；大圆内切正n边形，边长为k2 OA:OD=OB:OC；角AOB = 角COD；三角形OAB全等于三角形OCD ∴ k1:r1=k2:r2 设小正n边形周长为c1&#39;,大正n边形周长为c2&#39; c1&#39;=nk1,c2&#39;=nk2 c1&#39;:r1=c2&#39;:r2 当n等于无限大时，c1&#39;=c1,c2&#39;=c2 ∴ c1:r1=c2:r2
+所以，对于半径不同的圆，各自周长除以半径为定值（常数），记该常数为2π， 则周长除以直径为π 证明π为常数</description>
+    </item>
+    
+  </channel>
+</rss>

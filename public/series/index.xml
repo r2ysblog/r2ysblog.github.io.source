@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>专栏 on r2ys blog</title>
+    <link>/series/</link>
+    <description>Recent content in 专栏 on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 10 Jul 2019 16:01:00 +0800</lastBuildDate><atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL由浅入深</title>
+      <link>/series/mysql%E7%94%B1%E6%B5%85%E5%85%A5%E6%B7%B1/</link>
+      <pubDate>Wed, 10 Jul 2019 16:01:00 +0800</pubDate>
+      
+      <guid>/series/mysql%E7%94%B1%E6%B5%85%E5%85%A5%E6%B7%B1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
