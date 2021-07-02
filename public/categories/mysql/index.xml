@@ -6,7 +6,25 @@
     <description>Recent content in mysql on r2ys blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
-    <lastBuildDate>Wed, 15 Jan 2020 10:47:28 +0800</lastBuildDate><atom:link href="/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Jun 2021 17:17:00 +0800</lastBuildDate><atom:link href="/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>学会Innodb各种锁.md</title>
+      <link>/posts/notes/%E5%AD%A6%E4%BC%9Ainnodb%E5%90%84%E7%A7%8D%E9%94%81/</link>
+      <pubDate>Tue, 29 Jun 2021 17:17:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%AD%A6%E4%BC%9Ainnodb%E5%90%84%E7%A7%8D%E9%94%81/</guid>
+      <description>https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&amp;amp;mid=2651967369&amp;amp;idx=1&amp;amp;sn=d639abf6772a72c25cc2537749258163&amp;amp;chksm=bd2d7a558a5af3436e0a435a3e7cd9f72f67c1269370be936a82dc0af483f47aefa48bd58d69&amp;amp;mpshare=1&amp;amp;scene=24&amp;amp;srcid=0427iuPM9K3Qh3Ds8LvD8m2E&amp;amp;sharer_sharetime=1619533884103&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd</description>
+    </item>
+    
+    <item>
+      <title>对批量数据核验并更新的demo</title>
+      <link>/posts/notes/%E5%AF%B9%E6%89%B9%E9%87%8F%E6%95%B0%E6%8D%AE%E6%A0%B8%E9%AA%8C%E5%B9%B6%E6%9B%B4%E6%96%B0%E7%9A%84demo/</link>
+      <pubDate>Tue, 29 Jun 2021 16:14:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%AF%B9%E6%89%B9%E9%87%8F%E6%95%B0%E6%8D%AE%E6%A0%B8%E9%AA%8C%E5%B9%B6%E6%9B%B4%E6%96%B0%E7%9A%84demo/</guid>
+      <description>EasyExcel的使用 </description>
+    </item>
+    
     <item>
       <title>derby and mysql</title>
       <link>/posts/notes/2020-01-15-derby-and-mysql/</link>

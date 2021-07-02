@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>logback on r2ys blog</title>
+    <link>/tags/logback/</link>
+    <description>Recent content in logback on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 29 Jun 2021 16:49:00 +0800</lastBuildDate><atom:link href="/tags/logback/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何使用日志框架.md</title>
+      <link>/posts/notes/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6/</link>
+      <pubDate>Tue, 29 Jun 2021 16:49:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6/</guid>
+      <description>如何选择日志框架并解决冲突 logback配置文件 https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&amp;amp;mid=2247507916&amp;amp;idx=3&amp;amp;sn=99226aa132805fcac3dec83f0d494acb&amp;amp;chksm=fa4aa07dcd3d296b70402e2dcc9ab5a6136df8eafdcc758b4223d9e4433d1bd022f228a2bcab&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0205CqK4JI2wmmpCogocXv4r&amp;amp;sharer_sharetime=1612493462792&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd
+配置日志链路 traceId MDC </description>
+    </item>
+    
+  </channel>
+</rss>

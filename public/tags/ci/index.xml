@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CI on r2ys blog</title>
+    <link>/tags/ci/</link>
+    <description>Recent content in CI on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 29 Jun 2021 16:57:00 +0800</lastBuildDate><atom:link href="/tags/ci/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jenkins类的工具能帮我们做什么.md</title>
+      <link>/posts/notes/jenkins%E7%B1%BB%E7%9A%84%E5%B7%A5%E5%85%B7%E8%83%BD%E5%B8%AE%E6%88%91%E4%BB%AC%E5%81%9A%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Tue, 29 Jun 2021 16:57:00 +0800</pubDate>
+      
+      <guid>/posts/notes/jenkins%E7%B1%BB%E7%9A%84%E5%B7%A5%E5%85%B7%E8%83%BD%E5%B8%AE%E6%88%91%E4%BB%AC%E5%81%9A%E4%BB%80%E4%B9%88/</guid>
+      <description>Jenkins的替代方案 https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;amp;mid=2651050229&amp;amp;idx=5&amp;amp;sn=af2d0f8fc317cb4d73b14fc0c10f442e&amp;amp;chksm=bdbe28a68ac9a1b0461e43ef836aa9bfa9f397c1738bc60dc8d34742fb0b0bedacd0c367915c&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=1112OHSz20a9MsKcNCtRODfZ&amp;amp;sharer_sharetime=1605160588581&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd
+ https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&amp;amp;mid=2247518077&amp;amp;idx=1&amp;amp;sn=69cf89c46b453520460c0e375bfb3472&amp;amp;chksm=fa4af8cccd3d71dacc33bb6cfc3496af2d32fc4a1b5da32927ad7702b5baea2b6c2a3b3ab460&amp;amp;mpshare=1&amp;amp;scene=24&amp;amp;srcid=0612nZqBnjk98Ioh7rV6IvE4&amp;amp;sharer_sharetime=1623497834187&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd</description>
+    </item>
+    
+  </channel>
+</rss>

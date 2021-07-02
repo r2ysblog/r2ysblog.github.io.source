@@ -36,6 +36,10 @@
             <i class="fas fa-fw fa-file-archive"></i>归档
           </a>
         </li><li class="nav-item">
+          <a class="nav-link" href="/booklist">
+            <i class="fas fa-fw fa-file-archive"></i>我的书单
+          </a>
+        </li><li class="nav-item">
           <a class="nav-link" href="/categories">
             <i class="fas fa-fw fa-folder"></i>分类
           </a>
@@ -124,68 +128,59 @@
   <div class="container"><nav class="row" aria-label="breadcrumb">
   <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item active">文章</li></ol>
 </nav><div class="posts mb-4"><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2019-07-10-aes-encrypt-in-mysql/">aes encrypt in mysql</a></h2><div class="post-meta mb-3">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-query-linux-tcp-exceptional-tcp-connections/">query linux tcp exceptional tcp connections</a></h2><div class="post-meta mb-3">
   <span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>2019-07-10
-  </span>
-  <span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>1 min read
-  </span>
-<a href="/categories/encrypt/" class="post-taxonomy">#encrypt</a></div>
-<div class="post-summary mb-3">在mysql中对字符串aes加密和解密 直接上函数 # 加密 SELECT HEX(AES_ENCRYPT(&#39;123456&#39;,&#39;root&#39;)) # 解密 SELECT AES_DECRYPT(unhex(&#39;537AB41AAABDEC3BAB09BE15392B916A&#39;), &#39;root&#39;) </div>
-      </div>
-    </article><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2019-06-28-install-docker-registry-on-centos/">install docker registry on centos</a></h2><div class="post-meta mb-3">
-  <span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>2019-06-28
+    <i class="fas fa-fw fa-calendar-alt"></i>2020-01-15
   </span>
   <span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 min read
   </span>
 <a href="/categories/linux/" class="post-taxonomy">#linux</a></div>
-<div class="post-summary mb-3">centos搭建docker私有仓库 安装docker 略过
-# 重启docker systemctl daemon-reload systemctl restart docker 拉取仓库镜像 docker pull registry 运行仓库 docker run -d -v /registry:/var/lib/registry -p 5000:5000 --restart=always --privileged=true --name registry registry:latest 示例:从官方仓库拉取hello-world docker pull hello-world 给hello-world镜像打个tag，表示新的版 …</div>
+<div class="post-summary mb-3">查询linux中各种状态的tcp连接 netstat -ant |grep CLOSE_WAIT|wc -l 同理可替换CLOSE_WAIT为  TIME_WAIT ESTABLISHED  </div>
       </div>
     </article><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2019-01-08-how-to-install-jykell-on-mac/">How to install jykell on mac!</a></h2><div class="post-meta mb-3">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-difference-from-array-and-arraylist/">difference from array and arraylist</a></h2><div class="post-meta mb-3">
   <span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>2019-01-08
-  </span>
-  <span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>2 min read
-  </span>
-<a href="/categories/jekyll-update/" class="post-taxonomy">#jekyll update</a></div>
-<div class="post-summary mb-3">如何在mac上安装jykell
-1.安装rvm
-curl -L get.rvm.io | bash -s stable source ~/.rvm/scripts/rvm rvm -v  2.安装ruby
-rvm install 2.6.0 rvm list  3.安装jykell
-gem source gem install jekyll jekyll -version  4.安装bundle
-gem install bundle 运行bundle，安装Gemfile里的插件 bundle install  5.初始化web项目
-jekyll new r2ys-site cd r2ys-site/  6.本 …</div>
-      </div>
-    </article><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-14-%E5%A6%82%E4%BD%95-%E4%BD%BF%E7%94%A8-jekyll/"></a></h2><div class="post-meta mb-3">
-  <span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>0001-01-01
-  </span>
-  <span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>0 min read
-  </span>
-</div>
-<div class="post-summary mb-3"></div>
-      </div>
-    </article><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2014-3-3-hello-world/">You&#39;re up and running!</a></h2><div class="post-meta mb-3">
-  <span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>0001-01-01
+    <i class="fas fa-fw fa-calendar-alt"></i>2020-01-15
   </span>
   <span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 min read
   </span>
-</div>
-<div class="post-summary mb-3">Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
-![_config.yml]({{ site.baseurl }}/images/config.png)
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more …</div>
+<a href="/categories/java/" class="post-taxonomy">#Java</a></div>
+<div class="post-summary mb-3">Array和ArrayList的各自特点和区别 Array  内存中是连续的 读取和赋值很快 扩容和收缩很慢 需要指定内存大小  ArrayList  不需要指定容量 方便动态扩容和收缩 可以保存不同类型，本质都当作Object处理 ArrayList不是类型安全，需要拆装箱 通过指定泛型，通过编译来强制使用正确统一的数据类型，也减少了类型转换  </div>
+      </div>
+    </article><article class="post row surface"><div class="post-body">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-delete-dirty-lines-in-mysql/">delete dirty lines in mysql</a></h2><div class="post-meta mb-3">
+  <span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>2020-01-15
+  </span>
+  <span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>1 min read
+  </span>
+<a href="/categories/mysql/" class="post-taxonomy">#mysql</a></div>
+<div class="post-summary mb-3">清楚重复数据 建表 CREATE TABLE `src5` ( `userid` int(11) unsigned NOT NULL AUTO_INCREMENT, `username` varchar(20) DEFAULT NULL, `usercode` varchar(20) DEFAULT NULL, PRIMARY KEY (`userid`) ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8; 如果usercode重复，那么可能会出现以下数据 userid username usercode 1 &hellip; code0 2 &hellip; code0 3 …</div>
+      </div>
+    </article><article class="post row surface"><div class="post-body">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-how-to-descripe-in-resume/">how to descripe in resume</a></h2><div class="post-meta mb-3">
+  <span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>2020-01-15
+  </span>
+  <span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>1 min read
+  </span>
+<a href="/categories/resume/" class="post-taxonomy">#resume</a></div>
+<div class="post-summary mb-3">写好一份技术简历的要点 几个注意点  框架是重点，但别让人感觉你只会山寨别人的代码 别单纯看单机版的框架，适当了解些分布式 数据库方面，别就知道增删改查，得了解性能优化，NoSQL亦如此 Java核心方面，围绕数据结构和性能优化准备面试题 Linux方面，至少了解如何看日志排查问题 通读一些底层代码，作为加分项  一切的一切，把上述技能嵌入到你做过的项目里 </div>
+      </div>
+    </article><article class="post row surface"><div class="post-body">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-14-write-work-summary/">write work summary</a></h2><div class="post-meta mb-3">
+  <span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>2020-01-14
+  </span>
+  <span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>1 min read
+  </span>
+<a href="/categories/work/" class="post-taxonomy">#work</a></div>
+<div class="post-summary mb-3">write work summary 总结中必须包含的几大内容点  工作中暴露问题 某些方案提出合理的方案 自己工作中的提升 对来年的展望 未来公司的规划、个人的规划  工作总结要可以体现出以下特点  精确 准确、量化 对公司核心的作用 工作重要性的排列 可以借鉴给他人复用的工作经验 必要的反思 来年工作计划、思考、体现出热情  其它补充的点  应当适当表明成功来源于领导 征求领导的建议 不告状 *不带情绪  </div>
       </div>
     </article></div><div class="row table-responsive mb-3">
 <ul class="pagination">
@@ -216,11 +211,17 @@ The easiest way to make your first post is to edit this one. Go into /_posts/ an
   <li class="page-item">
     <a class="page-link" href="/posts/page/8/">8</a>
   </li>
+  <li class="page-item disabled">
+    <span aria-hidden="true">&nbsp;&hellip;&nbsp;</span>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="/posts/page/11/">11</a>
+  </li>
   <li class="page-item">
     <a href="/posts/page/8/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
   </li>
   <li class="page-item">
-    <a href="/posts/page/8/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    <a href="/posts/page/11/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
   </li>
 </ul>
 
@@ -236,32 +237,32 @@ The easiest way to make your first post is to edit this one. Go into /_posts/ an
     <h5 class="profile-name my-2">r2ys</h5><div class="profile-bio mb-2">好的应用开发者、应用架构师</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>sft</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>北京朝阳门</div></div>
 </section><section class="recent-posts row surface">
   <h4>Recent Posts</h4>
-  <ul><li><a href="/posts/notes/2020-01-16-ios-develop-certificate-understanding/">ios develop certificate understanding</a></li><li><a href="/posts/notes/2020-01-15-charactoristics-on-hyperledger-fabric/">charactoristics on hyperledger fabric</a></li><li><a href="/posts/notes/2020-01-15-learn-ast/">learn ast</a></li><li><a href="/posts/notes/2020-01-15-design-a-flow-based-develop-and-invoke-system/">design a flow based develop and invoke system</a></li><li><a href="/posts/notes/2020-01-15-learn-shell-from-start/">learn shell from start</a></li></ul>
+  <ul><li><a href="/posts/notes/%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4%E6%80%A7%E7%AE%97%E6%B3%95epaxos/">分布式一致性算法EPaxos.md</a></li><li><a href="/posts/notes/%E6%9D%83%E9%99%90%E8%AE%A4%E8%AF%81%E6%A1%86%E6%9E%B6%E6%80%8E%E4%B9%88%E9%80%89/">权限认证框架怎么选.md</a></li><li><a href="/posts/notes/%E5%AD%A6%E4%BC%9Ainnodb%E5%90%84%E7%A7%8D%E9%94%81/">学会Innodb各种锁.md</a></li><li><a href="/posts/notes/%E5%8F%82%E6%95%B0%E6%A0%A1%E9%AA%8C%E6%80%8E%E4%B9%88%E5%81%9A%E6%9B%B4%E4%BC%98%E9%9B%85/">参数校验怎么做更优雅.md</a></li><li><a href="/posts/notes/jenkins%E7%B1%BB%E7%9A%84%E5%B7%A5%E5%85%B7%E8%83%BD%E5%B8%AE%E6%88%91%E4%BB%AC%E5%81%9A%E4%BB%80%E4%B9%88/">Jenkins类的工具能帮我们做什么.md</a></li></ul>
 </section>
 <section class="taxonomy-categories row surface">
   <h4>
     <a href="/categories">Categories</a>
   </h4>
-  <div><a href="/categories/linux/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="linux">
+  <div><a href="/categories/mysql/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="mysql">
+      mysql <span class="badge rounded-pill">5</span>
+    </a><a href="/categories/linux/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="linux">
       linux <span class="badge rounded-pill">4</span>
+    </a><a href="/categories/java/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Java">
+      Java <span class="badge rounded-pill">3</span>
     </a><a href="/categories/jdk/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="jdk">
       jdk <span class="badge rounded-pill">3</span>
-    </a><a href="/categories/mysql/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="mysql">
-      mysql <span class="badge rounded-pill">3</span>
     </a><a href="/categories/shell/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="shell">
       shell <span class="badge rounded-pill">3</span>
-    </a><a href="/categories/java/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Java">
-      Java <span class="badge rounded-pill">2</span>
     </a><a href="/categories/sh/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="sh">
       sh <span class="badge rounded-pill">2</span>
+    </a><a href="/categories/%E5%88%86%E5%B8%83%E5%BC%8F/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="分布式">
+      分布式 <span class="badge rounded-pill">2</span>
+    </a><a href="/categories/%E6%8F%92%E4%BB%B6/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="插件">
+      插件 <span class="badge rounded-pill">2</span>
     </a><a href="/categories/algorithms/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="algorithms">
       algorithms <span class="badge rounded-pill">1</span>
     </a><a href="/categories/ast/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="AST">
       AST <span class="badge rounded-pill">1</span>
-    </a><a href="/categories/database/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="database">
-      database <span class="badge rounded-pill">1</span>
-    </a><a href="/categories/distributed/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="distributed">
-      distributed <span class="badge rounded-pill">1</span>
     </a></div>
 </section><section class="taxonomy-series row surface">
   <h4>
@@ -274,8 +275,26 @@ The easiest way to make your first post is to edit this one. Go into /_posts/ an
   <h4>
     <a href="/tags">Tags</a>
   </h4>
-  <div><a href="/tags/%E8%AF%AD%E6%B3%95/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="语法">
-      语法 <span class="badge rounded-pill">1</span>
+  <div><a href="/tags/idea/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="IDEA">
+      IDEA <span class="badge rounded-pill">2</span>
+    </a><a href="/tags/cd/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="CD">
+      CD <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/cglib/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="CGLIB">
+      CGLIB <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/ci/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="CI">
+      CI <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/easyexcel/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="easyexcel">
+      easyexcel <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/excel/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="excel">
+      excel <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/hibernate/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Hibernate">
+      Hibernate <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/hr/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="HR">
+      HR <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/innodb/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Innodb">
+      Innodb <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/jenkins/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Jenkins">
+      Jenkins <span class="badge rounded-pill">1</span>
     </a></div>
 </section></div>
 </aside>

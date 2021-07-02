@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>easyexcel on r2ys blog</title>
+    <link>/tags/easyexcel/</link>
+    <description>Recent content in easyexcel on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 29 Jun 2021 16:14:00 +0800</lastBuildDate><atom:link href="/tags/easyexcel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>对批量数据核验并更新的demo</title>
+      <link>/posts/notes/%E5%AF%B9%E6%89%B9%E9%87%8F%E6%95%B0%E6%8D%AE%E6%A0%B8%E9%AA%8C%E5%B9%B6%E6%9B%B4%E6%96%B0%E7%9A%84demo/</link>
+      <pubDate>Tue, 29 Jun 2021 16:14:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%AF%B9%E6%89%B9%E9%87%8F%E6%95%B0%E6%8D%AE%E6%A0%B8%E9%AA%8C%E5%B9%B6%E6%9B%B4%E6%96%B0%E7%9A%84demo/</guid>
+      <description>EasyExcel的使用 </description>
+    </item>
+    
+  </channel>
+</rss>

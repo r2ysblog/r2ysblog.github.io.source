@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>分布式 on r2ys blog</title>
+    <link>/categories/%E5%88%86%E5%B8%83%E5%BC%8F/</link>
+    <description>Recent content in 分布式 on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 29 Jun 2021 17:20:00 +0800</lastBuildDate><atom:link href="/categories/%E5%88%86%E5%B8%83%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>分布式一致性算法EPaxos.md</title>
+      <link>/posts/notes/%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4%E6%80%A7%E7%AE%97%E6%B3%95epaxos/</link>
+      <pubDate>Tue, 29 Jun 2021 17:20:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4%E6%80%A7%E7%AE%97%E6%B3%95epaxos/</guid>
+      <description>https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&amp;amp;mid=2247500380&amp;amp;idx=1&amp;amp;sn=025c1c9fcdba8e72a5eb2e8c8aad98fd&amp;amp;chksm=e92aff53de5d76454f580f3adebda282f31d3f97a3d5c6f8cdb9c2d5d8283b1719263368753b&amp;amp;mpshare=1&amp;amp;scene=24&amp;amp;srcid=1028xGhlHoY5tz23wMlOVs1C&amp;amp;sharer_sharetime=1603845682194&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd</description>
+    </item>
+    
+    <item>
+      <title>如何把分布式事务讲清楚.md</title>
+      <link>/posts/notes/%E5%A6%82%E4%BD%95%E6%8A%8A%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1%E8%AE%B2%E6%B8%85%E6%A5%9A/</link>
+      <pubDate>Tue, 29 Jun 2021 16:26:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%A6%82%E4%BD%95%E6%8A%8A%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1%E8%AE%B2%E6%B8%85%E6%A5%9A/</guid>
+      <description>https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&amp;amp;mid=2651968036&amp;amp;idx=2&amp;amp;sn=0e3b26a3fc7a46785433eed013e8907b&amp;amp;chksm=bd2d67f88a5aeeee6104fa43f8b78ac62aa7267633e3d14101733835189f44b42c8586bba204&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0617HHC4h4WvvkqalGv1uQcA&amp;amp;sharer_sharetime=1623935878168&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd</description>
+    </item>
+    
+  </channel>
+</rss>

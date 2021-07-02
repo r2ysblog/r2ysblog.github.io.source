@@ -6,7 +6,259 @@
     <description>Recent content in 标签 on r2ys blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
-    <lastBuildDate>Wed, 10 Jul 2019 16:01:00 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Jun 2021 17:20:00 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一致性</title>
+      <link>/tags/%E4%B8%80%E8%87%B4%E6%80%A7/</link>
+      <pubDate>Tue, 29 Jun 2021 17:20:00 +0800</pubDate>
+      
+      <guid>/tags/%E4%B8%80%E8%87%B4%E6%80%A7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>算法</title>
+      <link>/tags/%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Tue, 29 Jun 2021 17:20:00 +0800</pubDate>
+      
+      <guid>/tags/%E7%AE%97%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sa-token</title>
+      <link>/tags/sa-token/</link>
+      <pubDate>Tue, 29 Jun 2021 17:18:00 +0800</pubDate>
+      
+      <guid>/tags/sa-token/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shiro</title>
+      <link>/tags/shiro/</link>
+      <pubDate>Tue, 29 Jun 2021 17:18:00 +0800</pubDate>
+      
+      <guid>/tags/shiro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SpringSecurity</title>
+      <link>/tags/springsecurity/</link>
+      <pubDate>Tue, 29 Jun 2021 17:18:00 +0800</pubDate>
+      
+      <guid>/tags/springsecurity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Innodb</title>
+      <link>/tags/innodb/</link>
+      <pubDate>Tue, 29 Jun 2021 17:17:00 +0800</pubDate>
+      
+      <guid>/tags/innodb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>锁</title>
+      <link>/tags/%E9%94%81/</link>
+      <pubDate>Tue, 29 Jun 2021 17:17:00 +0800</pubDate>
+      
+      <guid>/tags/%E9%94%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hibernate</title>
+      <link>/tags/hibernate/</link>
+      <pubDate>Tue, 29 Jun 2021 17:16:00 +0800</pubDate>
+      
+      <guid>/tags/hibernate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Validate</title>
+      <link>/tags/validate/</link>
+      <pubDate>Tue, 29 Jun 2021 17:16:00 +0800</pubDate>
+      
+      <guid>/tags/validate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>参数校验</title>
+      <link>/tags/%E5%8F%82%E6%95%B0%E6%A0%A1%E9%AA%8C/</link>
+      <pubDate>Tue, 29 Jun 2021 17:16:00 +0800</pubDate>
+      
+      <guid>/tags/%E5%8F%82%E6%95%B0%E6%A0%A1%E9%AA%8C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CD</title>
+      <link>/tags/cd/</link>
+      <pubDate>Tue, 29 Jun 2021 16:57:00 +0800</pubDate>
+      
+      <guid>/tags/cd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CI</title>
+      <link>/tags/ci/</link>
+      <pubDate>Tue, 29 Jun 2021 16:57:00 +0800</pubDate>
+      
+      <guid>/tags/ci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jenkins</title>
+      <link>/tags/jenkins/</link>
+      <pubDate>Tue, 29 Jun 2021 16:57:00 +0800</pubDate>
+      
+      <guid>/tags/jenkins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IDEA</title>
+      <link>/tags/idea/</link>
+      <pubDate>Tue, 29 Jun 2021 16:56:00 +0800</pubDate>
+      
+      <guid>/tags/idea/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mock</title>
+      <link>/tags/mock/</link>
+      <pubDate>Tue, 29 Jun 2021 16:53:00 +0800</pubDate>
+      
+      <guid>/tags/mock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>log4j</title>
+      <link>/tags/log4j/</link>
+      <pubDate>Tue, 29 Jun 2021 16:49:00 +0800</pubDate>
+      
+      <guid>/tags/log4j/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>logback</title>
+      <link>/tags/logback/</link>
+      <pubDate>Tue, 29 Jun 2021 16:49:00 +0800</pubDate>
+      
+      <guid>/tags/logback/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slf4j</title>
+      <link>/tags/slf4j/</link>
+      <pubDate>Tue, 29 Jun 2021 16:49:00 +0800</pubDate>
+      
+      <guid>/tags/slf4j/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HR</title>
+      <link>/tags/hr/</link>
+      <pubDate>Tue, 29 Jun 2021 16:43:00 +0800</pubDate>
+      
+      <guid>/tags/hr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>涨薪</title>
+      <link>/tags/%E6%B6%A8%E8%96%AA/</link>
+      <pubDate>Tue, 29 Jun 2021 16:43:00 +0800</pubDate>
+      
+      <guid>/tags/%E6%B6%A8%E8%96%AA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>分布式事务</title>
+      <link>/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/</link>
+      <pubDate>Tue, 29 Jun 2021 16:26:00 +0800</pubDate>
+      
+      <guid>/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>技术管理</title>
+      <link>/tags/%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Tue, 29 Jun 2021 16:23:00 +0800</pubDate>
+      
+      <guid>/tags/%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>程序员</title>
+      <link>/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/</link>
+      <pubDate>Tue, 29 Jun 2021 16:23:00 +0800</pubDate>
+      
+      <guid>/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CGLIB</title>
+      <link>/tags/cglib/</link>
+      <pubDate>Tue, 29 Jun 2021 16:18:00 +0800</pubDate>
+      
+      <guid>/tags/cglib/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring</title>
+      <link>/tags/spring/</link>
+      <pubDate>Tue, 29 Jun 2021 16:18:00 +0800</pubDate>
+      
+      <guid>/tags/spring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>动态代理</title>
+      <link>/tags/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Tue, 29 Jun 2021 16:18:00 +0800</pubDate>
+      
+      <guid>/tags/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>easyexcel</title>
+      <link>/tags/easyexcel/</link>
+      <pubDate>Tue, 29 Jun 2021 16:14:00 +0800</pubDate>
+      
+      <guid>/tags/easyexcel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>excel</title>
+      <link>/tags/excel/</link>
+      <pubDate>Tue, 29 Jun 2021 16:14:00 +0800</pubDate>
+      
+      <guid>/tags/excel/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>语法</title>
       <link>/tags/%E8%AF%AD%E6%B3%95/</link>

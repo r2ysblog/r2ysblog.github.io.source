@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>程序员 on r2ys blog</title>
+    <link>/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/</link>
+    <description>Recent content in 程序员 on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 29 Jun 2021 16:23:00 +0800</lastBuildDate><atom:link href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>程序员是否应该转变管理岗.md</title>
+      <link>/posts/notes/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%98%AF%E5%90%A6%E5%BA%94%E8%AF%A5%E8%BD%AC%E5%8F%98%E7%AE%A1%E7%90%86%E5%B2%97/</link>
+      <pubDate>Tue, 29 Jun 2021 16:23:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%98%AF%E5%90%A6%E5%BA%94%E8%AF%A5%E8%BD%AC%E5%8F%98%E7%AE%A1%E7%90%86%E5%B2%97/</guid>
+      <description>  技术性岗位可以向管理岗位转，反过来则不成立，老不碰代码，代码能力就下降了。 裁员浪潮中，首当其冲的就是纯管理，技术人员再找工作比纯管理好。管理的成果可能产生于大环境和所在公司，体现不了你自己本身的价值。 技术才是保命的本领。  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -36,6 +36,10 @@
             <i class="fas fa-fw fa-file-archive"></i>归档
           </a>
         </li><li class="nav-item">
+          <a class="nav-link" href="/booklist">
+            <i class="fas fa-fw fa-file-archive"></i>我的书单
+          </a>
+        </li><li class="nav-item">
           <a class="nav-link" href="/categories">
             <i class="fas fa-fw fa-folder"></i>分类
           </a>
@@ -124,59 +128,85 @@
   <div class="container"><nav class="row" aria-label="breadcrumb">
   <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item active">文章</li></ol>
 </nav><div class="posts mb-4"><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-difference-from-array-and-arraylist/">difference from array and arraylist</a></h2><div class="post-meta mb-3">
+        <h2 class="post-title mb-4"><a href="/posts/notes/%E5%AF%B9%E6%89%B9%E9%87%8F%E6%95%B0%E6%8D%AE%E6%A0%B8%E9%AA%8C%E5%B9%B6%E6%9B%B4%E6%96%B0%E7%9A%84demo/">对批量数据核验并更新的demo</a></h2><div class="post-meta mb-3">
+  <span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>2021-06-29
+  </span>
+  <span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>1 min read
+  </span>
+<a href="/categories/mysql/" class="post-taxonomy">#mysql</a><a href="/tags/excel/" class="post-taxonomy">#excel</a><a href="/tags/easyexcel/" class="post-taxonomy">#easyexcel</a></div>
+<div class="post-summary mb-3">EasyExcel的使用 </div>
+      </div>
+    </article><article class="post row surface"><div class="post-body">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-16-ios-develop-certificate-understanding/">ios develop certificate understanding</a></h2><div class="post-meta mb-3">
+  <span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>2020-01-16
+  </span>
+  <span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>1 min read
+  </span>
+<a href="/categories/ios-cer-p12/" class="post-taxonomy">#iOS cer p12</a></div>
+<div class="post-summary mb-3">理解iOS开发证书 术语解释 cer 一种文件格式，存储的是公钥，学名证书
+如何生成cer  der二进制编码（cer有别于ber、der） base64编码  der 二进制格式，不可读，Java和Windows服务器偏向使用这种格式 DER格式的证书基于X.509标准
+PKCS#12 一个公钥加密的标准，总共有15个
+p12 .p12是基于PKCS#12标准生成的一种文件格式，存储的是私钥 mac系统下在keychains钥匙串中找到证书-&gt;导出-&gt;p12就可以
+数字证书 无论是cer还是p12，广义上说都可以被称为数字证书。 | 什么是数字证书呢？数字证书就是互联网通讯中标志通讯各方身份信息的一串数字，提供了一种 …</div>
+      </div>
+    </article><article class="post row surface"><div class="post-body">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-charactoristics-on-hyperledger-fabric/">charactoristics on hyperledger fabric</a></h2><div class="post-meta mb-3">
   <span class="post-date me-2">
     <i class="fas fa-fw fa-calendar-alt"></i>2020-01-15
   </span>
   <span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 min read
   </span>
-<a href="/categories/java/" class="post-taxonomy">#Java</a></div>
-<div class="post-summary mb-3">Array和ArrayList的各自特点和区别 Array  内存中是连续的 读取和赋值很快 扩容和收缩很慢 需要指定内存大小  ArrayList  不需要指定容量 方便动态扩容和收缩 可以保存不同类型，本质都当作Object处理 ArrayList不是类型安全，需要拆装箱 通过指定泛型，通过编译来强制使用正确统一的数据类型，也减少了类型转换  </div>
+<a href="/categories/fabric/" class="post-taxonomy">#fabric</a></div>
+<div class="post-summary mb-3">charactoristics on hyperledger fabric 一个标准的可认为是最佳实践的fabric项目应当具备的特性   初始配置
+  各组件启动
+  通道创建和加入
+  链码的注册和实例化
+  界面化的demo演示交易的调用
+  blockchain explorer启动和查看运行、网络、区块、交易
+  demo应用监听事件
+  多级证书配置和可插拔
+  动态加入和撤出组织
+  更换排序共识插件
+  组件无限扩展
+  账本、状态的存储结构替换
+  多通道
+   </div>
       </div>
     </article><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-delete-dirty-lines-in-mysql/">delete dirty lines in mysql</a></h2><div class="post-meta mb-3">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-learn-ast/">learn ast</a></h2><div class="post-meta mb-3">
   <span class="post-date me-2">
     <i class="fas fa-fw fa-calendar-alt"></i>2020-01-15
   </span>
   <span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 min read
   </span>
-<a href="/categories/mysql/" class="post-taxonomy">#mysql</a></div>
-<div class="post-summary mb-3">清楚重复数据 建表 CREATE TABLE `src5` ( `userid` int(11) unsigned NOT NULL AUTO_INCREMENT, `username` varchar(20) DEFAULT NULL, `usercode` varchar(20) DEFAULT NULL, PRIMARY KEY (`userid`) ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8; 如果usercode重复，那么可能会出现以下数据 userid username usercode 1 &hellip; code0 2 &hellip; code0 3 …</div>
+<a href="/categories/ast/" class="post-taxonomy">#AST</a></div>
+<div class="post-summary mb-3">抽象语法树AST https://baijiahao.baidu.com/s?id=1626159656211187310&amp;wfr=spider&amp;for=pc</div>
       </div>
     </article><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-how-to-descripe-in-resume/">how to descripe in resume</a></h2><div class="post-meta mb-3">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-design-a-flow-based-develop-and-invoke-system/">design a flow based develop and invoke system</a></h2><div class="post-meta mb-3">
   <span class="post-date me-2">
     <i class="fas fa-fw fa-calendar-alt"></i>2020-01-15
   </span>
   <span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 min read
   </span>
-<a href="/categories/resume/" class="post-taxonomy">#resume</a></div>
-<div class="post-summary mb-3">写好一份技术简历的要点 几个注意点  框架是重点，但别让人感觉你只会山寨别人的代码 别单纯看单机版的框架，适当了解些分布式 数据库方面，别就知道增删改查，得了解性能优化，NoSQL亦如此 Java核心方面，围绕数据结构和性能优化准备面试题 Linux方面，至少了解如何看日志排查问题 通读一些底层代码，作为加分项  一切的一切，把上述技能嵌入到你做过的项目里 </div>
-      </div>
-    </article><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-14-write-work-summary/">write work summary</a></h2><div class="post-meta mb-3">
-  <span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>2020-01-14
-  </span>
-  <span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>1 min read
-  </span>
-<a href="/categories/work/" class="post-taxonomy">#work</a></div>
-<div class="post-summary mb-3">write work summary 总结中必须包含的几大内容点  工作中暴露问题 某些方案提出合理的方案 自己工作中的提升 对来年的展望 未来公司的规划、个人的规划  工作总结要可以体现出以下特点  精确 准确、量化 对公司核心的作用 工作重要性的排列 可以借鉴给他人复用的工作经验 必要的反思 来年工作计划、思考、体现出热情  其它补充的点  应当适当表明成功来源于领导 征求领导的建议 不告状 *不带情绪  </div>
-      </div>
-    </article><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-14-how-to-post-by-shell/">how to post by shell</a></h2><div class="post-meta mb-3">
-  <span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>2020-01-14
-  </span>
-  <span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>1 min read
-  </span>
-<a href="/categories/shell/" class="post-taxonomy">#shell</a></div>
-<div class="post-summary mb-3">how to post by shell 本篇文章留存，用作帮助使用shell去快速发布一篇文章</div>
+<a href="/categories/flow/" class="post-taxonomy">#flow</a></div>
+<div class="post-summary mb-3">design a flow based develop and invoke system todo cabala重构点： 根据接口查脚本 根据脚本反查接口
+脚本写完模拟调用 接口写完模拟调用
+管理页面提取成一套，根据接口名称和脚本名称查询 搜索规则有：list，count，save，get，edit，remove，其它
+业务模块-&gt;接口 -&gt;脚本(脚本中指定库)
+开始结束 循环、判断 数据库操作 缓存操作
+调用子服务 同步和异步
+从原始接口表更新到目标接口表：指定接口号和脚本代码即可，自动拉取同步，自动刷新缓存，永不重启引擎服务
+开启提示模式时，节点入出的参数都展示出来
+判断、循环的代码段可以边编辑边拷贝参考
+接口流程 …</div>
       </div>
     </article></div><div class="row table-responsive mb-3">
 <ul class="pagination">
@@ -205,13 +235,13 @@
     <span aria-hidden="true">&nbsp;&hellip;&nbsp;</span>
   </li>
   <li class="page-item">
-    <a class="page-link" href="/posts/page/8/">8</a>
+    <a class="page-link" href="/posts/page/11/">11</a>
   </li>
   <li class="page-item">
     <a href="/posts/page/5/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
   </li>
   <li class="page-item">
-    <a href="/posts/page/8/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    <a href="/posts/page/11/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
   </li>
 </ul>
 
@@ -227,32 +257,32 @@
     <h5 class="profile-name my-2">r2ys</h5><div class="profile-bio mb-2">好的应用开发者、应用架构师</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>sft</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>北京朝阳门</div></div>
 </section><section class="recent-posts row surface">
   <h4>Recent Posts</h4>
-  <ul><li><a href="/posts/notes/2020-01-16-ios-develop-certificate-understanding/">ios develop certificate understanding</a></li><li><a href="/posts/notes/2020-01-15-charactoristics-on-hyperledger-fabric/">charactoristics on hyperledger fabric</a></li><li><a href="/posts/notes/2020-01-15-learn-ast/">learn ast</a></li><li><a href="/posts/notes/2020-01-15-design-a-flow-based-develop-and-invoke-system/">design a flow based develop and invoke system</a></li><li><a href="/posts/notes/2020-01-15-learn-shell-from-start/">learn shell from start</a></li></ul>
+  <ul><li><a href="/posts/notes/%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4%E6%80%A7%E7%AE%97%E6%B3%95epaxos/">分布式一致性算法EPaxos.md</a></li><li><a href="/posts/notes/%E6%9D%83%E9%99%90%E8%AE%A4%E8%AF%81%E6%A1%86%E6%9E%B6%E6%80%8E%E4%B9%88%E9%80%89/">权限认证框架怎么选.md</a></li><li><a href="/posts/notes/%E5%AD%A6%E4%BC%9Ainnodb%E5%90%84%E7%A7%8D%E9%94%81/">学会Innodb各种锁.md</a></li><li><a href="/posts/notes/%E5%8F%82%E6%95%B0%E6%A0%A1%E9%AA%8C%E6%80%8E%E4%B9%88%E5%81%9A%E6%9B%B4%E4%BC%98%E9%9B%85/">参数校验怎么做更优雅.md</a></li><li><a href="/posts/notes/jenkins%E7%B1%BB%E7%9A%84%E5%B7%A5%E5%85%B7%E8%83%BD%E5%B8%AE%E6%88%91%E4%BB%AC%E5%81%9A%E4%BB%80%E4%B9%88/">Jenkins类的工具能帮我们做什么.md</a></li></ul>
 </section>
 <section class="taxonomy-categories row surface">
   <h4>
     <a href="/categories">Categories</a>
   </h4>
-  <div><a href="/categories/linux/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="linux">
+  <div><a href="/categories/mysql/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="mysql">
+      mysql <span class="badge rounded-pill">5</span>
+    </a><a href="/categories/linux/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="linux">
       linux <span class="badge rounded-pill">4</span>
+    </a><a href="/categories/java/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Java">
+      Java <span class="badge rounded-pill">3</span>
     </a><a href="/categories/jdk/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="jdk">
       jdk <span class="badge rounded-pill">3</span>
-    </a><a href="/categories/mysql/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="mysql">
-      mysql <span class="badge rounded-pill">3</span>
     </a><a href="/categories/shell/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="shell">
       shell <span class="badge rounded-pill">3</span>
-    </a><a href="/categories/java/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Java">
-      Java <span class="badge rounded-pill">2</span>
     </a><a href="/categories/sh/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="sh">
       sh <span class="badge rounded-pill">2</span>
+    </a><a href="/categories/%E5%88%86%E5%B8%83%E5%BC%8F/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="分布式">
+      分布式 <span class="badge rounded-pill">2</span>
+    </a><a href="/categories/%E6%8F%92%E4%BB%B6/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="插件">
+      插件 <span class="badge rounded-pill">2</span>
     </a><a href="/categories/algorithms/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="algorithms">
       algorithms <span class="badge rounded-pill">1</span>
     </a><a href="/categories/ast/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="AST">
       AST <span class="badge rounded-pill">1</span>
-    </a><a href="/categories/database/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="database">
-      database <span class="badge rounded-pill">1</span>
-    </a><a href="/categories/distributed/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="distributed">
-      distributed <span class="badge rounded-pill">1</span>
     </a></div>
 </section><section class="taxonomy-series row surface">
   <h4>
@@ -265,8 +295,26 @@
   <h4>
     <a href="/tags">Tags</a>
   </h4>
-  <div><a href="/tags/%E8%AF%AD%E6%B3%95/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="语法">
-      语法 <span class="badge rounded-pill">1</span>
+  <div><a href="/tags/idea/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="IDEA">
+      IDEA <span class="badge rounded-pill">2</span>
+    </a><a href="/tags/cd/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="CD">
+      CD <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/cglib/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="CGLIB">
+      CGLIB <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/ci/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="CI">
+      CI <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/easyexcel/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="easyexcel">
+      easyexcel <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/excel/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="excel">
+      excel <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/hibernate/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Hibernate">
+      Hibernate <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/hr/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="HR">
+      HR <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/innodb/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Innodb">
+      Innodb <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/jenkins/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Jenkins">
+      Jenkins <span class="badge rounded-pill">1</span>
     </a></div>
 </section></div>
 </aside>

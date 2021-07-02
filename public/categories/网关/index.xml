@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>网关 on r2ys blog</title>
+    <link>/categories/%E7%BD%91%E5%85%B3/</link>
+    <description>Recent content in 网关 on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 29 Jun 2021 16:51:00 +0800</lastBuildDate><atom:link href="/categories/%E7%BD%91%E5%85%B3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何做好一个API网关.md</title>
+      <link>/posts/notes/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E4%B8%80%E4%B8%AAapi%E7%BD%91%E5%85%B3/</link>
+      <pubDate>Tue, 29 Jun 2021 16:51:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E4%B8%80%E4%B8%AAapi%E7%BD%91%E5%85%B3/</guid>
+      <description>api网关设计的方方面面 https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&amp;amp;mid=2247507916&amp;amp;idx=4&amp;amp;sn=b55ef35bce39ae448ad472e20393fb11&amp;amp;chksm=fa4aa07dcd3d296b7bfcb786975f7271e4184596c87e4a6d5ce17643bbdde452d08026950d67&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0205Rd3F9PaDvFcm4BrgbPLp&amp;amp;sharer_sharetime=1612493454398&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd
+如何设计 https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&amp;amp;mid=2247507679&amp;amp;idx=3&amp;amp;sn=0e54bf6c578a85601e45a44bc8bfca0f&amp;amp;chksm=fa4aa16ecd3d2878ba5b7273b11b91302e31af04b75b3c0ac1f1408c8c4948f98fbc27e45356&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0201frLvZI3FLO5OoGr767hz&amp;amp;sharer_sharetime=1612155601583&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd
+开源API网关对比 https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&amp;amp;mid=2247518160&amp;amp;idx=1&amp;amp;sn=00d4d72312ac8960c5523908feacc50b&amp;amp;chksm=fa4af861cd3d717724ab3bd58f254c9499b40a5343fe8e1758c91ab0fb0f13fe0172d5ce2506&amp;amp;mpshare=1&amp;amp;scene=24&amp;amp;srcid=0614RrmDpr1WiO6KEt2yPaQZ&amp;amp;sharer_sharetime=1623626262648&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd</description>
+    </item>
+    
+  </channel>
+</rss>

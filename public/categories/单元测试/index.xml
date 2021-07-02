@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>单元测试 on r2ys blog</title>
+    <link>/categories/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</link>
+    <description>Recent content in 单元测试 on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 29 Jun 2021 16:53:00 +0800</lastBuildDate><atom:link href="/categories/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何写好单元测试用例.md</title>
+      <link>/posts/notes/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BD%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/</link>
+      <pubDate>Tue, 29 Jun 2021 16:53:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BD%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/</guid>
+      <description>阿里的mock工具有什么魔法 https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&amp;amp;mid=2247501494&amp;amp;idx=1&amp;amp;sn=54d20391a4d0d3a8ddbbb2d4e777d771&amp;amp;chksm=e92afbb9de5d72af37fad640ba1401afb22fa1caf99eef58374c110abfcb0179cf1c8eaf39ce&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=1222b0NpB7mhljSLhpklzHbA&amp;amp;sharer_sharetime=1608595647786&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd</description>
+    </item>
+    
+  </channel>
+</rss>

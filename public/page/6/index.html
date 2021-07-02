@@ -37,6 +37,10 @@
             <i class="fas fa-fw fa-file-archive"></i>归档
           </a>
         </li><li class="nav-item">
+          <a class="nav-link" href="/booklist">
+            <i class="fas fa-fw fa-file-archive"></i>我的书单
+          </a>
+        </li><li class="nav-item">
           <a class="nav-link" href="/categories">
             <i class="fas fa-fw fa-folder"></i>分类
           </a>
@@ -123,64 +127,59 @@
       <div class="row content">
 <div class="col-lg-8">
   <div class="container"><div class="posts mb-4"><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2019-07-30-how-to-install-flutter-on-mac/">how to install flutter on mac</a></h2><div class="post-meta mb-3">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-linux-close-selinux/">linux close selinux</a></h2><div class="post-meta mb-3">
   <span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>2019-08-09
+    <i class="fas fa-fw fa-calendar-alt"></i>2020-01-15
   </span>
   <span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 min read
   </span>
-<a href="/categories/jdk/" class="post-taxonomy">#jdk</a></div>
-<div class="post-summary mb-3"> 示例 # 查看flutter环境 flutter doctor # 升级flutter flutter upgrade # 查看flutter版本分支 flutter channels </div>
+<a href="/categories/linux/" class="post-taxonomy">#linux</a></div>
+<div class="post-summary mb-3">CentOS7关闭SELinux [root@dev-server ~]# getenforce Disabled [root@dev-server ~]# /usr/sbin/sestatus SELinux status: disabled # 永久关闭 vi /etc/selinux/config # 将SELINUX=enforcing改为SELINUX=disabled # 重启后生效 </div>
       </div>
     </article><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2019-08-09-abstract-queued-synchronizer/">AbstractQueuedSynchronizer</a></h2><div class="post-meta mb-3">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-operate-linux-firewall/">operate linux firewall</a></h2><div class="post-meta mb-3">
   <span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>2019-08-09
+    <i class="fas fa-fw fa-calendar-alt"></i>2020-01-15
   </span>
   <span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 min read
   </span>
-<a href="/categories/jdk/" class="post-taxonomy">#jdk</a></div>
-<div class="post-summary mb-3">AbstractQueuedSynchronizer Lock 使用Lock接口是java实现锁的一种方式。 Lock接口在java.util.concurrent.locks包下。 ReentrantLock(可重入锁)、ReadLock(读锁)、WriteLock(写锁)是Lock接口最重要的三个实现类。 ReadWriteLock接口是一个工厂接口，ReentrantReadWriteLock是ReadWriteLock接口的实现类，它包含两个内部静态类ReadLock(读锁)、WriteLock(写锁)，这两个静态类又分别实现了Lock接口。
-悲观锁与乐观锁的定义 它们是在并发情况下的两种不同策略。java中没有明确的类就是 …</div>
+<a href="/categories/linux/" class="post-taxonomy">#linux</a></div>
+<div class="post-summary mb-3">centOS7永久关闭防火墙 # 查看状态 systemctl status firewalld.service # 关闭 systemctl stop firewalld.service # 开机禁用 systemctl disable firewalld.service # 开启 systemctl start firewalld.service # 开机启用 systemctl enable firewalld.service </div>
       </div>
     </article><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2019-07-30-find-java-path/">find java path</a></h2><div class="post-meta mb-3">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-learn-hibernate-mybatis-and-orm/">learn hibernate mybatis and orm</a></h2><div class="post-meta mb-3">
   <span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>2019-07-30
+    <i class="fas fa-fw fa-calendar-alt"></i>2020-01-15
   </span>
   <span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 min read
   </span>
-<a href="/categories/jdk/" class="post-taxonomy">#jdk</a></div>
-<div class="post-summary mb-3">Mac下查看已安装的jdk版本及其安装目录 示例 /usr/libexec/java_home -V </div>
+<a href="/categories/orm/" class="post-taxonomy">#orm</a></div>
+<div class="post-summary mb-3">learn hibernate mybatis and orm todo hibernate mybatis ORM</div>
       </div>
     </article><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2019-07-24-how-to-prove-pi/">how to prove pi</a></h2><div class="post-meta mb-3">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-database-design/">database design</a></h2><div class="post-meta mb-3">
   <span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>2019-07-24
+    <i class="fas fa-fw fa-calendar-alt"></i>2020-01-15
   </span>
   <span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 min read
   </span>
-<a href="/categories/math/" class="post-taxonomy">#math</a></div>
-<div class="post-summary mb-3">https://zhuanlan.zhihu.com/p/48307582
-如何证明π为常数？ &ndash;为什么π是一个常数？即为什么所有圆的周长和直径之比为一个定值？
-解答： 小圆的半径r1，周长c1；大圆的半径r2，周长c2 小圆内切正n边形，边长为k1；大圆内切正n边形，边长为k2 OA:OD=OB:OC；角AOB = 角COD；三角形OAB全等于三角形OCD ∴ k1:r1=k2:r2 设小正n边形周长为c1',大正n边形周长为c2' c1'=nk1,c2'=nk2 c1':r1=c2':r2 当n等于无限大时，c1'=c1,c2'=c2 ∴ c1:r1=c2:r2
-所以，对于半径不同的圆，各自周长除以半径为定值（常 …</div>
+<a href="/categories/database/" class="post-taxonomy">#database</a></div>
+<div class="post-summary mb-3">数据库设计的原则 简单记录几点要点  符合业务需求 避免冗余  数据仓库设计要以哪些指标为主？  需求 维度 指标  数据库的需求和数据仓库需求的不同  数据库要求的是实时，一致 数据仓库要求的是汇总数据有效，全量，不需实时  数据仓库产生的因素 数据仓库产生于数据库之上，为了进一步挖掘数据资源、决策需要而存在</div>
       </div>
     </article><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2019-07-10-mysql-only-full-group-by/">mysql only full group by</a></h2><div class="post-meta mb-3">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-derby-and-mysql/">derby and mysql</a></h2><div class="post-meta mb-3">
   <span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>2019-07-10
+    <i class="fas fa-fw fa-calendar-alt"></i>2020-01-15
   </span>
   <span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 min read
   </span>
-<a href="/categories/mysql/" class="post-taxonomy">#mysql</a><a href="/series/mysql%E7%94%B1%E6%B5%85%E5%85%A5%E6%B7%B1/" class="post-taxonomy">#MySQL由浅入深</a><a href="/tags/%E8%AF%AD%E6%B3%95/" class="post-taxonomy">#语法</a></div>
-<div class="post-summary mb-3">MySQL SQL GROUP BY是如何选择哪一条数据留下的 示例 -- 建表 CREATE TABLE `src2` ( `id` int(11) DEFAULT NULL, `name` varchar(20) DEFAULT NULL ) ENGINE=InnoDB DEFAULT CHARSET=utf8; -- 查询 SELECT id, name FROM src2; 查询到的结果 id name 1 alpha 1 bravo 2 charlie 2 dolphin
-查看当前mysql版本，并且看是否开启了only full group by SELECT version(), @@sql_mode; 5.7.20 …</div>
+<a href="/categories/mysql/" class="post-taxonomy">#mysql</a></div>
+<div class="post-summary mb-3">derby and mysql todo derby 哪些方面能代替mysql MariaDB 为什么是mysql的分支 </div>
       </div>
     </article></div><div class="row table-responsive mb-3">
 <ul class="pagination">
@@ -211,14 +210,17 @@
   <li class="page-item">
     <a class="page-link" href="/page/7/">7</a>
   </li>
+  <li class="page-item disabled">
+    <span aria-hidden="true">&nbsp;&hellip;&nbsp;</span>
+  </li>
   <li class="page-item">
-    <a class="page-link" href="/page/8/">8</a>
+    <a class="page-link" href="/page/11/">11</a>
   </li>
   <li class="page-item">
     <a href="/page/7/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
   </li>
   <li class="page-item">
-    <a href="/page/8/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    <a href="/page/11/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
   </li>
 </ul>
 
@@ -234,32 +236,32 @@
     <h5 class="profile-name my-2">r2ys</h5><div class="profile-bio mb-2">好的应用开发者、应用架构师</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>sft</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>北京朝阳门</div></div>
 </section><section class="recent-posts row surface">
   <h4>Recent Posts</h4>
-  <ul><li><a href="/posts/notes/2020-01-16-ios-develop-certificate-understanding/">ios develop certificate understanding</a></li><li><a href="/posts/notes/2020-01-15-charactoristics-on-hyperledger-fabric/">charactoristics on hyperledger fabric</a></li><li><a href="/posts/notes/2020-01-15-learn-ast/">learn ast</a></li><li><a href="/posts/notes/2020-01-15-design-a-flow-based-develop-and-invoke-system/">design a flow based develop and invoke system</a></li><li><a href="/posts/notes/2020-01-15-learn-shell-from-start/">learn shell from start</a></li></ul>
+  <ul><li><a href="/posts/notes/%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4%E6%80%A7%E7%AE%97%E6%B3%95epaxos/">分布式一致性算法EPaxos.md</a></li><li><a href="/posts/notes/%E6%9D%83%E9%99%90%E8%AE%A4%E8%AF%81%E6%A1%86%E6%9E%B6%E6%80%8E%E4%B9%88%E9%80%89/">权限认证框架怎么选.md</a></li><li><a href="/posts/notes/%E5%AD%A6%E4%BC%9Ainnodb%E5%90%84%E7%A7%8D%E9%94%81/">学会Innodb各种锁.md</a></li><li><a href="/posts/notes/%E5%8F%82%E6%95%B0%E6%A0%A1%E9%AA%8C%E6%80%8E%E4%B9%88%E5%81%9A%E6%9B%B4%E4%BC%98%E9%9B%85/">参数校验怎么做更优雅.md</a></li><li><a href="/posts/notes/jenkins%E7%B1%BB%E7%9A%84%E5%B7%A5%E5%85%B7%E8%83%BD%E5%B8%AE%E6%88%91%E4%BB%AC%E5%81%9A%E4%BB%80%E4%B9%88/">Jenkins类的工具能帮我们做什么.md</a></li></ul>
 </section>
 <section class="taxonomy-categories row surface">
   <h4>
     <a href="/categories">Categories</a>
   </h4>
-  <div><a href="/categories/linux/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="linux">
+  <div><a href="/categories/mysql/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="mysql">
+      mysql <span class="badge rounded-pill">5</span>
+    </a><a href="/categories/linux/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="linux">
       linux <span class="badge rounded-pill">4</span>
+    </a><a href="/categories/java/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Java">
+      Java <span class="badge rounded-pill">3</span>
     </a><a href="/categories/jdk/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="jdk">
       jdk <span class="badge rounded-pill">3</span>
-    </a><a href="/categories/mysql/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="mysql">
-      mysql <span class="badge rounded-pill">3</span>
     </a><a href="/categories/shell/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="shell">
       shell <span class="badge rounded-pill">3</span>
-    </a><a href="/categories/java/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Java">
-      Java <span class="badge rounded-pill">2</span>
     </a><a href="/categories/sh/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="sh">
       sh <span class="badge rounded-pill">2</span>
+    </a><a href="/categories/%E5%88%86%E5%B8%83%E5%BC%8F/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="分布式">
+      分布式 <span class="badge rounded-pill">2</span>
+    </a><a href="/categories/%E6%8F%92%E4%BB%B6/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="插件">
+      插件 <span class="badge rounded-pill">2</span>
     </a><a href="/categories/algorithms/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="algorithms">
       algorithms <span class="badge rounded-pill">1</span>
     </a><a href="/categories/ast/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="AST">
       AST <span class="badge rounded-pill">1</span>
-    </a><a href="/categories/database/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="database">
-      database <span class="badge rounded-pill">1</span>
-    </a><a href="/categories/distributed/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="distributed">
-      distributed <span class="badge rounded-pill">1</span>
     </a></div>
 </section><section class="taxonomy-series row surface">
   <h4>
@@ -272,8 +274,26 @@
   <h4>
     <a href="/tags">Tags</a>
   </h4>
-  <div><a href="/tags/%E8%AF%AD%E6%B3%95/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="语法">
-      语法 <span class="badge rounded-pill">1</span>
+  <div><a href="/tags/idea/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="IDEA">
+      IDEA <span class="badge rounded-pill">2</span>
+    </a><a href="/tags/cd/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="CD">
+      CD <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/cglib/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="CGLIB">
+      CGLIB <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/ci/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="CI">
+      CI <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/easyexcel/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="easyexcel">
+      easyexcel <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/excel/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="excel">
+      excel <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/hibernate/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Hibernate">
+      Hibernate <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/hr/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="HR">
+      HR <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/innodb/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Innodb">
+      Innodb <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/jenkins/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Jenkins">
+      Jenkins <span class="badge rounded-pill">1</span>
     </a></div>
 </section></div>
 </aside>

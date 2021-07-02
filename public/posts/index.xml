@@ -6,7 +6,163 @@
     <description>Recent content in 文章 on r2ys blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
-    <lastBuildDate>Thu, 16 Jan 2020 08:47:24 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Jun 2021 17:20:00 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>分布式一致性算法EPaxos.md</title>
+      <link>/posts/notes/%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4%E6%80%A7%E7%AE%97%E6%B3%95epaxos/</link>
+      <pubDate>Tue, 29 Jun 2021 17:20:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4%E6%80%A7%E7%AE%97%E6%B3%95epaxos/</guid>
+      <description>https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&amp;amp;mid=2247500380&amp;amp;idx=1&amp;amp;sn=025c1c9fcdba8e72a5eb2e8c8aad98fd&amp;amp;chksm=e92aff53de5d76454f580f3adebda282f31d3f97a3d5c6f8cdb9c2d5d8283b1719263368753b&amp;amp;mpshare=1&amp;amp;scene=24&amp;amp;srcid=1028xGhlHoY5tz23wMlOVs1C&amp;amp;sharer_sharetime=1603845682194&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd</description>
+    </item>
+    
+    <item>
+      <title>权限认证框架怎么选.md</title>
+      <link>/posts/notes/%E6%9D%83%E9%99%90%E8%AE%A4%E8%AF%81%E6%A1%86%E6%9E%B6%E6%80%8E%E4%B9%88%E9%80%89/</link>
+      <pubDate>Tue, 29 Jun 2021 17:18:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E6%9D%83%E9%99%90%E8%AE%A4%E8%AF%81%E6%A1%86%E6%9E%B6%E6%80%8E%E4%B9%88%E9%80%89/</guid>
+      <description>目前常用的几种可选框架 sa-token https://mp.weixin.qq.com/s?__biz=MzU3MDc3OTI1NA==&amp;amp;mid=2247490668&amp;amp;idx=1&amp;amp;sn=cd9efecdf1ac34cc8cac04902a9f8319&amp;amp;chksm=fceb6f75cb9ce663f818cbaaa78e5d9eb9d8142f721e9385056ad9f68f7277acd03c509fe531&amp;amp;mpshare=1&amp;amp;scene=24&amp;amp;srcid=0321KOsiEPuUB5RpsMsy6y9g&amp;amp;sharer_sharetime=1616285588520&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd</description>
+    </item>
+    
+    <item>
+      <title>学会Innodb各种锁.md</title>
+      <link>/posts/notes/%E5%AD%A6%E4%BC%9Ainnodb%E5%90%84%E7%A7%8D%E9%94%81/</link>
+      <pubDate>Tue, 29 Jun 2021 17:17:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%AD%A6%E4%BC%9Ainnodb%E5%90%84%E7%A7%8D%E9%94%81/</guid>
+      <description>https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&amp;amp;mid=2651967369&amp;amp;idx=1&amp;amp;sn=d639abf6772a72c25cc2537749258163&amp;amp;chksm=bd2d7a558a5af3436e0a435a3e7cd9f72f67c1269370be936a82dc0af483f47aefa48bd58d69&amp;amp;mpshare=1&amp;amp;scene=24&amp;amp;srcid=0427iuPM9K3Qh3Ds8LvD8m2E&amp;amp;sharer_sharetime=1619533884103&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd</description>
+    </item>
+    
+    <item>
+      <title>参数校验怎么做更优雅.md</title>
+      <link>/posts/notes/%E5%8F%82%E6%95%B0%E6%A0%A1%E9%AA%8C%E6%80%8E%E4%B9%88%E5%81%9A%E6%9B%B4%E4%BC%98%E9%9B%85/</link>
+      <pubDate>Tue, 29 Jun 2021 17:16:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%8F%82%E6%95%B0%E6%A0%A1%E9%AA%8C%E6%80%8E%E4%B9%88%E5%81%9A%E6%9B%B4%E4%BC%98%E9%9B%85/</guid>
+      <description>https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&amp;amp;mid=2247503481&amp;amp;idx=1&amp;amp;sn=c85ae5d031b8b27b267a277484c05c87&amp;amp;chksm=e92af376de5d7a604d5f0c0078c5f3de4e5ac3540a018b1cc0ecf434ea90db1aac8f0150d1fe&amp;amp;mpshare=1&amp;amp;scene=24&amp;amp;srcid=0520kljGHoaZJv6QcY41Fh2d&amp;amp;sharer_sharetime=1621485378939&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd</description>
+    </item>
+    
+    <item>
+      <title>Jenkins类的工具能帮我们做什么.md</title>
+      <link>/posts/notes/jenkins%E7%B1%BB%E7%9A%84%E5%B7%A5%E5%85%B7%E8%83%BD%E5%B8%AE%E6%88%91%E4%BB%AC%E5%81%9A%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Tue, 29 Jun 2021 16:57:00 +0800</pubDate>
+      
+      <guid>/posts/notes/jenkins%E7%B1%BB%E7%9A%84%E5%B7%A5%E5%85%B7%E8%83%BD%E5%B8%AE%E6%88%91%E4%BB%AC%E5%81%9A%E4%BB%80%E4%B9%88/</guid>
+      <description>Jenkins的替代方案 https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;amp;mid=2651050229&amp;amp;idx=5&amp;amp;sn=af2d0f8fc317cb4d73b14fc0c10f442e&amp;amp;chksm=bdbe28a68ac9a1b0461e43ef836aa9bfa9f397c1738bc60dc8d34742fb0b0bedacd0c367915c&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=1112OHSz20a9MsKcNCtRODfZ&amp;amp;sharer_sharetime=1605160588581&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd
+ https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&amp;amp;mid=2247518077&amp;amp;idx=1&amp;amp;sn=69cf89c46b453520460c0e375bfb3472&amp;amp;chksm=fa4af8cccd3d71dacc33bb6cfc3496af2d32fc4a1b5da32927ad7702b5baea2b6c2a3b3ab460&amp;amp;mpshare=1&amp;amp;scene=24&amp;amp;srcid=0612nZqBnjk98Ioh7rV6IvE4&amp;amp;sharer_sharetime=1623497834187&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd</description>
+    </item>
+    
+    <item>
+      <title>响应式编程Vert.x入门.md</title>
+      <link>/posts/notes/%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8Bvert.x%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Tue, 29 Jun 2021 16:56:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8Bvert.x%E5%85%A5%E9%97%A8/</guid>
+      <description>Vert.x Core项目源码地址： https://github.com/eclipse-vertx/vert.x Zulu JDK下载地址：https://www.azul.com/downloads/zulu-community/?os=macos&amp;amp;package=jdk JDK 国内镜像站：https://www.injdk.cn 也可以找到适配M1 Mac的Zulu版本</description>
+    </item>
+    
+    <item>
+      <title>用好IDEA插件带来的好处.md</title>
+      <link>/posts/notes/%E7%94%A8%E5%A5%BDidea%E6%8F%92%E4%BB%B6%E5%B8%A6%E6%9D%A5%E7%9A%84%E5%A5%BD%E5%A4%84/</link>
+      <pubDate>Tue, 29 Jun 2021 16:54:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E7%94%A8%E5%A5%BDidea%E6%8F%92%E4%BB%B6%E5%B8%A6%E6%9D%A5%E7%9A%84%E5%A5%BD%E5%A4%84/</guid>
+      <description>HttpClient插件 https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&amp;amp;mid=2247505020&amp;amp;idx=1&amp;amp;sn=3075f2a466d1d2df949c63ae4393f81e&amp;amp;chksm=fa4aabcdcd3d22dbe79c200f0c087b9b404a5b01047ef4993b3512426209655493ecf9ad953b&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=12240mUmXWr6agTCvhkHbKkg&amp;amp;sharer_sharetime=1608818291964&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd
+文档生成插件 git提交插件 如何自己开发插件 https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&amp;amp;mid=2247500551&amp;amp;idx=1&amp;amp;sn=0feada3f16404a10c9632689a060082e&amp;amp;chksm=e92afe08de5d771e153f5f91d60a169df29f2bec1afc481df550f1022bd1e8eccd9d9228dc00&amp;amp;mpshare=1&amp;amp;scene=24&amp;amp;srcid=1106mOqUWRt3EUcQS6fX1wYu&amp;amp;sharer_sharetime=1604622305608&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd</description>
+    </item>
+    
+    <item>
+      <title>如何写好单元测试用例.md</title>
+      <link>/posts/notes/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BD%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/</link>
+      <pubDate>Tue, 29 Jun 2021 16:53:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BD%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/</guid>
+      <description>阿里的mock工具有什么魔法 https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&amp;amp;mid=2247501494&amp;amp;idx=1&amp;amp;sn=54d20391a4d0d3a8ddbbb2d4e777d771&amp;amp;chksm=e92afbb9de5d72af37fad640ba1401afb22fa1caf99eef58374c110abfcb0179cf1c8eaf39ce&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=1222b0NpB7mhljSLhpklzHbA&amp;amp;sharer_sharetime=1608595647786&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd</description>
+    </item>
+    
+    <item>
+      <title>如何做好一个API网关.md</title>
+      <link>/posts/notes/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E4%B8%80%E4%B8%AAapi%E7%BD%91%E5%85%B3/</link>
+      <pubDate>Tue, 29 Jun 2021 16:51:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E4%B8%80%E4%B8%AAapi%E7%BD%91%E5%85%B3/</guid>
+      <description>api网关设计的方方面面 https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&amp;amp;mid=2247507916&amp;amp;idx=4&amp;amp;sn=b55ef35bce39ae448ad472e20393fb11&amp;amp;chksm=fa4aa07dcd3d296b7bfcb786975f7271e4184596c87e4a6d5ce17643bbdde452d08026950d67&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0205Rd3F9PaDvFcm4BrgbPLp&amp;amp;sharer_sharetime=1612493454398&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd
+如何设计 https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&amp;amp;mid=2247507679&amp;amp;idx=3&amp;amp;sn=0e54bf6c578a85601e45a44bc8bfca0f&amp;amp;chksm=fa4aa16ecd3d2878ba5b7273b11b91302e31af04b75b3c0ac1f1408c8c4948f98fbc27e45356&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0201frLvZI3FLO5OoGr767hz&amp;amp;sharer_sharetime=1612155601583&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd
+开源API网关对比 https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&amp;amp;mid=2247518160&amp;amp;idx=1&amp;amp;sn=00d4d72312ac8960c5523908feacc50b&amp;amp;chksm=fa4af861cd3d717724ab3bd58f254c9499b40a5343fe8e1758c91ab0fb0f13fe0172d5ce2506&amp;amp;mpshare=1&amp;amp;scene=24&amp;amp;srcid=0614RrmDpr1WiO6KEt2yPaQZ&amp;amp;sharer_sharetime=1623626262648&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd</description>
+    </item>
+    
+    <item>
+      <title>如何使用日志框架.md</title>
+      <link>/posts/notes/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6/</link>
+      <pubDate>Tue, 29 Jun 2021 16:49:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6/</guid>
+      <description>如何选择日志框架并解决冲突 logback配置文件 https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&amp;amp;mid=2247507916&amp;amp;idx=3&amp;amp;sn=99226aa132805fcac3dec83f0d494acb&amp;amp;chksm=fa4aa07dcd3d296b70402e2dcc9ab5a6136df8eafdcc758b4223d9e4433d1bd022f228a2bcab&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0205CqK4JI2wmmpCogocXv4r&amp;amp;sharer_sharetime=1612493462792&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd
+配置日志链路 traceId MDC </description>
+    </item>
+    
+    <item>
+      <title>如何向HR提出合理的涨薪要求.md</title>
+      <link>/posts/notes/%E5%A6%82%E4%BD%95%E5%90%91hr%E6%8F%90%E5%87%BA%E5%90%88%E7%90%86%E7%9A%84%E6%B6%A8%E8%96%AA%E8%A6%81%E6%B1%82/</link>
+      <pubDate>Tue, 29 Jun 2021 16:43:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%A6%82%E4%BD%95%E5%90%91hr%E6%8F%90%E5%87%BA%E5%90%88%E7%90%86%E7%9A%84%E6%B6%A8%E8%96%AA%E8%A6%81%E6%B1%82/</guid>
+      <description>态度 在金科和惠金所合并前后都是骨干、核心开发，因为我负责的系统多，11个，也都是平台核心系统，比如支付、存管，这些当中大部分也都是我一个人在负责，最新研发的区块链存证系统也是我独立研发的。 加上最近架构调整，部门去年计划把我提成室经理，过去的这半年多已经让我带一个框架研发团队了，既负责团队管理，还要兼顾系统设计和开发和运维，我们团队是人最少的，负责系统最多的，而且未来负责的系统会更多，我觉得我为单位做的贡献是远大于上次调薪的比例的。 结合市场行情我相信目前同级别的同事里我的工资应该是算最低的，但是相比我做的事是最多的。这点我们整个部门都是认可的。
+因为目前的级别是高级后台开发和架构师。 来咱们公司差四个月满3年了，上个月调薪是来咱们公司之后第一次调，整体的薪资规划和我计划的是差很多的，我媳妇刚怀了宝宝，并且换了房子，压力比较大，目前的薪资水平会很大方面影响我的工作 我希望调薪的最终目标是总包最低43，这个目标不是随口说的，因为公司离职的前同事里边，内推我的特别多。 按照上一年的薪酬和年终奖，我拿到的总计时30。我觉得我的要求不算过分。
+我觉得无论是咱们公司还是其它公司，肯定是能者既多劳也多得！而且不论是什么情况，我都会站好我这一班岗，因为作为员工来说，做好了自然能证明自己。做不好也没资格提什么要求，我们也都理解。
+要放松、自信且尊重
+整体谈判态度：放松、自信且尊重
+姓名：胡丁武 入职时间：差四个月满3年 岗位和职责：在金科和惠金所合并前后都是骨干、核心开发 当前工作：负责的系统多，11个，都是平台核心系统，比如支付、存管，这些当中大部分也都是我一个人在负责，部门最新研发的区 块链存证系统也是我独立研发 后续工作重心：最近架构调整，部门去年计划把我提成室经理，让我带一个框架研发团队（核心团队，人少），这半年多既负责团队 管理，还要兼顾系统设计和开发和运维，目前直接负责系统最多，未来系统会更多 部门的定位：相比相同职位的同事，我做的事是最多的，我为单位做的贡献是受整个部门认可的。 级别：目前的级别是高级后台开发和架构师 薪资规划：上个月调薪是来咱们公司之后第一次调，整体的薪资规划和我计划的是差很多的 家庭：我媳妇刚怀了宝宝，并且换了房子，压力比较大，目前的薪资水平会很大方面影响我的工作 目标和期望：我希望调薪的最终目标是总包最低43 offer方面：这个目标不是随口说的，因为公司离职的前同事里边，内推我的特别多。 调薪合理性：按照上一年的薪酬和年终奖，我拿到的总计时30。我觉得我的要求不算过分。 工作态度：我觉得无论是咱们公司还是其它公司，肯定是能者既多劳也多得！而且不论是什么情况，我都会站好我这一班岗，因为作 为员工来说，做好了自然能证明自己。做不好也没资格提什么要求，我们也都理解。
+谈判主导方向 谈判要点 最后的筹码 最后的底线  </description>
+    </item>
+    
+    <item>
+      <title>如何全部搞懂设计模式.md</title>
+      <link>/posts/notes/%E5%A6%82%E4%BD%95%E5%85%A8%E9%83%A8%E6%90%9E%E6%87%82%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Tue, 29 Jun 2021 16:35:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%A6%82%E4%BD%95%E5%85%A8%E9%83%A8%E6%90%9E%E6%87%82%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
+      <description>https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&amp;amp;mid=2247516612&amp;amp;idx=1&amp;amp;sn=da8d528697a15722e3aa53986aa3aada&amp;amp;chksm=fa4afe75cd3d7763d367929411ff0affca05b71ab827148b2cb7d6dbbb88b33bc76fa3d5a4a4&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0525GBDcNZ5yv9lgXOrcNzj4&amp;amp;sharer_sharetime=1621911183717&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd
+廖雪峰的java教程中对java设计模式讲的特别好，通俗易懂 https://www.liaoxuefeng.com/wiki/1252599548343744/1264742167474528</description>
+    </item>
+    
+    <item>
+      <title>如何把分布式事务讲清楚.md</title>
+      <link>/posts/notes/%E5%A6%82%E4%BD%95%E6%8A%8A%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1%E8%AE%B2%E6%B8%85%E6%A5%9A/</link>
+      <pubDate>Tue, 29 Jun 2021 16:26:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%A6%82%E4%BD%95%E6%8A%8A%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1%E8%AE%B2%E6%B8%85%E6%A5%9A/</guid>
+      <description>https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&amp;amp;mid=2651968036&amp;amp;idx=2&amp;amp;sn=0e3b26a3fc7a46785433eed013e8907b&amp;amp;chksm=bd2d67f88a5aeeee6104fa43f8b78ac62aa7267633e3d14101733835189f44b42c8586bba204&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0617HHC4h4WvvkqalGv1uQcA&amp;amp;sharer_sharetime=1623935878168&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd</description>
+    </item>
+    
+    <item>
+      <title>程序员是否应该转变管理岗.md</title>
+      <link>/posts/notes/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%98%AF%E5%90%A6%E5%BA%94%E8%AF%A5%E8%BD%AC%E5%8F%98%E7%AE%A1%E7%90%86%E5%B2%97/</link>
+      <pubDate>Tue, 29 Jun 2021 16:23:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%98%AF%E5%90%A6%E5%BA%94%E8%AF%A5%E8%BD%AC%E5%8F%98%E7%AE%A1%E7%90%86%E5%B2%97/</guid>
+      <description>  技术性岗位可以向管理岗位转，反过来则不成立，老不碰代码，代码能力就下降了。 裁员浪潮中，首当其冲的就是纯管理，技术人员再找工作比纯管理好。管理的成果可能产生于大环境和所在公司，体现不了你自己本身的价值。 技术才是保命的本领。  </description>
+    </item>
+    
+    <item>
+      <title>剖析动态代理.md</title>
+      <link>/posts/notes/%E5%89%96%E6%9E%90%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Tue, 29 Jun 2021 16:18:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%89%96%E6%9E%90%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/</guid>
+      <description>https://blog.csdn.net/andy_67/article/details/84837804 https://blog.csdn.net/user2025/article/details/106039999?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-2.control&amp;amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-2.control https://blog.csdn.net/Dongguabai/article/details/80788585 https://mp.weixin.qq.com/s?__biz=MzU1OTgyMDc3Mg==&amp;amp;mid=2247483911&amp;amp;idx=1&amp;amp;sn=f6d3fbd8ca0f09bc0ee4cf346bc4e862&amp;amp;chksm=fc10388ccb67b19ac3042fbc8ea3f1cce035172fb46651a86f351eb915751547440eb8edee72&amp;amp;token=336585355&amp;amp;lang=zh_CN#rd%20https://mp.weixin.qq.com/s?__biz=MzU1OTgyMDc3Mg==&amp;amp;mid=2247483918&amp;amp;idx=1&amp;amp;sn=60b22f9555eefb2e5e0c4b88f5be3003&amp;amp;chksm=fc103885cb67b1930e2715f0cfd7fde3fc35732caa4d37fe0492da56876209a9ed45a61d0e4a&amp;amp;token=336585355&amp;amp;lang=zh_CN#rd</description>
+    </item>
+    
+    <item>
+      <title>对批量数据核验并更新的demo</title>
+      <link>/posts/notes/%E5%AF%B9%E6%89%B9%E9%87%8F%E6%95%B0%E6%8D%AE%E6%A0%B8%E9%AA%8C%E5%B9%B6%E6%9B%B4%E6%96%B0%E7%9A%84demo/</link>
+      <pubDate>Tue, 29 Jun 2021 16:14:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%AF%B9%E6%89%B9%E9%87%8F%E6%95%B0%E6%8D%AE%E6%A0%B8%E9%AA%8C%E5%B9%B6%E6%9B%B4%E6%96%B0%E7%9A%84demo/</guid>
+      <description>EasyExcel的使用 </description>
+    </item>
+    
     <item>
       <title>ios develop certificate understanding</title>
       <link>/posts/notes/2020-01-16-ios-develop-certificate-understanding/</link>

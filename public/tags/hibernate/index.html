@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hibernate - r2ys blog</title><link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/images/favicons/manifest.json">
+<link rel="icon" href="/images/favicons/favicon.ico">
+<meta name="description" content="" /><meta itemprop="name" content="Hibernate">
+<meta itemprop="description" content="An extreme fast, responsive and feature-rich blog theme for Hugo"><meta property="og:title" content="Hibernate" />
+<meta property="og:description" content="An extreme fast, responsive and feature-rich blog theme for Hugo" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/tags/hibernate/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hibernate"/>
+<meta name="twitter:description" content="An extreme fast, responsive and feature-rich blog theme for Hugo"/>
+<link rel="alternate" type="application/rss+xml" href="/tags/hibernate/index.xml" title="r2ys blog" /><meta data-name="palette" content="blue"><link rel=stylesheet href="/css/bundle.min.bdc006879cd20517e77688bae2fc55ea9d7e177932b39d1c3171a61568902591.css" integrity="sha256-vcAGh5zSBRfndoi64vxV6p1&#43;F3kys50cMXGmFWiQJZE=" crossorigin="anonymous"><script src="/js/bundle.min.9086c676f0fa41c310e43a66a8d4f808e5737f0d86298ae3892bfb2609456b21.js" integrity="sha256-kIbGdvD6QcMQ5DpmqNT4COVzfw2GKYrjiSv7JglFayE=" crossorigin="anonymous"></script>
+</head><body><header><nav class="navbar navbar-expand-xl fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img class="logo" alt="Logo" src="/images/logo.webp" loading="lazy">r2ysBlog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-1 mb-2 mb-lg-0"><form class="search-bar d-flex ms-1" action="/search">
+  <div class="input-group input-group-sm">
+    <button class="btn btn-search disabled position-absolute left-0" type="submit"><i class="fas fa-fw fa-search"></i></button>
+    <input class="form-control rounded-pill" id="searchQuery" name="q" type="search" aria-label="Search">
+  </div>
+</form></ul><ul class="navbar-nav me-1 mb-2 mb-lg-0 me-1 ms-auto"><li class="nav-item">
+          <a class="nav-link" href="/archives">
+            <i class="fas fa-fw fa-file-archive"></i>归档
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/booklist">
+            <i class="fas fa-fw fa-file-archive"></i>我的书单
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/categories">
+            <i class="fas fa-fw fa-folder"></i>分类
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/tags">
+            <i class="fas fa-fw fa-tags"></i>标签
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/series">
+            <i class="fas fa-fw fa-columns"></i>专栏
+          </a>
+        </li><li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            我的其它主页
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown-dropdown"><li>
+              <a class="dropdown-item"
+                href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank">
+                <i class="fab fa-fw fa-github"></i>Github
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="https://cube.r2ys.life" target="_blank">
+                <i class="fab fa-fw fa-github"></i>我的魔方页
+              </a>
+            </li></ul>
+        </li></ul>
+      <ul class="navbar-nav d-flex flex-row mb-2 mb-lg-0"><li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="paletteSwitcher" data-bs-toggle="popover" data-bs-placement="bottom" 
+    data-bs-target="#palettesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-palette" ></i>
+  </a>
+</li>
+<script type="text/html" id="palettesPopoverBody">
+  <ul class="palettes list-group"><li id="palette-blue" class="palette list-group-item bg-blue">
+      <a>Blue</a>
+    </li><li id="palette-blue-gray" class="palette list-group-item bg-blue-gray">
+      <a>Blue Gray</a>
+    </li><li id="palette-brown" class="palette list-group-item bg-brown">
+      <a>Brown</a>
+    </li><li id="palette-cyan" class="palette list-group-item bg-cyan">
+      <a>Cyan</a>
+    </li><li id="palette-green" class="palette list-group-item bg-green">
+      <a>Green</a>
+    </li><li id="palette-indigo" class="palette list-group-item bg-indigo">
+      <a>Indigo</a>
+    </li><li id="palette-orange" class="palette list-group-item bg-orange">
+      <a>Orange</a>
+    </li><li id="palette-pink" class="palette list-group-item bg-pink">
+      <a>Pink</a>
+    </li><li id="palette-purple" class="palette list-group-item bg-purple">
+      <a>Purple</a>
+    </li><li id="palette-red" class="palette list-group-item bg-red">
+      <a>Red</a>
+    </li><li id="palette-teal" class="palette list-group-item bg-teal">
+      <a>Teal</a>
+    </li><li id="palette-yellow" class="palette list-group-item bg-yellow">
+      <a>Yellow</a>
+    </li></ul>
+</script>
+<li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="fontSizeSwitcher" data-bs-toggle="popover" data-bs-placement="bottom" 
+    data-bs-target="#fontSizesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-font" ></i>
+  </a>
+</li>
+<script type="text/html" id="fontSizesPopoverBody">
+  <form class="font-size-switcher-form">
+    <label for="fontSize" class="form-label">Font Size</label>
+    <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+  </form>
+</script>
+
+<form class="mode-switcher-form d-flex align-items-center">
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="modeSwitcher">
+  </div>
+</form></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row" aria-label="breadcrumb">
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/tags/">标签</a></li><li class="breadcrumb-item active">Hibernate</li></ol>
+</nav><div class="posts mb-4"><article class="post row surface"><div class="post-body">
+        <h2 class="post-title mb-4"><a href="/posts/notes/%E5%8F%82%E6%95%B0%E6%A0%A1%E9%AA%8C%E6%80%8E%E4%B9%88%E5%81%9A%E6%9B%B4%E4%BC%98%E9%9B%85/">参数校验怎么做更优雅.md</a></h2><div class="post-meta mb-3">
+  <span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>2021-06-29
+  </span>
+  <span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>1 min read
+  </span>
+<a href="/categories/spring/" class="post-taxonomy">#Spring</a><a href="/tags/%E5%8F%82%E6%95%B0%E6%A0%A1%E9%AA%8C/" class="post-taxonomy">#参数校验</a><a href="/tags/hibernate/" class="post-taxonomy">#Hibernate</a><a href="/tags/validate/" class="post-taxonomy">#Validate</a></div>
+<div class="post-summary mb-3">https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&amp;mid=2247503481&amp;idx=1&amp;sn=c85ae5d031b8b27b267a277484c05c87&amp;chksm=e92af376de5d7a604d5f0c0078c5f3de4e5ac3540a018b1cc0ecf434ea90db1aac8f0150d1fe&amp;mpshare=1&amp;scene=24&amp;srcid=0520kljGHoaZJv6QcY41Fh2d&amp;sharer_sharetime=1621485378939&amp;sharer_sharei …</div>
+      </div>
+    </article></div><div class="row table-responsive mb-3">
+
+</div>
+</div>
+
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container"><section class="profile surface row">
+  <div class="col-xl-6 d-flex align-items-center justify-content-center">
+    <img class="profile-avatar img-fluid" src="/images/profile.webp" alt="r2ys" loading="lazy">
+  </div>
+  <div class="col-xl-6">
+    <h5 class="profile-name my-2">r2ys</h5><div class="profile-bio mb-2">好的应用开发者、应用架构师</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>sft</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>北京朝阳门</div></div>
+</section><section class="recent-posts row surface">
+  <h4>Recent Posts</h4>
+  <ul><li><a href="/posts/notes/%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4%E6%80%A7%E7%AE%97%E6%B3%95epaxos/">分布式一致性算法EPaxos.md</a></li><li><a href="/posts/notes/%E6%9D%83%E9%99%90%E8%AE%A4%E8%AF%81%E6%A1%86%E6%9E%B6%E6%80%8E%E4%B9%88%E9%80%89/">权限认证框架怎么选.md</a></li><li><a href="/posts/notes/%E5%AD%A6%E4%BC%9Ainnodb%E5%90%84%E7%A7%8D%E9%94%81/">学会Innodb各种锁.md</a></li><li><a href="/posts/notes/%E5%8F%82%E6%95%B0%E6%A0%A1%E9%AA%8C%E6%80%8E%E4%B9%88%E5%81%9A%E6%9B%B4%E4%BC%98%E9%9B%85/">参数校验怎么做更优雅.md</a></li><li><a href="/posts/notes/jenkins%E7%B1%BB%E7%9A%84%E5%B7%A5%E5%85%B7%E8%83%BD%E5%B8%AE%E6%88%91%E4%BB%AC%E5%81%9A%E4%BB%80%E4%B9%88/">Jenkins类的工具能帮我们做什么.md</a></li></ul>
+</section>
+<section class="taxonomy-categories row surface">
+  <h4>
+    <a href="/categories">Categories</a>
+  </h4>
+  <div><a href="/categories/mysql/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="mysql">
+      mysql <span class="badge rounded-pill">5</span>
+    </a><a href="/categories/linux/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="linux">
+      linux <span class="badge rounded-pill">4</span>
+    </a><a href="/categories/java/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Java">
+      Java <span class="badge rounded-pill">3</span>
+    </a><a href="/categories/jdk/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="jdk">
+      jdk <span class="badge rounded-pill">3</span>
+    </a><a href="/categories/shell/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="shell">
+      shell <span class="badge rounded-pill">3</span>
+    </a><a href="/categories/sh/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="sh">
+      sh <span class="badge rounded-pill">2</span>
+    </a><a href="/categories/%E5%88%86%E5%B8%83%E5%BC%8F/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="分布式">
+      分布式 <span class="badge rounded-pill">2</span>
+    </a><a href="/categories/%E6%8F%92%E4%BB%B6/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="插件">
+      插件 <span class="badge rounded-pill">2</span>
+    </a><a href="/categories/algorithms/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="algorithms">
+      algorithms <span class="badge rounded-pill">1</span>
+    </a><a href="/categories/ast/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="AST">
+      AST <span class="badge rounded-pill">1</span>
+    </a></div>
+</section><section class="taxonomy-series row surface">
+  <h4>
+    <a href="/series">Series</a>
+  </h4>
+  <div><a href="/series/mysql%E7%94%B1%E6%B5%85%E5%85%A5%E6%B7%B1/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="MySQL由浅入深">
+      MySQL由浅入深 <span class="badge rounded-pill">1</span>
+    </a></div>
+</section><section class="taxonomy-tags row surface">
+  <h4>
+    <a href="/tags">Tags</a>
+  </h4>
+  <div><a href="/tags/idea/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="IDEA">
+      IDEA <span class="badge rounded-pill">2</span>
+    </a><a href="/tags/cd/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="CD">
+      CD <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/cglib/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="CGLIB">
+      CGLIB <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/ci/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="CI">
+      CI <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/easyexcel/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="easyexcel">
+      easyexcel <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/excel/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="excel">
+      excel <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/hibernate/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Hibernate">
+      Hibernate <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/hr/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="HR">
+      HR <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/innodb/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Innodb">
+      Innodb <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/jenkins/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Jenkins">
+      Jenkins <span class="badge rounded-pill">1</span>
+    </a></div>
+</section></div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav my-2 justify-content-center"><li class="nav-item">
+    <a class="nav-link social-link" href="mailto:860150245@qq.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a>
+  </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://github.com/r2ysblog" title="GitHub">
+        <i class="fab fa-fw fa-2x fa-github"></i>
+      </a>
+    </li><li class="nav-item">
+    <a class="nav-link social-link" target="_blank" href="/tags/hibernate/index.xml" title="RSS">
+      <i class="fas fa-fw fa-2x fa-rss"></i>
+    </a>
+  </li></nav>
+<div class="copyright mb-2">
+  Copyright © 2021-2021 r2ys. All Rights Reserved.
+</div>
+<div class="powered-by mb-2">
+  Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank">Bootstrap</a> theme.
+</div></footer>
+<a id="btnScrollToTop" class="btn-scroll-to-top">
+  <i class="fas fa-fw fa-chevron-circle-up fa-2x"></i>
+</a>
+<script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60bcc43f59f2d04f"></script></body>
+</html>

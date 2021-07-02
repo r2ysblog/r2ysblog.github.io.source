@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sa-token on r2ys blog</title>
+    <link>/tags/sa-token/</link>
+    <description>Recent content in sa-token on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 29 Jun 2021 17:18:00 +0800</lastBuildDate><atom:link href="/tags/sa-token/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>权限认证框架怎么选.md</title>
+      <link>/posts/notes/%E6%9D%83%E9%99%90%E8%AE%A4%E8%AF%81%E6%A1%86%E6%9E%B6%E6%80%8E%E4%B9%88%E9%80%89/</link>
+      <pubDate>Tue, 29 Jun 2021 17:18:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E6%9D%83%E9%99%90%E8%AE%A4%E8%AF%81%E6%A1%86%E6%9E%B6%E6%80%8E%E4%B9%88%E9%80%89/</guid>
+      <description>目前常用的几种可选框架 sa-token https://mp.weixin.qq.com/s?__biz=MzU3MDc3OTI1NA==&amp;amp;mid=2247490668&amp;amp;idx=1&amp;amp;sn=cd9efecdf1ac34cc8cac04902a9f8319&amp;amp;chksm=fceb6f75cb9ce663f818cbaaa78e5d9eb9d8142f721e9385056ad9f68f7277acd03c509fe531&amp;amp;mpshare=1&amp;amp;scene=24&amp;amp;srcid=0321KOsiEPuUB5RpsMsy6y9g&amp;amp;sharer_sharetime=1616285588520&amp;amp;sharer_shareid=cbc82124cedc2b0864b983af90cce39a#rd</description>
+    </item>
+    
+  </channel>
+</rss>

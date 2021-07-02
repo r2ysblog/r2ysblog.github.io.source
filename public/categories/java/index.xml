@@ -6,7 +6,16 @@
     <description>Recent content in Java on r2ys blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
-    <lastBuildDate>Wed, 15 Jan 2020 10:53:49 +0800</lastBuildDate><atom:link href="/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Jun 2021 16:18:00 +0800</lastBuildDate><atom:link href="/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>剖析动态代理.md</title>
+      <link>/posts/notes/%E5%89%96%E6%9E%90%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Tue, 29 Jun 2021 16:18:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%89%96%E6%9E%90%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/</guid>
+      <description>https://blog.csdn.net/andy_67/article/details/84837804 https://blog.csdn.net/user2025/article/details/106039999?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-2.control&amp;amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-2.control https://blog.csdn.net/Dongguabai/article/details/80788585 https://mp.weixin.qq.com/s?__biz=MzU1OTgyMDc3Mg==&amp;amp;mid=2247483911&amp;amp;idx=1&amp;amp;sn=f6d3fbd8ca0f09bc0ee4cf346bc4e862&amp;amp;chksm=fc10388ccb67b19ac3042fbc8ea3f1cce035172fb46651a86f351eb915751547440eb8edee72&amp;amp;token=336585355&amp;amp;lang=zh_CN#rd%20https://mp.weixin.qq.com/s?__biz=MzU1OTgyMDc3Mg==&amp;amp;mid=2247483918&amp;amp;idx=1&amp;amp;sn=60b22f9555eefb2e5e0c4b88f5be3003&amp;amp;chksm=fc103885cb67b1930e2715f0cfd7fde3fc35732caa4d37fe0492da56876209a9ed45a61d0e4a&amp;amp;token=336585355&amp;amp;lang=zh_CN#rd</description>
+    </item>
+    
     <item>
       <title>parse request url</title>
       <link>/posts/notes/2020-01-15-parse-request-url/</link>
