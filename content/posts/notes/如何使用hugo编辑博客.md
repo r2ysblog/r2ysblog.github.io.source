@@ -26,7 +26,7 @@ git submodule add https://github.com/razonyang/hugo-theme-bootstrap themes/hugo-
 并拷贝到themes目录下
 cp -a themes/hugo-theme-bootstrap/exampleSite/* .
 ### 生成静态页面包括草稿
-hugo --theme=hugo-theme-bootstrap --buildDrafts -D
+hugo -D --theme=hugo-theme-bootstrap --buildDrafts
 ### 启用本地调试服务
 hugo server
 
@@ -40,11 +40,14 @@ hugo server
 ## 日常编辑笔记或博文
 hugo new content/posts/notes/如何使用hugo编辑博客.md
 vim content/posts/notes/如何使用hugo编辑博客.md
+```shell
+cd /Volumes/My\ Passport/course/life/r2ysblog/r2ysblog.github.io.source/
 git add .
 ls_date=`date +%Y%m%d%H%M`
 git commit -m $ls_date
 git push -u origin main
-open -a "/Applications/Safari.app" https://blog.r2ys.life 
+open -a "/Applications/Safari.app" https://blog.r2ys.life
+```
 
 
 
