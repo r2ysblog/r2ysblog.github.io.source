@@ -6,7 +6,16 @@
     <description>Recent content in 文章 on r2ys blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
-    <lastBuildDate>Tue, 29 Jun 2021 17:20:00 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Mar 2022 11:43:00 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>每日翻译例句</title>
+      <link>/posts/notes/%E6%AF%8F%E6%97%A5%E7%BF%BB%E8%AF%91%E4%BE%8B%E5%8F%A5/</link>
+      <pubDate>Thu, 10 Mar 2022 11:43:00 +0800</pubDate>
+      
+      <guid>/posts/notes/%E6%AF%8F%E6%97%A5%E7%BF%BB%E8%AF%91%E4%BE%8B%E5%8F%A5/</guid>
+      <description> 人各有志：Everyone has his own ambition/aspiration.  </description>
+    </item>
+    
     <item>
       <title>分布式一致性算法EPaxos.md</title>
       <link>/posts/notes/%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4%E6%80%A7%E7%AE%97%E6%B3%95epaxos/</link>
@@ -547,6 +556,149 @@ jekyll build  You’ll find this post in your _posts directory. Go ahead and edi
       
       <guid>/posts/notes/2020-01-14-%E5%A6%82%E4%BD%95-%E4%BD%BF%E7%94%A8-jekyll/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/posts/notes/fabric_%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/notes/fabric_%E9%97%AE%E9%A2%98/</guid>
+      <description> 拜占庭容错 崩溃容错   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/posts/notes/ioc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/notes/ioc/</guid>
+      <description>IoC </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/posts/notes/java%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/notes/java%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/</guid>
+      <description>Java动态代理 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/posts/notes/spring%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E5%BE%AA%E7%8E%AF%E4%BE%9D%E8%B5%96%E7%9A%84/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/notes/spring%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E5%BE%AA%E7%8E%AF%E4%BE%9D%E8%B5%96%E7%9A%84/</guid>
+      <description>Spring如何解决循环依赖的 三级缓存 @Lazy </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/posts/notes/%E4%B8%8D%E9%87%8D%E5%A4%8D%E5%BA%8F%E5%88%97%E5%8F%B7%E7%94%9F%E6%88%90%E9%80%BB%E8%BE%91/%E5%85%91%E6%8D%A2%E7%A0%81%E5%BA%8F%E5%88%97%E5%8F%B7%E7%94%9F%E6%88%90/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/notes/%E4%B8%8D%E9%87%8D%E5%A4%8D%E5%BA%8F%E5%88%97%E5%8F%B7%E7%94%9F%E6%88%90%E9%80%BB%E8%BE%91/%E5%85%91%E6%8D%A2%E7%A0%81%E5%BA%8F%E5%88%97%E5%8F%B7%E7%94%9F%E6%88%90/</guid>
+      <description>兑换码/序列号生成 需求  16位字符串，包含数字或字母 随机性，无法猜测和暴力碰撞 永不重复  分析  给定的要求是永不重复，但往往业务的体量不同，上限也不同；假定单个业务类型下可支持的总量为1亿，技术上能实现10亿是否就能满足需求？ 数字或字母，参考以往Base32编码表中字母为A-Z共26个，数字为234567，去掉了容易混淆的0、1、8、9；32个字符随机是否也能满足需求？  生成流程    生成原理 先逆向考虑
+32个字符的编码表最多表示多少个数？
+1个字符能表示32个数：0,1,2,&amp;hellip;,30,31对应A,B,C,&amp;hellip;,6,7
+2个字符能表示1024个数: 0,1,2,&amp;hellip;,30,31,32,33,34,&amp;hellip;,1022,1023对应A,B,C,&amp;hellip;,6,7,AB,AC,AD,&amp;hellip;,ZX,ZY
+结论：1个字符表示32^1个数；2个字符表示32^2个数
+那么32个字符表示32^32个数，约为1.4e48，支持10^40个亿。
+16位字符能表示的最多有32^16个数，约为1.2e24，10^16个亿，肯定能包含在32字符编码所支持的范围，也自然远超过需求的1亿个数，我们以技术能支持的上限10亿作为目标。
+接下来，怎么表示这10亿个数，用字符串、浮点、整型肯定是不理想的，我们选择用bit来表示，java中byte字节是8个bit：
+1bit能表示2^1个数，以int32位无符号整数举例，32bit能表示2^32个数，float64bit能表示2^64个数
+所以log2(10亿)能表示10亿个数，也就是29.897353bit能表示10亿个数，约为30bit。
+log2(32^16)能表示10^16亿个数，约为80bit。
+我们使用超过30bit的值来表示这10亿个数即可，那么如何确定bit使用多少位？用bit表示的值怎么转换成16位字符？
+我们计划使用Base32编码表中的编码来表示最终的16位字符，Base32的转换方式是这样的，每5bit作为一个小节，5bit有2^5也就是32种情况，每种情况对应一个0-31的数值，根据下标也就能对应一个编码。
+举例如下：
+// 字节数组byte[]中存放了2个byte字节也就是16bit的short类型的数据：127 127 // 对应二进制表示为：01111111 01111111 // 将二进制作5位一个小节的拆分：01111 11101 11111 1base32中的编码表是： // 末位不够5位的后边补0: 01111 11101 11111 10000 // 对应的数值就是：15 29 31 16 // base32中的编码表是：ABCDEFGHIJKLMNOPQRSTUVWXYZ234567 // 所以对应的下标：15:P 29:5 31:7 16:Q // 将byte[(byte)127,(byte)127]进行base32编码的结果是：P57Q 回到刚才的问题，如何确定bit使用多少位？用bit表示的值怎么转换成16位字符？
+用base32可以将76-80bit的数值转换成16位字符；根据最终序列号长度n的要求，使用(5(n-1),5n]来表示bit位数。
+java以uff-8编码的数据类型中，byte8bit、short16bit、int32bit、long64bit、英文数字字符char8bit、中文字符char24bit。
+为了实现16位序列号，bit总长度为80bit，数值长度需要&amp;gt;30bit，有两种选择，int32bit和long64bit，但因为我们考虑加一些payload、sign，选择int32bit即可，为其它位置预留空间。payload包含一些标记字段，如发行信息、序列号扩展信息、发行时间等。sign可以将payload和data合并之后的bit作哈希签名，方便客户端或者服务端的简单校验。
+在此基础上，假定规划如下：
+payload(32bit)+data(32bit)+sign(16bit)
+  payload：使用长度为4字节的int，这里将业务应用的模版编号在数据库中的自增主键拿过来用，通常自增主键是bigint(8字节，能存2^64个整数)或int(4字节，能存2^32个整数，约40亿)，在字符串长度可以增加的情况下我们可以选择bigint，这里我们采用int作为payload中的模版编号。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/posts/notes/%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%91%E5%8E%9F%E7%94%9F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/notes/%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%91%E5%8E%9F%E7%94%9F/</guid>
+      <description>什么是云原生 前言 要有明确的认识：云原生一直在发展变化。技术的变革，一定是思想先行，所以首先可以体会到，云原生是一种思想驱动的技术。
+软件设计有两个关键目标：高内聚、低耦合，围绕这2个核心目标，又提出了单一职责、开闭原则、里氏替换、依赖倒置、接口隔离、最少知识等设计原则。
+软件工程师一直都在为这两个目标而努力奋斗，以求把软件编写得更加清晰、更加健壮、更加易于扩展和维护。
+再后来，软件行业的诉求时希望开发软件变得更简单、更快捷，软件工程师更少编写代码，非专业人员也希望能开发程序，于是，更多的更傻瓜的编程语言被发明出来，更多的编程技术和编程思想被发明出来，比如库、组件、云基础设施。
+于是很多技术变成了屠龙之技，比如汇编，时代变了，建国后动物不能成精了，没有龙可以宰了，然后很多软件工程师摇身一变成了调参工程师、Call API砖家、用库包能手、拼组件达人，这是效率分工的结果，也是技术发展的使然。
+纵观近二十年的科技互联网发展历程，大的趋势是技术下沉，特别是近些年，随着云计算的发展和普及，基础设施越来越厚实，业务开发变得越来越容易，也越来越没有技术含量，而之前困扰小团队的性能、负载、安全性、扩展性问题都不复存在，这不禁让互联网行业的油腻大叔们噤若寒蝉，仿佛分分钟就要被卷入历史洪流而万劫不复。
+虽然不可否认技术的重要性在降低，但也还不至于那么悲观。遥想PC时代，当VB、Delphi、MFC出现的时候，也有类似论调，所见即所得，点点鼠标，就可以开发PC桌面程序，是不是很高端？那时候码农的担心相比现在恐怕是只多不少吧，但后来随着互联网兴起，出现了后端开发这个工种，码农很快找到了新的战场，网络、分布式、数据库、海量服务、容灾防错，于是又玩出一堆新花样。
+如果说PC时代的基础设施是控件库，互联网时代的基础实施是云，那AI时代基础设施是什么？又会有什么高端玩法？
+解释 准确来说，云原生是一套方法论，也是一套或多套技术体系。我们用它来构建和运行应用程序。
+ 云-Cloud：应用首先都部署和运行在云服务器上，而非传统主机上 原生-Native：应用天生就要支持部署和运行在云上，天生要为了云环境而设计；最终得以在云环境中平稳、淋漓精致的、以一种最佳的方式运行；完全利用了云环境的弹性的、分布式的能力，发挥出云环境的特色  以上是抽象的以表述形式来简单形容云原生的定义。而市场上对其定论都是主观性的，各有侧重点。以下为例：
+ Pivotal公司：DevOps、持续交付、微服务、容器 云原生计算基金会（CNCF）：容器化封装、自动化管理、面向微服务、服务网格(Service Mesh)、声明式API  特点 看吧，关注的点不一样，意味着定义的方向也不一样。
+至少在我们的理解来看，云原生应该是有以下特点的，或者说符合云原生的应用程序应当具有以下特点：
+ 采用开源堆栈（K8S+Docker）进行容器化 基于微服务架构提高灵活性和可维护性 构建应用简便快捷，部署应用轻松自如；借助敏捷方法、DevOps支持持续迭代和运维自动化 运行应用按需伸缩：利用云平台设施实现弹性伸缩、动态调度、优化资源利用率  要素 微服务 组织架构决定产品形态，云原生下的应用使用微服务，能将服务通过func解耦，高内聚
+容器化 把应用部署在隔离的docker中，通过K8S做容器编排、管理、负载均衡，谷歌搞的，Docker和K8S都采用Go编写，都是好东西。
+DevOps 开发、运维合体，捎带上测试，一起为云原生提供持续交付能力。
+所以从理解上来看，DevOps是一个敏捷思维，是一个沟通文化，也是组织形式和流程，也需要很多工具来支撑。
+持续交付 有别于传统瀑布式开发模型，持续交付是不误时开发，不停机更新，不间断小步快跑。
+如何去应用 首先，云原生借了云计算的东风，没有云计算，自然没有云原生，云计算是云原生的基础。
+随着虚拟化技术的成熟和分布式框架的普及，在容器技术、可持续交付、编排系统等开源社区的推动下，以及微服务等开发理念的带动下，应用上云已经是不可逆转的趋势。
+云计算的3层划分，即基础设施即服务(IaaS)、平台即服务(PaaS)、软件即服务(SaaS)为云原生提供了技术基础和方向指引，真正的云化不仅仅是基础设施和平台的变化，应用也需要做出改变，摈弃传统的土方法，在架构设计、开发方式、部署维护等各个阶段和方面都基于云的特点，重新设计，从而建设全新的云化的应用，即云原生应用。
+1.本地部署的传统应用往往采用c/c++、企业级java编写，而云原生应用则需要用以网络为中心的go、node.js等新兴语言编写。
+2.本地部署的传统应用可能需要停机更新，而云原生应用应该始终是最新的，需要支持频繁变更，持续交付，蓝绿部署。
+3.本地部署的传统应用无法动态扩展，往往需要冗余资源以抵抗流量高峰，而云原生应用利用云的弹性自动伸缩，通过共享降本增效。
+4.本地部署的传统应用对网络资源，比如ip、端口等有依赖，甚至是硬编码，而云原生应用对网络和存储都没有这种限制。
+5.本地部署的传统应用通常人肉部署手工运维，而云原生应用这一切都是自动化的。
+6.本地部署的传统应用通常依赖系统环境，而云原生应用不会硬连接到任何系统环境，而是依赖抽象的基础架构，从而获得良好移植性。
+7.本地部署的传统应用有些是单体(巨石)应用，或者强依赖，而基于微服务架构的云原生应用，纵向划分服务，模块化更合理。
+可见，要转向云原生应用需要以新的云原生方法开展工作，云原生包括很多方面：基础架构服务、虚拟化、容器化、容器编排、微服务。幸运的是，开源社区在云原生应用方面做出了大量卓有成效的工作，很多开源的框架和设施可以通过拿来主义直接用，2013年Docker推出并很快成为容器事实标准，随后围绕容器编排的混战中，2017年诞生的k8s很快脱颖而出，而这些技术极大的降低了开发云原生应用的技术门槛。
+虽说云原生的推介文档有引导之嫌，但面对它列举的优点，作为杠精的我亦是无可辩驳。这么说的话，云原生也忒好了吧，应用是不是要立刻马上切换到云原生架构？我的观点是：理想很丰满，现实经常很骨感，需从应用的实际需要出发，目前的问题是否真的影响到业务发展，而推倒重来的代价能否承受得来。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/posts/notes/%E5%8D%95%E4%BE%8B%E5%92%8C%E5%8E%9F%E5%9E%8B%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/notes/%E5%8D%95%E4%BE%8B%E5%92%8C%E5%8E%9F%E5%9E%8B%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>单例和原型的区别 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/posts/notes/%E6%8E%92%E6%9F%A5linux%E7%9A%84%E5%86%85%E5%AD%98%E5%8D%A0%E7%94%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/notes/%E6%8E%92%E6%9F%A5linux%E7%9A%84%E5%86%85%E5%AD%98%E5%8D%A0%E7%94%A8/</guid>
+      <description>// 基本状况
+free -h // 应用程序物理内存消耗
+ps -eo rss | awk &amp;lsquo;BEGIN{sum=0}{sum=sum+$1}END{print sum}&amp;rsquo; // 应用程序状况
+top -b -n 1 cat /proc/meminfo 清理buffer cache $ sync
+将内存中数据强制先刷新到磁盘中 清理Buffer缓存区域 $ echo 1 &amp;gt; /proc/sys/vm/drop_caches # 表示清除pagecache。 $ echo 2 &amp;gt; /proc/sys/vm/drop_caches # 表示清除回收slab分配器中的对象（包括目录项缓存和inode缓存）。slab分配器是内核中管理内存的一种机制，其中很多缓存数据实现都是用的pagecache。 $ echo 3 &amp;gt; /proc/sys/vm/drop_caches # 表示清除pagecache和slab分配器中的缓存对象</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/posts/notes/%E6%90%9E%E6%87%82juc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/notes/%E6%90%9E%E6%87%82juc/</guid>
+      <description>搞懂JUC https://mp.weixin.qq.com/s/mmaTmHzWxIVDe_bvy5nz_w</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/posts/notes/%E8%AF%81%E4%B9%A6%E7%9B%B8%E5%85%B3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/notes/%E8%AF%81%E4%B9%A6%E7%9B%B8%E5%85%B3/</guid>
+      <description>证书相关 什么是私钥？什么是证书？ 数字签名通常定义了两种运算： 签名和验签。发送者用自己的私钥对消息的哈希值进行签名，接收者用对方的公钥进行验签。因此，在使用数字签名时，需要通信的双方都要事先生成公钥、私钥，并且完成双方的公钥交换。其中，私钥是只能由拥有者使用的不公开密钥，公钥是可以公开的密钥。
+由于公钥本身并不含有拥有者的身份信息，使用时无法确认它是真实有效的。所以需要证书认证机构（简称 CA）在核实公钥拥有者的信息后，将公钥拥有者的身份信息（如商户号、公司名称等），公钥、签发者信息、有效期以及扩展信息等进行签名，制作成“证书”。</description>
     </item>
     
     <item>

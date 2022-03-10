@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> - r2ys blog</title><link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/images/favicons/manifest.json">
+<link rel="icon" href="/images/favicons/favicon.ico">
+<meta name="description" content="" /><meta itemprop="name" content="">
+<meta itemprop="description" content="什么是云原生 前言 要有明确的认识：云原生一直在发展变化。技术的变革，一定是思想先行，所以首先可以体会到，云原生是一种思想驱动的技术。
+软件设计有两个关键目标：高内聚、低耦合，围绕这2个核心目标，又提出了单一职责、开闭原则、里氏替换、依赖倒置、接口隔离、最少知识等设计原则。
+软件工程师一直都在为这两个目标而努力奋斗，以求把软件编写得更加清晰、更加健壮、更加易于扩展和维护。
+再后来，软件行业的诉求时希望开发软件变得更简单、更快捷，软件工程师更少编写代码，非专业人员也希望能开发程序，于是，更多的更傻瓜的编程语言被发明出来，更多的编程技术和编程思想被发明出来，比如库、组件、云基础设施。
+于是很多技术变成了屠龙之技，比如汇编，时代变了，建国后动物不能成精了，没有龙可以宰了，然后很多软件工程师摇身一变成了调参工程师、Call API砖家、用库包能手、拼组件达人，这是效率分工的结果，也是技术发展的使然。
+纵观近二十年的科技互联网发展历程，大的趋势是技术下沉，特别是近些年，随着云计算的发展和普及，基础设施越来越厚实，业务开发变得越来越容易，也越来越没有技术含量，而之前困扰小团队的性能、负载、安全性、扩展性问题都不复存在，这不禁让互联网行业的油腻大叔们噤若寒蝉，仿佛分分钟就要被卷入历史洪流而万劫不复。
+虽然不可否认技术的重要性在降低，但也还不至于那么悲观。遥想PC时代，当VB、Delphi、MFC出现的时候，也有类似论调，所见即所得，点点鼠标，就可以开发PC桌面程序，是不是很高端？那时候码农的担心相比现在恐怕是只多不少吧，但后来随着互联网兴起，出现了后端开发这个工种，码农很快找到了新的战场，网络、分布式、数据库、海量服务、容灾防错，于是又玩出一堆新花样。
+如果说PC时代的基础设施是控件库，互联网时代的基础实施是云，那AI时代基础设施是什么？又会有什么高端玩法？
+解释 准确来说，云原生是一套方法论，也是一套或多套技术体系。我们用它来构建和运行应用程序。
+ 云-Cloud：应用首先都部署和运行在云服务器上，而非传统主机上 原生-Native：应用天生就要支持部署和运行在云上，天生要为了云环境而设计；最终得以在云环境中平稳、淋漓精致的、以一种最佳的方式运行；完全利用了云环境的弹性的、分布式的能力，发挥出云环境的特色  以上是抽象的以表述形式来简单形容云原生的定义。而市场上对其定论都是主观性的，各有侧重点。以下为例：
+ Pivotal公司：DevOps、持续交付、微服务、容器 云原生计算基金会（CNCF）：容器化封装、自动化管理、面向微服务、服务网格(Service Mesh)、声明式API  特点 看吧，关注的点不一样，意味着定义的方向也不一样。
+至少在我们的理解来看，云原生应该是有以下特点的，或者说符合云原生的应用程序应当具有以下特点：
+ 采用开源堆栈（K8S&#43;Docker）进行容器化 基于微服务架构提高灵活性和可维护性 构建应用简便快捷，部署应用轻松自如；借助敏捷方法、DevOps支持持续迭代和运维自动化 运行应用按需伸缩：利用云平台设施实现弹性伸缩、动态调度、优化资源利用率  要素 微服务 组织架构决定产品形态，云原生下的应用使用微服务，能将服务通过func解耦，高内聚
+容器化 把应用部署在隔离的docker中，通过K8S做容器编排、管理、负载均衡，谷歌搞的，Docker和K8S都采用Go编写，都是好东西。
+DevOps 开发、运维合体，捎带上测试，一起为云原生提供持续交付能力。
+所以从理解上来看，DevOps是一个敏捷思维，是一个沟通文化，也是组织形式和流程，也需要很多工具来支撑。
+持续交付 有别于传统瀑布式开发模型，持续交付是不误时开发，不停机更新，不间断小步快跑。
+如何去应用 首先，云原生借了云计算的东风，没有云计算，自然没有云原生，云计算是云原生的基础。
+随着虚拟化技术的成熟和分布式框架的普及，在容器技术、可持续交付、编排系统等开源社区的推动下，以及微服务等开发理念的带动下，应用上云已经是不可逆转的趋势。
+云计算的3层划分，即基础设施即服务(IaaS)、平台即服务(PaaS)、软件即服务(SaaS)为云原生提供了技术基础和方向指引，真正的云化不仅仅是基础设施和平台的变化，应用也需要做出改变，摈弃传统的土方法，在架构设计、开发方式、部署维护等各个阶段和方面都基于云的特点，重新设计，从而建设全新的云化的应用，即云原生应用。
+1.本地部署的传统应用往往采用c/c&#43;&#43;、企业级java编写，而云原生应用则需要用以网络为中心的go、node.js等新兴语言编写。
+2.本地部署的传统应用可能需要停机更新，而云原生应用应该始终是最新的，需要支持频繁变更，持续交付，蓝绿部署。
+3.本地部署的传统应用无法动态扩展，往往需要冗余资源以抵抗流量高峰，而云原生应用利用云的弹性自动伸缩，通过共享降本增效。
+4.本地部署的传统应用对网络资源，比如ip、端口等有依赖，甚至是硬编码，而云原生应用对网络和存储都没有这种限制。
+5.本地部署的传统应用通常人肉部署手工运维，而云原生应用这一切都是自动化的。
+6.本地部署的传统应用通常依赖系统环境，而云原生应用不会硬连接到任何系统环境，而是依赖抽象的基础架构，从而获得良好移植性。
+7.本地部署的传统应用有些是单体(巨石)应用，或者强依赖，而基于微服务架构的云原生应用，纵向划分服务，模块化更合理。
+可见，要转向云原生应用需要以新的云原生方法开展工作，云原生包括很多方面：基础架构服务、虚拟化、容器化、容器编排、微服务。幸运的是，开源社区在云原生应用方面做出了大量卓有成效的工作，很多开源的框架和设施可以通过拿来主义直接用，2013年Docker推出并很快成为容器事实标准，随后围绕容器编排的混战中，2017年诞生的k8s很快脱颖而出，而这些技术极大的降低了开发云原生应用的技术门槛。
+虽说云原生的推介文档有引导之嫌，但面对它列举的优点，作为杠精的我亦是无可辩驳。这么说的话，云原生也忒好了吧，应用是不是要立刻马上切换到云原生架构？我的观点是：理想很丰满，现实经常很骨感，需从应用的实际需要出发，目前的问题是否真的影响到业务发展，而推倒重来的代价能否承受得来。">
+
+<meta itemprop="wordCount" content="49">
+<meta itemprop="keywords" content="" /><meta property="og:title" content="" />
+<meta property="og:description" content="什么是云原生 前言 要有明确的认识：云原生一直在发展变化。技术的变革，一定是思想先行，所以首先可以体会到，云原生是一种思想驱动的技术。
+软件设计有两个关键目标：高内聚、低耦合，围绕这2个核心目标，又提出了单一职责、开闭原则、里氏替换、依赖倒置、接口隔离、最少知识等设计原则。
+软件工程师一直都在为这两个目标而努力奋斗，以求把软件编写得更加清晰、更加健壮、更加易于扩展和维护。
+再后来，软件行业的诉求时希望开发软件变得更简单、更快捷，软件工程师更少编写代码，非专业人员也希望能开发程序，于是，更多的更傻瓜的编程语言被发明出来，更多的编程技术和编程思想被发明出来，比如库、组件、云基础设施。
+于是很多技术变成了屠龙之技，比如汇编，时代变了，建国后动物不能成精了，没有龙可以宰了，然后很多软件工程师摇身一变成了调参工程师、Call API砖家、用库包能手、拼组件达人，这是效率分工的结果，也是技术发展的使然。
+纵观近二十年的科技互联网发展历程，大的趋势是技术下沉，特别是近些年，随着云计算的发展和普及，基础设施越来越厚实，业务开发变得越来越容易，也越来越没有技术含量，而之前困扰小团队的性能、负载、安全性、扩展性问题都不复存在，这不禁让互联网行业的油腻大叔们噤若寒蝉，仿佛分分钟就要被卷入历史洪流而万劫不复。
+虽然不可否认技术的重要性在降低，但也还不至于那么悲观。遥想PC时代，当VB、Delphi、MFC出现的时候，也有类似论调，所见即所得，点点鼠标，就可以开发PC桌面程序，是不是很高端？那时候码农的担心相比现在恐怕是只多不少吧，但后来随着互联网兴起，出现了后端开发这个工种，码农很快找到了新的战场，网络、分布式、数据库、海量服务、容灾防错，于是又玩出一堆新花样。
+如果说PC时代的基础设施是控件库，互联网时代的基础实施是云，那AI时代基础设施是什么？又会有什么高端玩法？
+解释 准确来说，云原生是一套方法论，也是一套或多套技术体系。我们用它来构建和运行应用程序。
+ 云-Cloud：应用首先都部署和运行在云服务器上，而非传统主机上 原生-Native：应用天生就要支持部署和运行在云上，天生要为了云环境而设计；最终得以在云环境中平稳、淋漓精致的、以一种最佳的方式运行；完全利用了云环境的弹性的、分布式的能力，发挥出云环境的特色  以上是抽象的以表述形式来简单形容云原生的定义。而市场上对其定论都是主观性的，各有侧重点。以下为例：
+ Pivotal公司：DevOps、持续交付、微服务、容器 云原生计算基金会（CNCF）：容器化封装、自动化管理、面向微服务、服务网格(Service Mesh)、声明式API  特点 看吧，关注的点不一样，意味着定义的方向也不一样。
+至少在我们的理解来看，云原生应该是有以下特点的，或者说符合云原生的应用程序应当具有以下特点：
+ 采用开源堆栈（K8S&#43;Docker）进行容器化 基于微服务架构提高灵活性和可维护性 构建应用简便快捷，部署应用轻松自如；借助敏捷方法、DevOps支持持续迭代和运维自动化 运行应用按需伸缩：利用云平台设施实现弹性伸缩、动态调度、优化资源利用率  要素 微服务 组织架构决定产品形态，云原生下的应用使用微服务，能将服务通过func解耦，高内聚
+容器化 把应用部署在隔离的docker中，通过K8S做容器编排、管理、负载均衡，谷歌搞的，Docker和K8S都采用Go编写，都是好东西。
+DevOps 开发、运维合体，捎带上测试，一起为云原生提供持续交付能力。
+所以从理解上来看，DevOps是一个敏捷思维，是一个沟通文化，也是组织形式和流程，也需要很多工具来支撑。
+持续交付 有别于传统瀑布式开发模型，持续交付是不误时开发，不停机更新，不间断小步快跑。
+如何去应用 首先，云原生借了云计算的东风，没有云计算，自然没有云原生，云计算是云原生的基础。
+随着虚拟化技术的成熟和分布式框架的普及，在容器技术、可持续交付、编排系统等开源社区的推动下，以及微服务等开发理念的带动下，应用上云已经是不可逆转的趋势。
+云计算的3层划分，即基础设施即服务(IaaS)、平台即服务(PaaS)、软件即服务(SaaS)为云原生提供了技术基础和方向指引，真正的云化不仅仅是基础设施和平台的变化，应用也需要做出改变，摈弃传统的土方法，在架构设计、开发方式、部署维护等各个阶段和方面都基于云的特点，重新设计，从而建设全新的云化的应用，即云原生应用。
+1.本地部署的传统应用往往采用c/c&#43;&#43;、企业级java编写，而云原生应用则需要用以网络为中心的go、node.js等新兴语言编写。
+2.本地部署的传统应用可能需要停机更新，而云原生应用应该始终是最新的，需要支持频繁变更，持续交付，蓝绿部署。
+3.本地部署的传统应用无法动态扩展，往往需要冗余资源以抵抗流量高峰，而云原生应用利用云的弹性自动伸缩，通过共享降本增效。
+4.本地部署的传统应用对网络资源，比如ip、端口等有依赖，甚至是硬编码，而云原生应用对网络和存储都没有这种限制。
+5.本地部署的传统应用通常人肉部署手工运维，而云原生应用这一切都是自动化的。
+6.本地部署的传统应用通常依赖系统环境，而云原生应用不会硬连接到任何系统环境，而是依赖抽象的基础架构，从而获得良好移植性。
+7.本地部署的传统应用有些是单体(巨石)应用，或者强依赖，而基于微服务架构的云原生应用，纵向划分服务，模块化更合理。
+可见，要转向云原生应用需要以新的云原生方法开展工作，云原生包括很多方面：基础架构服务、虚拟化、容器化、容器编排、微服务。幸运的是，开源社区在云原生应用方面做出了大量卓有成效的工作，很多开源的框架和设施可以通过拿来主义直接用，2013年Docker推出并很快成为容器事实标准，随后围绕容器编排的混战中，2017年诞生的k8s很快脱颖而出，而这些技术极大的降低了开发云原生应用的技术门槛。
+虽说云原生的推介文档有引导之嫌，但面对它列举的优点，作为杠精的我亦是无可辩驳。这么说的话，云原生也忒好了吧，应用是不是要立刻马上切换到云原生架构？我的观点是：理想很丰满，现实经常很骨感，需从应用的实际需要出发，目前的问题是否真的影响到业务发展，而推倒重来的代价能否承受得来。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/notes/%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%91%E5%8E%9F%E7%94%9F/" /><meta property="article:section" content="posts" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="什么是云原生 前言 要有明确的认识：云原生一直在发展变化。技术的变革，一定是思想先行，所以首先可以体会到，云原生是一种思想驱动的技术。
+软件设计有两个关键目标：高内聚、低耦合，围绕这2个核心目标，又提出了单一职责、开闭原则、里氏替换、依赖倒置、接口隔离、最少知识等设计原则。
+软件工程师一直都在为这两个目标而努力奋斗，以求把软件编写得更加清晰、更加健壮、更加易于扩展和维护。
+再后来，软件行业的诉求时希望开发软件变得更简单、更快捷，软件工程师更少编写代码，非专业人员也希望能开发程序，于是，更多的更傻瓜的编程语言被发明出来，更多的编程技术和编程思想被发明出来，比如库、组件、云基础设施。
+于是很多技术变成了屠龙之技，比如汇编，时代变了，建国后动物不能成精了，没有龙可以宰了，然后很多软件工程师摇身一变成了调参工程师、Call API砖家、用库包能手、拼组件达人，这是效率分工的结果，也是技术发展的使然。
+纵观近二十年的科技互联网发展历程，大的趋势是技术下沉，特别是近些年，随着云计算的发展和普及，基础设施越来越厚实，业务开发变得越来越容易，也越来越没有技术含量，而之前困扰小团队的性能、负载、安全性、扩展性问题都不复存在，这不禁让互联网行业的油腻大叔们噤若寒蝉，仿佛分分钟就要被卷入历史洪流而万劫不复。
+虽然不可否认技术的重要性在降低，但也还不至于那么悲观。遥想PC时代，当VB、Delphi、MFC出现的时候，也有类似论调，所见即所得，点点鼠标，就可以开发PC桌面程序，是不是很高端？那时候码农的担心相比现在恐怕是只多不少吧，但后来随着互联网兴起，出现了后端开发这个工种，码农很快找到了新的战场，网络、分布式、数据库、海量服务、容灾防错，于是又玩出一堆新花样。
+如果说PC时代的基础设施是控件库，互联网时代的基础实施是云，那AI时代基础设施是什么？又会有什么高端玩法？
+解释 准确来说，云原生是一套方法论，也是一套或多套技术体系。我们用它来构建和运行应用程序。
+ 云-Cloud：应用首先都部署和运行在云服务器上，而非传统主机上 原生-Native：应用天生就要支持部署和运行在云上，天生要为了云环境而设计；最终得以在云环境中平稳、淋漓精致的、以一种最佳的方式运行；完全利用了云环境的弹性的、分布式的能力，发挥出云环境的特色  以上是抽象的以表述形式来简单形容云原生的定义。而市场上对其定论都是主观性的，各有侧重点。以下为例：
+ Pivotal公司：DevOps、持续交付、微服务、容器 云原生计算基金会（CNCF）：容器化封装、自动化管理、面向微服务、服务网格(Service Mesh)、声明式API  特点 看吧，关注的点不一样，意味着定义的方向也不一样。
+至少在我们的理解来看，云原生应该是有以下特点的，或者说符合云原生的应用程序应当具有以下特点：
+ 采用开源堆栈（K8S&#43;Docker）进行容器化 基于微服务架构提高灵活性和可维护性 构建应用简便快捷，部署应用轻松自如；借助敏捷方法、DevOps支持持续迭代和运维自动化 运行应用按需伸缩：利用云平台设施实现弹性伸缩、动态调度、优化资源利用率  要素 微服务 组织架构决定产品形态，云原生下的应用使用微服务，能将服务通过func解耦，高内聚
+容器化 把应用部署在隔离的docker中，通过K8S做容器编排、管理、负载均衡，谷歌搞的，Docker和K8S都采用Go编写，都是好东西。
+DevOps 开发、运维合体，捎带上测试，一起为云原生提供持续交付能力。
+所以从理解上来看，DevOps是一个敏捷思维，是一个沟通文化，也是组织形式和流程，也需要很多工具来支撑。
+持续交付 有别于传统瀑布式开发模型，持续交付是不误时开发，不停机更新，不间断小步快跑。
+如何去应用 首先，云原生借了云计算的东风，没有云计算，自然没有云原生，云计算是云原生的基础。
+随着虚拟化技术的成熟和分布式框架的普及，在容器技术、可持续交付、编排系统等开源社区的推动下，以及微服务等开发理念的带动下，应用上云已经是不可逆转的趋势。
+云计算的3层划分，即基础设施即服务(IaaS)、平台即服务(PaaS)、软件即服务(SaaS)为云原生提供了技术基础和方向指引，真正的云化不仅仅是基础设施和平台的变化，应用也需要做出改变，摈弃传统的土方法，在架构设计、开发方式、部署维护等各个阶段和方面都基于云的特点，重新设计，从而建设全新的云化的应用，即云原生应用。
+1.本地部署的传统应用往往采用c/c&#43;&#43;、企业级java编写，而云原生应用则需要用以网络为中心的go、node.js等新兴语言编写。
+2.本地部署的传统应用可能需要停机更新，而云原生应用应该始终是最新的，需要支持频繁变更，持续交付，蓝绿部署。
+3.本地部署的传统应用无法动态扩展，往往需要冗余资源以抵抗流量高峰，而云原生应用利用云的弹性自动伸缩，通过共享降本增效。
+4.本地部署的传统应用对网络资源，比如ip、端口等有依赖，甚至是硬编码，而云原生应用对网络和存储都没有这种限制。
+5.本地部署的传统应用通常人肉部署手工运维，而云原生应用这一切都是自动化的。
+6.本地部署的传统应用通常依赖系统环境，而云原生应用不会硬连接到任何系统环境，而是依赖抽象的基础架构，从而获得良好移植性。
+7.本地部署的传统应用有些是单体(巨石)应用，或者强依赖，而基于微服务架构的云原生应用，纵向划分服务，模块化更合理。
+可见，要转向云原生应用需要以新的云原生方法开展工作，云原生包括很多方面：基础架构服务、虚拟化、容器化、容器编排、微服务。幸运的是，开源社区在云原生应用方面做出了大量卓有成效的工作，很多开源的框架和设施可以通过拿来主义直接用，2013年Docker推出并很快成为容器事实标准，随后围绕容器编排的混战中，2017年诞生的k8s很快脱颖而出，而这些技术极大的降低了开发云原生应用的技术门槛。
+虽说云原生的推介文档有引导之嫌，但面对它列举的优点，作为杠精的我亦是无可辩驳。这么说的话，云原生也忒好了吧，应用是不是要立刻马上切换到云原生架构？我的观点是：理想很丰满，现实经常很骨感，需从应用的实际需要出发，目前的问题是否真的影响到业务发展，而推倒重来的代价能否承受得来。"/>
+<meta data-name="palette" content="blue"><link rel=stylesheet href="/css/bundle.min.bdc006879cd20517e77688bae2fc55ea9d7e177932b39d1c3171a61568902591.css" integrity="sha256-vcAGh5zSBRfndoi64vxV6p1&#43;F3kys50cMXGmFWiQJZE=" crossorigin="anonymous"><script src="/js/bundle.min.9086c676f0fa41c310e43a66a8d4f808e5737f0d86298ae3892bfb2609456b21.js" integrity="sha256-kIbGdvD6QcMQ5DpmqNT4COVzfw2GKYrjiSv7JglFayE=" crossorigin="anonymous"></script>
+</head><body><header><nav class="navbar navbar-expand-xl fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img class="logo" alt="Logo" src="/images/logo.webp" loading="lazy">r2ysBlog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-1 mb-2 mb-lg-0"><form class="search-bar d-flex ms-1" action="/search">
+  <div class="input-group input-group-sm">
+    <button class="btn btn-search disabled position-absolute left-0" type="submit"><i class="fas fa-fw fa-search"></i></button>
+    <input class="form-control rounded-pill" id="searchQuery" name="q" type="search" aria-label="Search">
+  </div>
+</form></ul><ul class="navbar-nav me-1 mb-2 mb-lg-0 me-1 ms-auto"><li class="nav-item">
+          <a class="nav-link" href="/archives">
+            <i class="fas fa-fw fa-file-archive"></i>归档
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/booklist">
+            <i class="fas fa-fw fa-file-archive"></i>我的书单
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/categories">
+            <i class="fas fa-fw fa-folder"></i>分类
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/tags">
+            <i class="fas fa-fw fa-tags"></i>标签
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/series">
+            <i class="fas fa-fw fa-columns"></i>专栏
+          </a>
+        </li><li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            我的其它主页
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown-dropdown"><li>
+              <a class="dropdown-item"
+                href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank">
+                <i class="fab fa-fw fa-github"></i>Github
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="https://cube.r2ys.life" target="_blank">
+                <i class="fab fa-fw fa-github"></i>我的魔方页
+              </a>
+            </li></ul>
+        </li></ul>
+      <ul class="navbar-nav d-flex flex-row mb-2 mb-lg-0"><li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="paletteSwitcher" data-bs-toggle="popover" data-bs-placement="bottom" 
+    data-bs-target="#palettesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-palette" ></i>
+  </a>
+</li>
+<script type="text/html" id="palettesPopoverBody">
+  <ul class="palettes list-group"><li id="palette-blue" class="palette list-group-item bg-blue">
+      <a>Blue</a>
+    </li><li id="palette-blue-gray" class="palette list-group-item bg-blue-gray">
+      <a>Blue Gray</a>
+    </li><li id="palette-brown" class="palette list-group-item bg-brown">
+      <a>Brown</a>
+    </li><li id="palette-cyan" class="palette list-group-item bg-cyan">
+      <a>Cyan</a>
+    </li><li id="palette-green" class="palette list-group-item bg-green">
+      <a>Green</a>
+    </li><li id="palette-indigo" class="palette list-group-item bg-indigo">
+      <a>Indigo</a>
+    </li><li id="palette-orange" class="palette list-group-item bg-orange">
+      <a>Orange</a>
+    </li><li id="palette-pink" class="palette list-group-item bg-pink">
+      <a>Pink</a>
+    </li><li id="palette-purple" class="palette list-group-item bg-purple">
+      <a>Purple</a>
+    </li><li id="palette-red" class="palette list-group-item bg-red">
+      <a>Red</a>
+    </li><li id="palette-teal" class="palette list-group-item bg-teal">
+      <a>Teal</a>
+    </li><li id="palette-yellow" class="palette list-group-item bg-yellow">
+      <a>Yellow</a>
+    </li></ul>
+</script>
+<li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="fontSizeSwitcher" data-bs-toggle="popover" data-bs-placement="bottom" 
+    data-bs-target="#fontSizesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-font" ></i>
+  </a>
+</li>
+<script type="text/html" id="fontSizesPopoverBody">
+  <form class="font-size-switcher-form">
+    <label for="fontSize" class="form-label">Font Size</label>
+    <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+  </form>
+</script>
+
+<form class="mode-switcher-form d-flex align-items-center">
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="modeSwitcher">
+  </div>
+</form></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row" aria-label="breadcrumb">
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/posts/">文章</a></li><li class="breadcrumb-item active"></li></ol>
+</nav><article class="post row surface">
+  <h1 class="post-title my-3"></h1><div class="post-meta mb-3">
+  <span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>0001-01-01
+  </span>
+  <span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>1 min read
+  </span>
+</div>
+<div class="post-share mb-3"><div class="addthis_inline_share_toolbox"></div></div><div class="post-content mb-3"><h1 id="什么是云原生">什么是云原生</h1>
+<h2 id="前言">前言</h2>
+<p>要有明确的认识：<strong>云原生</strong>一直在发展变化。<strong>技术的变革，一定是思想先行</strong>，所以首先可以体会到，云原生是一种思想驱动的技术。</p>
+<p>软件设计有两个关键目标：<strong>高内聚、低耦合</strong>，围绕这2个核心目标，又提出了单一职责、开闭原则、里氏替换、依赖倒置、接口隔离、最少知识等设计原则。</p>
+<p>软件工程师一直都在为这两个目标而努力奋斗，以求把软件编写得更加清晰、更加健壮、更加易于扩展和维护。</p>
+<p>再后来，软件行业的诉求时希望开发软件变得更简单、更快捷，软件工程师更少编写代码，非专业人员也希望能开发程序，于是，更多的更傻瓜的编程语言被发明出来，更多的编程技术和编程思想被发明出来，比如库、组件、云基础设施。</p>
+<p>于是很多技术变成了屠龙之技，比如汇编，时代变了，建国后动物不能成精了，没有龙可以宰了，然后很多软件工程师摇身一变成了调参工程师、Call API砖家、用库包能手、拼组件达人，这是效率分工的结果，也是技术发展的使然。</p>
+<p>纵观近二十年的科技互联网发展历程，<strong>大的趋势是技术下沉</strong>，特别是近些年，随着云计算的发展和普及，基础设施越来越厚实，业务开发变得越来越容易，也越来越没有技术含量，而之前困扰小团队的性能、负载、安全性、扩展性问题都不复存在，这不禁让互联网行业的油腻大叔们噤若寒蝉，仿佛分分钟就要被卷入历史洪流而万劫不复。</p>
+<p>虽然不可否认技术的重要性在降低，但也还不至于那么悲观。遥想PC时代，当VB、Delphi、MFC出现的时候，也有类似论调，所见即所得，点点鼠标，就可以开发PC桌面程序，是不是很高端？那时候码农的担心相比现在恐怕是只多不少吧，但后来随着互联网兴起，出现了后端开发这个工种，码农很快找到了新的战场，网络、分布式、数据库、海量服务、容灾防错，于是又玩出一堆新花样。</p>
+<p>如果说PC时代的基础设施是控件库，互联网时代的基础实施是云，那AI时代基础设施是什么？又会有什么高端玩法？</p>
+<h2 id="解释">解释</h2>
+<p>准确来说，云原生是一套方法论，也是一套或多套技术体系。我们用它来构建和运行应用程序。</p>
+<ul>
+<li>云-Cloud：应用首先都部署和运行在云服务器上，而非传统主机上</li>
+<li>原生-Native：应用天生就要支持部署和运行在云上，天生要为了云环境而设计；最终得以在云环境中平稳、淋漓精致的、以一种最佳的方式运行；完全利用了云环境的弹性的、分布式的能力，发挥出云环境的特色</li>
+</ul>
+<p>以上是抽象的以表述形式来简单形容云原生的定义。而市场上对其定论都是主观性的，各有侧重点。以下为例：</p>
+<ul>
+<li>Pivotal公司：DevOps、持续交付、微服务、容器</li>
+<li>云原生计算基金会（CNCF）：容器化封装、自动化管理、面向微服务、服务网格(Service Mesh)、声明式API</li>
+</ul>
+<h2 id="特点">特点</h2>
+<p>看吧，关注的点不一样，意味着定义的方向也不一样。</p>
+<p>至少在我们的理解来看，云原生应该是有以下特点的，或者说符合云原生的应用程序应当具有以下特点：</p>
+<ul>
+<li>采用开源堆栈（K8S+Docker）进行容器化</li>
+<li>基于微服务架构提高灵活性和可维护性</li>
+<li>构建应用简便快捷，部署应用轻松自如；借助敏捷方法、DevOps支持持续迭代和运维自动化</li>
+<li>运行应用按需伸缩：利用云平台设施实现弹性伸缩、动态调度、优化资源利用率</li>
+</ul>
+<h4 id="要素">要素</h4>
+<h5 id="微服务">微服务</h5>
+<p>组织架构决定产品形态，云原生下的应用使用微服务，能将服务通过func解耦，高内聚</p>
+<h5 id="容器化">容器化</h5>
+<p>把应用部署在隔离的docker中，通过K8S做容器编排、管理、负载均衡，谷歌搞的，Docker和K8S都采用Go编写，都是好东西。</p>
+<h5 id="devops">DevOps</h5>
+<p>开发、运维合体，捎带上测试，一起为云原生提供持续交付能力。</p>
+<p>所以从理解上来看，DevOps是一个敏捷思维，是一个沟通文化，也是组织形式和流程，也需要很多工具来支撑。</p>
+<h5 id="持续交付">持续交付</h5>
+<p>有别于传统瀑布式开发模型，持续交付是不误时开发，不停机更新，不间断小步快跑。</p>
+<h2 id="如何去应用">如何去应用</h2>
+<p>首先，云原生借了云计算的东风，没有云计算，自然没有云原生，云计算是云原生的基础。</p>
+<p>随着虚拟化技术的成熟和分布式框架的普及，在容器技术、可持续交付、编排系统等开源社区的推动下，以及微服务等开发理念的带动下，<strong>应用上云已经是不可逆转的趋势</strong>。</p>
+<p>云计算的3层划分，即基础设施即服务(IaaS)、平台即服务(PaaS)、软件即服务(SaaS)为云原生提供了技术基础和方向指引，<strong>真正的云化不仅仅是基础设施和平台的变化，应用也需要做出改变</strong>，摈弃传统的土方法，在架构设计、开发方式、部署维护等各个阶段和方面都基于云的特点，重新设计，从而建设全新的云化的应用，即云原生应用。</p>
+<p>1.本地部署的传统应用往往采用c/c++、企业级java编写，而云原生应用则需要用以网络为中心的go、node.js等新兴语言编写。</p>
+<p>2.本地部署的传统应用可能需要停机更新，而云原生应用应该始终是最新的，需要支持频繁变更，持续交付，蓝绿部署。</p>
+<p>3.本地部署的传统应用无法动态扩展，往往需要冗余资源以抵抗流量高峰，而云原生应用利用云的弹性自动伸缩，通过共享降本增效。</p>
+<p>4.本地部署的传统应用对网络资源，比如ip、端口等有依赖，甚至是硬编码，而云原生应用对网络和存储都没有这种限制。</p>
+<p>5.本地部署的传统应用通常人肉部署手工运维，而云原生应用这一切都是自动化的。</p>
+<p>6.本地部署的传统应用通常依赖系统环境，而云原生应用不会硬连接到任何系统环境，而是依赖抽象的基础架构，从而获得良好移植性。</p>
+<p>7.本地部署的传统应用有些是单体(巨石)应用，或者强依赖，而基于微服务架构的云原生应用，纵向划分服务，模块化更合理。</p>
+<p>可见，要转向云原生应用需要以新的云原生方法开展工作，云原生包括很多方面：基础架构服务、虚拟化、容器化、容器编排、微服务。幸运的是，开源社区在云原生应用方面做出了大量卓有成效的工作，很多开源的框架和设施可以通过拿来主义直接用，2013年Docker推出并很快成为容器事实标准，随后围绕容器编排的混战中，2017年诞生的k8s很快脱颖而出，而这些技术极大的降低了开发云原生应用的技术门槛。</p>
+<p>虽说云原生的推介文档有引导之嫌，但面对它列举的优点，作为杠精的我亦是无可辩驳。这么说的话，云原生也忒好了吧，应用是不是要立刻马上切换到云原生架构？我的观点是：理想很丰满，现实经常很骨感，需从应用的实际需要出发，目前的问题是否真的影响到业务发展，而推倒重来的代价能否承受得来。</p>
+</div><div class="post-copyright mb-4">
+  <h3>Copyright</h3>
+<div class="post-cc">This work is licensed under <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.CC BY-NC-ND 4.0 "><i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i>%!s(MISSING)</a>.</div>
+</div><div class="post-navs d-flex mb-3 justify-content-between">
+  <div class="post-nav w-50"><div class="prev-post">
+      <a href="/posts/notes/%E5%8D%95%E4%BE%8B%E5%92%8C%E5%8E%9F%E5%9E%8B%E7%9A%84%E5%8C%BA%E5%88%AB/"></a>
+    </div></div>
+  <div class="post-nav flex-row-reverse"><div class="next-post">
+      <a href="/posts/notes/%E4%B8%8D%E9%87%8D%E5%A4%8D%E5%BA%8F%E5%88%97%E5%8F%B7%E7%94%9F%E6%88%90%E9%80%BB%E8%BE%91/%E5%85%91%E6%8D%A2%E7%A0%81%E5%BA%8F%E5%88%97%E5%8F%B7%E7%94%9F%E6%88%90/"></a>
+    </div></div>
+</div></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
+  repo="razonyang/hugo-theme-bootstrap"
+  issue-term="pathname"
+  label=""
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script></div></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container"><section class="profile surface row">
+  <div class="col-xl-6 d-flex align-items-center justify-content-center">
+    <img class="profile-avatar img-fluid" src="/images/profile.webp" alt="r2ys" loading="lazy">
+  </div>
+  <div class="col-xl-6">
+    <h5 class="profile-name my-2">r2ys</h5><div class="profile-bio mb-2">好的应用开发者、应用架构师</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>sft</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>北京朝阳门</div></div>
+</section><section class="recent-posts row surface">
+  <h4>Recent Posts</h4>
+  <ul><li><a href="/posts/notes/%E6%AF%8F%E6%97%A5%E7%BF%BB%E8%AF%91%E4%BE%8B%E5%8F%A5/">每日翻译例句</a></li><li><a href="/posts/notes/%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4%E6%80%A7%E7%AE%97%E6%B3%95epaxos/">分布式一致性算法EPaxos.md</a></li><li><a href="/posts/notes/%E6%9D%83%E9%99%90%E8%AE%A4%E8%AF%81%E6%A1%86%E6%9E%B6%E6%80%8E%E4%B9%88%E9%80%89/">权限认证框架怎么选.md</a></li><li><a href="/posts/notes/%E5%AD%A6%E4%BC%9Ainnodb%E5%90%84%E7%A7%8D%E9%94%81/">学会Innodb各种锁.md</a></li><li><a href="/posts/notes/%E5%8F%82%E6%95%B0%E6%A0%A1%E9%AA%8C%E6%80%8E%E4%B9%88%E5%81%9A%E6%9B%B4%E4%BC%98%E9%9B%85/">参数校验怎么做更优雅.md</a></li></ul>
+</section>
+<section class="taxonomy-categories row surface">
+  <h4>
+    <a href="/categories">Categories</a>
+  </h4>
+  <div><a href="/categories/mysql/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="mysql">
+      mysql <span class="badge rounded-pill">5</span>
+    </a><a href="/categories/linux/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="linux">
+      linux <span class="badge rounded-pill">4</span>
+    </a><a href="/categories/java/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Java">
+      Java <span class="badge rounded-pill">3</span>
+    </a><a href="/categories/jdk/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="jdk">
+      jdk <span class="badge rounded-pill">3</span>
+    </a><a href="/categories/shell/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="shell">
+      shell <span class="badge rounded-pill">3</span>
+    </a><a href="/categories/sh/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="sh">
+      sh <span class="badge rounded-pill">2</span>
+    </a><a href="/categories/%E5%88%86%E5%B8%83%E5%BC%8F/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="分布式">
+      分布式 <span class="badge rounded-pill">2</span>
+    </a><a href="/categories/%E6%8F%92%E4%BB%B6/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="插件">
+      插件 <span class="badge rounded-pill">2</span>
+    </a><a href="/categories/algorithms/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="algorithms">
+      algorithms <span class="badge rounded-pill">1</span>
+    </a><a href="/categories/ast/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="AST">
+      AST <span class="badge rounded-pill">1</span>
+    </a></div>
+</section><section class="taxonomy-series row surface">
+  <h4>
+    <a href="/series">Series</a>
+  </h4>
+  <div><a href="/series/mysql%E7%94%B1%E6%B5%85%E5%85%A5%E6%B7%B1/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="MySQL由浅入深">
+      MySQL由浅入深 <span class="badge rounded-pill">1</span>
+    </a></div>
+</section><section class="taxonomy-tags row surface">
+  <h4>
+    <a href="/tags">Tags</a>
+  </h4>
+  <div><a href="/tags/idea/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="IDEA">
+      IDEA <span class="badge rounded-pill">2</span>
+    </a><a href="/tags/cd/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="CD">
+      CD <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/cglib/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="CGLIB">
+      CGLIB <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/ci/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="CI">
+      CI <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/easyexcel/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="easyexcel">
+      easyexcel <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/excel/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="excel">
+      excel <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/hibernate/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Hibernate">
+      Hibernate <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/hr/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="HR">
+      HR <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/innodb/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Innodb">
+      Innodb <span class="badge rounded-pill">1</span>
+    </a><a href="/tags/jenkins/" class="post-taxonomy rounded-pill btn btn-sm me-2 mb-2" title="Jenkins">
+      Jenkins <span class="badge rounded-pill">1</span>
+    </a></div>
+</section></div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav my-2 justify-content-center"><li class="nav-item">
+    <a class="nav-link social-link" href="mailto:860150245@qq.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a>
+  </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://github.com/r2ysblog" title="GitHub">
+        <i class="fab fa-fw fa-2x fa-github"></i>
+      </a>
+    </li></nav>
+<div class="copyright mb-2">
+  Copyright © 2021-2022 r2ys. All Rights Reserved.
+</div>
+<div class="powered-by mb-2">
+  Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank">Bootstrap</a> theme.
+</div></footer>
+<a id="btnScrollToTop" class="btn-scroll-to-top">
+  <i class="fas fa-fw fa-chevron-circle-up fa-2x"></i>
+</a>
+<script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60bcc43f59f2d04f"></script></body>
+</html>
