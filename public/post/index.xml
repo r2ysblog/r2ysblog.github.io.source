@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on r2ys blog</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on r2ys blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
+    <lastBuildDate>Thu, 10 Mar 2022 13:00:15 +0800</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何使用hugo编辑博客</title>
+      <link>/post/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%BC%96%E8%BE%91%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Thu, 10 Mar 2022 13:00:15 +0800</pubDate>
+      
+      <guid>/post/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%BC%96%E8%BE%91%E5%8D%9A%E5%AE%A2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

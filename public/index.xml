@@ -6,7 +6,16 @@
     <description>Recent content on r2ys blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
-    <lastBuildDate>Thu, 10 Mar 2022 11:43:00 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Mar 2022 13:00:54 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何使用hugo编辑博客</title>
+      <link>/posts/notes/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%BC%96%E8%BE%91%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Thu, 10 Mar 2022 13:00:54 +0800</pubDate>
+      
+      <guid>/posts/notes/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%BC%96%E8%BE%91%E5%8D%9A%E5%AE%A2/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>每日翻译例句</title>
       <link>/posts/notes/%E6%AF%8F%E6%97%A5%E7%BF%BB%E8%AF%91%E4%BE%8B%E5%8F%A5/</link>

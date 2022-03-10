@@ -3,12 +3,15 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2022-03-10T11:43:00+08:00</lastmod>
+    <lastmod>2022-03-10T13:00:54+08:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2022-03-10T11:43:00+08:00</lastmod>
+    <loc>/posts/notes/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%BC%96%E8%BE%91%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2022-03-10T13:00:54+08:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
+    <lastmod>2022-03-10T13:00:54+08:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
     <lastmod>2022-03-10T11:43:00+08:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
