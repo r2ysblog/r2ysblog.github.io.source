@@ -11,7 +11,7 @@
 <meta name="description" content="" /><meta itemprop="name" content="如何使用hugo编辑博客">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2022-03-10T13:00:54&#43;08:00" />
 <meta itemprop="dateModified" content="2022-03-10T13:00:54&#43;08:00" />
-<meta itemprop="wordCount" content="37">
+<meta itemprop="wordCount" content="61">
 <meta itemprop="keywords" content="," /><meta property="og:title" content="如何使用hugo编辑博客" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
@@ -161,6 +161,14 @@ cp -a themes/hugo-theme-bootstrap/exampleSite/* .</p>
 <h3 id="新建工作流">新建工作流</h3>
 <h3 id="使用推送功能触发工作流">使用推送功能触发工作流</h3>
 <h3 id="预览">预览</h3>
+<h2 id="日常编辑笔记或博文">日常编辑笔记或博文</h2>
+<p>hugo new content/posts/notes/如何使用hugo编辑博客.md
+vim content/posts/notes/如何使用hugo编辑博客.md
+git add .
+ls_date=<code>date +%Y%m%d%H%M</code>
+git commit -m $ls_date
+git push -u origin main
+open -a &ldquo;/Applications/Safari.app&rdquo; <a href="https://blog.r2ys.life">https://blog.r2ys.life</a></p>
 <h3 id="结束">结束。</h3></div><div class="post-copyright mb-4">
   <h3>Copyright</h3>
 <div class="post-cc">This work is licensed under <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.CC BY-NC-ND 4.0 "><i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i>%!s(MISSING)</a>.</div>
