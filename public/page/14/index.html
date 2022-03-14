@@ -127,7 +127,7 @@
       <div class="row content">
 <div class="col-lg-8">
   <div class="container"><div class="posts mb-4"><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2019-06-14-the-road-to-engineering/">我的编程之路</a></h2><div class="post-meta mb-3">
+        <h2 class="post-title mb-4"><a href="/posts/notes/%E4%B8%8D%E9%87%8D%E5%A4%8D%E5%BA%8F%E5%88%97%E5%8F%B7%E7%94%9F%E6%88%90%E9%80%BB%E8%BE%91/%E5%85%91%E6%8D%A2%E7%A0%81%E5%BA%8F%E5%88%97%E5%8F%B7%E7%94%9F%E6%88%90/"></a></h2><div class="post-meta mb-3">
   <span class="post-date me-2">
     <i class="fas fa-fw fa-calendar-alt"></i>0001-01-01
   </span>
@@ -135,7 +135,62 @@
     <i class="fas fa-fw fa-coffee"></i>1 min read
   </span>
 </div>
-<div class="post-summary mb-3">C-&gt;iOS-&gt;javascript-&gt;Java-&gt;Go</div>
+<div class="post-summary mb-3">兑换码/序列号生成 需求  16位字符串，包含数字或字母 随机性，无法猜测和暴力碰撞 永不重复  分析  给定的要求是永不重复，但往往业务的体量不同，上限也不同；假定单个业务类型下可支持的总量为1亿，技术上能实现10亿是否就能满足需求？ 数字或字母，参考以往Base32编码表中字母为A-Z共26个，数字为234567，去掉了容易混淆的0、1、8、9；32个字符随机是否也能满足需求？  生成流程    生成原理 先逆向考虑
+32个字符的编码表最多表示多少个数？
+1个字符能表示32个数：0,1,2,&hellip;,30,31对应A,B,C,&hellip;,6,7
+2个字符能表示1024个数: …</div>
+      </div>
+    </article><article class="post row surface"><div class="post-body">
+        <h2 class="post-title mb-4"><a href="/posts/notes/%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%91%E5%8E%9F%E7%94%9F/"></a></h2><div class="post-meta mb-3">
+  <span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>0001-01-01
+  </span>
+  <span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>1 min read
+  </span>
+</div>
+<div class="post-summary mb-3">什么是云原生 前言 要有明确的认识：云原生一直在发展变化。技术的变革，一定是思想先行，所以首先可以体会到，云原生是一种思想驱动的技术。
+软件设计有两个关键目标：高内聚、低耦合，围绕这2个核心目标，又提出了单一职责、开闭原则、里氏替换、依赖倒置、接口隔离、最少知识等设计原则。
+软件工程师一直都在为这两个目标而努力奋斗，以求把软件编写得更加清晰、更加健壮、更加易于扩展和维护。
+再后来，软件行业的诉求时希望开发软件变得更简单、更快捷，软件工程师更少编写代码，非专业人员也希望能开发程序，于是，更多的更傻瓜的编程语言被发明出来，更多的编程技术和编程思想被发明出来，比如库、组件、云基础设施。
+于是很多技术变成了屠龙之技，比如汇编，时代变了，建国 …</div>
+      </div>
+    </article><article class="post row surface"><div class="post-body">
+        <h2 class="post-title mb-4"><a href="/posts/notes/%E5%8D%95%E4%BE%8B%E5%92%8C%E5%8E%9F%E5%9E%8B%E7%9A%84%E5%8C%BA%E5%88%AB/"></a></h2><div class="post-meta mb-3">
+  <span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>0001-01-01
+  </span>
+  <span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>1 min read
+  </span>
+</div>
+<div class="post-summary mb-3">单例和原型的区别 </div>
+      </div>
+    </article><article class="post row surface"><div class="post-body">
+        <h2 class="post-title mb-4"><a href="/posts/notes/%E6%8E%92%E6%9F%A5linux%E7%9A%84%E5%86%85%E5%AD%98%E5%8D%A0%E7%94%A8/"></a></h2><div class="post-meta mb-3">
+  <span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>0001-01-01
+  </span>
+  <span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>1 min read
+  </span>
+</div>
+<div class="post-summary mb-3">// 基本状况
+free -h // 应用程序物理内存消耗
+ps -eo rss | awk &lsquo;BEGIN{sum=0}{sum=sum+$1}END{print sum}&rsquo; // 应用程序状况
+top -b -n 1 cat /proc/meminfo 清理buffer cache $ sync
+将内存中数据强制先刷新到磁盘中 清理Buffer缓存区域 $ echo 1 &gt; /proc/sys/vm/drop_caches # 表示清除pagecache。 $ echo 2 &gt; /proc/sys/vm/drop_caches # 表示清除回收slab分配器中的对象（包括目录项缓存和inode缓 …</div>
+      </div>
+    </article><article class="post row surface"><div class="post-body">
+        <h2 class="post-title mb-4"><a href="/posts/notes/%E6%90%9E%E6%87%82juc/"></a></h2><div class="post-meta mb-3">
+  <span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>0001-01-01
+  </span>
+  <span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>1 min read
+  </span>
+</div>
+<div class="post-summary mb-3">搞懂JUC https://mp.weixin.qq.com/s/mmaTmHzWxIVDe_bvy5nz_w</div>
       </div>
     </article></div><div class="row table-responsive mb-3">
 <ul class="pagination">
@@ -163,11 +218,14 @@
   <li class="page-item active">
     <a class="page-link" href="/page/14/">14</a>
   </li>
-  <li class="page-item disabled">
-    <a  class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+  <li class="page-item">
+    <a class="page-link" href="/page/15/">15</a>
   </li>
   <li class="page-item">
-    <a href="/page/14/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    <a href="/page/15/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+  </li>
+  <li class="page-item">
+    <a href="/page/15/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
   </li>
 </ul>
 
@@ -183,7 +241,7 @@
     <h5 class="profile-name my-2">r2ys</h5><div class="profile-bio mb-2">好的应用开发者、应用架构师</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>sft</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>北京朝阳门</div></div>
 </section><section class="recent-posts row surface">
   <h4>Recent Posts</h4>
-  <ul><li><a href="/posts/notes/%E9%80%9A%E8%BF%87githubactions%E5%8F%91%E5%B8%83gitbook%E6%B5%81%E7%A8%8B%E5%AE%9E%E8%B7%B5/">通过GithubActions发布Gitbook流程实践</a></li><li><a href="/posts/notes/%E7%A0%94%E5%8F%91%E6%B5%81%E7%A8%8B%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/">研发流程的最佳实践</a></li><li><a href="/posts/notes/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%BC%96%E8%BE%91%E5%8D%9A%E5%AE%A2/">如何使用hugo编辑博客</a></li><li><a href="/posts/notes/%E6%AF%8F%E6%97%A5%E7%BF%BB%E8%AF%91%E4%BE%8B%E5%8F%A5/">每日翻译例句</a></li><li><a href="/posts/notes/%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4%E6%80%A7%E7%AE%97%E6%B3%95epaxos/">分布式一致性算法EPaxos.md</a></li></ul>
+  <ul><li><a href="/posts/notes/%E6%AF%8F%E6%97%A5%E7%94%9F%E8%AF%8D%E6%9C%AC/">每日生词本</a></li><li><a href="/posts/notes/%E5%AF%B9%E8%BF%87%E5%8E%BB%E4%B8%80%E5%B9%B4%E7%9A%84%E8%87%AA%E7%9C%81/">对过去一年的自省</a></li><li><a href="/posts/notes/%E5%B7%A5%E4%BD%9C%E8%83%BD%E5%8A%9B%E7%9A%84%E4%BD%93%E7%8E%B0/">工作能力的体现</a></li><li><a href="/posts/notes/%E5%A6%82%E4%BD%95%E6%8F%90%E7%A6%BB%E8%81%8C/">如何提离职</a></li><li><a href="/posts/notes/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%9C%8B%E6%87%82%E5%BC%80%E6%BA%90%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE/">一张图看懂开源许可协议</a></li></ul>
 </section>
 <section class="taxonomy-categories row surface">
   <h4>

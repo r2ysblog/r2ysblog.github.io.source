@@ -127,59 +127,77 @@
       <div class="row content">
 <div class="col-lg-8">
   <div class="container"><div class="posts mb-4"><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-operate-linux-firewall/">operate linux firewall</a></h2><div class="post-meta mb-3">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-design-a-flow-based-develop-and-invoke-system/">design a flow based develop and invoke system</a></h2><div class="post-meta mb-3">
   <span class="post-date me-2">
     <i class="fas fa-fw fa-calendar-alt"></i>2020-01-15
   </span>
   <span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 min read
   </span>
-<a href="/categories/linux/" class="post-taxonomy">#linux</a></div>
-<div class="post-summary mb-3">centOS7永久关闭防火墙 # 查看状态 systemctl status firewalld.service # 关闭 systemctl stop firewalld.service # 开机禁用 systemctl disable firewalld.service # 开启 systemctl start firewalld.service # 开机启用 systemctl enable firewalld.service </div>
+<a href="/categories/flow/" class="post-taxonomy">#flow</a></div>
+<div class="post-summary mb-3">design a flow based develop and invoke system todo cabala重构点： 根据接口查脚本 根据脚本反查接口
+脚本写完模拟调用 接口写完模拟调用
+管理页面提取成一套，根据接口名称和脚本名称查询 搜索规则有：list，count，save，get，edit，remove，其它
+业务模块-&gt;接口 -&gt;脚本(脚本中指定库)
+开始结束 循环、判断 数据库操作 缓存操作
+调用子服务 同步和异步
+从原始接口表更新到目标接口表：指定接口号和脚本代码即可，自动拉取同步，自动刷新缓存，永不重启引擎服务
+开启提示模式时，节点入出的参数都展示出来
+判断、循环的代码段可以边编辑边拷贝参考
+接口流程 …</div>
       </div>
     </article><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-learn-hibernate-mybatis-and-orm/">learn hibernate mybatis and orm</a></h2><div class="post-meta mb-3">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-learn-shell-from-start/">learn shell from start</a></h2><div class="post-meta mb-3">
   <span class="post-date me-2">
     <i class="fas fa-fw fa-calendar-alt"></i>2020-01-15
   </span>
   <span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>1 min read
+    <i class="fas fa-fw fa-coffee"></i>2 min read
   </span>
-<a href="/categories/orm/" class="post-taxonomy">#orm</a></div>
-<div class="post-summary mb-3">learn hibernate mybatis and orm todo hibernate mybatis ORM</div>
+<a href="/categories/shell/" class="post-taxonomy">#shell</a></div>
+<div class="post-summary mb-3">learn shell from start 打印日期的两种方式 echo today is `date &#34;+%Y-%m-%d&#34;` echo today is $(date &#34;+%Y-%m-%d&#34;) shell中变量的使用 mypid=$$ echo &ldquo;mypid:$mypid&rdquo;
+paramCount=$# echo &ldquo;paramCount:$paramCount&rdquo;
+lastPid=$! echo &ldquo;lastPid:$lastPid&rdquo;
+lastResponse=$? echo …</div>
       </div>
     </article><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-database-design/">database design</a></h2><div class="post-meta mb-3">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-byzantine/">byzantine</a></h2><div class="post-meta mb-3">
   <span class="post-date me-2">
     <i class="fas fa-fw fa-calendar-alt"></i>2020-01-15
   </span>
   <span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 min read
   </span>
-<a href="/categories/database/" class="post-taxonomy">#database</a></div>
-<div class="post-summary mb-3">数据库设计的原则 简单记录几点要点  符合业务需求 避免冗余  数据仓库设计要以哪些指标为主？  需求 维度 指标  数据库的需求和数据仓库需求的不同  数据库要求的是实时，一致 数据仓库要求的是汇总数据有效，全量，不需实时  数据仓库产生的因素 数据仓库产生于数据库之上，为了进一步挖掘数据资源、决策需要而存在</div>
+<a href="/categories/algorithms/" class="post-taxonomy">#algorithms</a></div>
+<div class="post-summary mb-3">byzantine：拜占庭问题的算法 https://www.zhihu.com/question/30288330
+1.5（P - E） &gt; P 3 / 2 * P - 3 / 2 * E &gt; P 1 / 2 * P &gt; 3 / 2 * E P &gt; 3 E 1 / 3 * P &gt; E
+如果系统中有n个故障节点，系统要想正确运行，必须至少要有2n+1个正常节点
+P = N + E N &gt; X &gt; N/2 + E
+1.5N &gt; N + E
+1 / 2 N &gt; E N &gt; 2E
+所有正确的节点最终会决定一个值（termination） 所有正确的节点决定的值必须相 …</div>
       </div>
     </article><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-derby-and-mysql/">derby and mysql</a></h2><div class="post-meta mb-3">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-distributed-system-learn-key-point/">distributed system learn key point</a></h2><div class="post-meta mb-3">
   <span class="post-date me-2">
     <i class="fas fa-fw fa-calendar-alt"></i>2020-01-15
   </span>
   <span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 min read
   </span>
-<a href="/categories/mysql/" class="post-taxonomy">#mysql</a></div>
-<div class="post-summary mb-3">derby and mysql todo derby 哪些方面能代替mysql MariaDB 为什么是mysql的分支 </div>
+<a href="/categories/distributed/" class="post-taxonomy">#distributed</a></div>
+<div class="post-summary mb-3">distributed system learn key point </div>
       </div>
     </article><article class="post row surface"><div class="post-body">
-        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-query-linux-tcp-exceptional-tcp-connections/">query linux tcp exceptional tcp connections</a></h2><div class="post-meta mb-3">
+        <h2 class="post-title mb-4"><a href="/posts/notes/2020-01-15-maven-project-directory-standard/">maven project directory standard</a></h2><div class="post-meta mb-3">
   <span class="post-date me-2">
     <i class="fas fa-fw fa-calendar-alt"></i>2020-01-15
   </span>
   <span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 min read
   </span>
-<a href="/categories/linux/" class="post-taxonomy">#linux</a></div>
-<div class="post-summary mb-3">查询linux中各种状态的tcp连接 netstat -ant |grep CLOSE_WAIT|wc -l 同理可替换CLOSE_WAIT为  TIME_WAIT ESTABLISHED  </div>
+<a href="/categories/maven/" class="post-taxonomy">#maven</a></div>
+<div class="post-summary mb-3">maven project directory standard </div>
       </div>
     </article></div><div class="row table-responsive mb-3">
 <ul class="pagination">
@@ -214,13 +232,13 @@
     <span aria-hidden="true">&nbsp;&hellip;&nbsp;</span>
   </li>
   <li class="page-item">
-    <a class="page-link" href="/page/14/">14</a>
+    <a class="page-link" href="/page/15/">15</a>
   </li>
   <li class="page-item">
     <a href="/page/8/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
   </li>
   <li class="page-item">
-    <a href="/page/14/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    <a href="/page/15/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
   </li>
 </ul>
 
@@ -236,7 +254,7 @@
     <h5 class="profile-name my-2">r2ys</h5><div class="profile-bio mb-2">好的应用开发者、应用架构师</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>sft</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>北京朝阳门</div></div>
 </section><section class="recent-posts row surface">
   <h4>Recent Posts</h4>
-  <ul><li><a href="/posts/notes/%E9%80%9A%E8%BF%87githubactions%E5%8F%91%E5%B8%83gitbook%E6%B5%81%E7%A8%8B%E5%AE%9E%E8%B7%B5/">通过GithubActions发布Gitbook流程实践</a></li><li><a href="/posts/notes/%E7%A0%94%E5%8F%91%E6%B5%81%E7%A8%8B%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/">研发流程的最佳实践</a></li><li><a href="/posts/notes/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%BC%96%E8%BE%91%E5%8D%9A%E5%AE%A2/">如何使用hugo编辑博客</a></li><li><a href="/posts/notes/%E6%AF%8F%E6%97%A5%E7%BF%BB%E8%AF%91%E4%BE%8B%E5%8F%A5/">每日翻译例句</a></li><li><a href="/posts/notes/%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4%E6%80%A7%E7%AE%97%E6%B3%95epaxos/">分布式一致性算法EPaxos.md</a></li></ul>
+  <ul><li><a href="/posts/notes/%E6%AF%8F%E6%97%A5%E7%94%9F%E8%AF%8D%E6%9C%AC/">每日生词本</a></li><li><a href="/posts/notes/%E5%AF%B9%E8%BF%87%E5%8E%BB%E4%B8%80%E5%B9%B4%E7%9A%84%E8%87%AA%E7%9C%81/">对过去一年的自省</a></li><li><a href="/posts/notes/%E5%B7%A5%E4%BD%9C%E8%83%BD%E5%8A%9B%E7%9A%84%E4%BD%93%E7%8E%B0/">工作能力的体现</a></li><li><a href="/posts/notes/%E5%A6%82%E4%BD%95%E6%8F%90%E7%A6%BB%E8%81%8C/">如何提离职</a></li><li><a href="/posts/notes/%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%9C%8B%E6%87%82%E5%BC%80%E6%BA%90%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE/">一张图看懂开源许可协议</a></li></ul>
 </section>
 <section class="taxonomy-categories row surface">
   <h4>
