@@ -6,7 +6,25 @@
     <description>Recent content in 文章 on r2ys blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2021-{year} r2ys. All Rights Reserved.</copyright>
-    <lastBuildDate>Thu, 10 Mar 2022 13:00:54 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Mar 2022 14:59:06 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>通过GithubActions发布Gitbook流程实践</title>
+      <link>/posts/notes/%E9%80%9A%E8%BF%87githubactions%E5%8F%91%E5%B8%83gitbook%E6%B5%81%E7%A8%8B%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Mon, 14 Mar 2022 14:59:06 +0800</pubDate>
+      
+      <guid>/posts/notes/%E9%80%9A%E8%BF%87githubactions%E5%8F%91%E5%B8%83gitbook%E6%B5%81%E7%A8%8B%E5%AE%9E%E8%B7%B5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>研发流程的最佳实践</title>
+      <link>/posts/notes/%E7%A0%94%E5%8F%91%E6%B5%81%E7%A8%8B%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Mon, 14 Mar 2022 14:35:06 +0800</pubDate>
+      
+      <guid>/posts/notes/%E7%A0%94%E5%8F%91%E6%B5%81%E7%A8%8B%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>如何使用hugo编辑博客</title>
       <link>/posts/notes/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%BC%96%E8%BE%91%E5%8D%9A%E5%AE%A2/</link>
@@ -22,7 +40,7 @@
       <pubDate>Thu, 10 Mar 2022 11:43:00 +0800</pubDate>
       
       <guid>/posts/notes/%E6%AF%8F%E6%97%A5%E7%BF%BB%E8%AF%91%E4%BE%8B%E5%8F%A5/</guid>
-      <description> 人各有志：Everyone has his own ambition/aspiration.  </description>
+      <description> 人各有志：Everyone has his own ambition/aspiration. 晴天霹雳：The accident came as a bolt from/out of the blue (sth sudden and unexpected, a complete surprise)  </description>
     </item>
     
     <item>
