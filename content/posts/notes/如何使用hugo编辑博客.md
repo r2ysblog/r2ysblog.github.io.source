@@ -28,7 +28,7 @@ cp -a themes/hugo-theme-bootstrap/exampleSite/* .
 ### 生成静态页面包括草稿
 hugo -D --theme=hugo-theme-bootstrap --buildDrafts
 ### 启用本地调试服务
-hugo server
+hugo server -D
 
 ## 如何使用工作流推送并生成博客页
 ### 开启github pages
